@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.tsx';
+import DictionaryModal from '../components/dictionary/DictionaryModal.tsx';
+import { APP_NAME, DOCUMENT_LANGUAGE } from '../constants/app';
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+const documentTitle = title ? `${title} · ${APP_NAME}` : APP_NAME;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang={DOCUMENT_LANGUAGE}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{documentTitle}</title>
+  </head>
+  <body>
+    <Navbar client:load currentPath={currentPath} />
+    <main>
+      <slot />
+    </main>
+    <!-- Mounted once here so any island can open it via the shared event. -->
+    <DictionaryModal client:load />
+  </body>
+</html>

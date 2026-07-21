@@ -1,0 +1,290 @@
+[
+  {
+    "id": "acetic-acid",
+    "smiles": "CC(=O)O",
+    "formula": "C2H4O2",
+    "type": "acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Ácido acético", "description": null, "uses": null },
+      "en": { "name": "Acetic acid", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 176", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/176" }
+    ]
+  },
+  {
+    "id": "citric-acid",
+    "smiles": "OC(=O)CC(O)(CC(=O)O)C(=O)O",
+    "formula": "C6H8O7",
+    "type": "acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Ácido cítrico", "description": null, "uses": null },
+      "en": { "name": "Citric acid", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 311", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/311" }
+    ]
+  },
+  {
+    "id": "ascorbic-acid",
+    "smiles": "OC[C@H](O)[C@H]1OC(=O)C(O)=C1O",
+    "formula": "C6H8O6",
+    "type": "acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Ácido ascórbico", "description": null, "uses": null },
+      "en": { "name": "Ascorbic acid", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 54670067", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067" }
+    ]
+  },
+  {
+    "id": "glucose",
+    "smiles": "OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O",
+    "formula": "C6H12O6",
+    "type": "sugar",
+    "isomers": ["fructose"],
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Glucosa",
+      "en": "https://en.wikipedia.org/wiki/Glucose"
+    },
+    "i18n": {
+      "es": { "name": "Glucosa", "description": null, "uses": null },
+      "en": { "name": "Glucose", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 5793", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793" }
+    ]
+  },
+  {
+    "id": "fructose",
+    "smiles": "OC[C@H]1O[C@](O)(CO)[C@@H](O)[C@@H]1O",
+    "formula": "C6H12O6",
+    "type": "sugar",
+    "isomers": ["glucose"],
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Fructosa",
+      "en": "https://en.wikipedia.org/wiki/Fructose"
+    },
+    "i18n": {
+      "es": { "name": "Fructosa", "description": null, "uses": null },
+      "en": { "name": "Fructose", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 2723872", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2723872" }
+    ]
+  },
+  {
+    "id": "sucrose",
+    "smiles": "OC[C@H]1O[C@@](CO)(O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O",
+    "formula": "C12H22O11",
+    "type": "sugar",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Sacarosa", "description": null, "uses": null },
+      "en": { "name": "Sucrose", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 5988", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988" }
+    ]
+  },
+  {
+    "id": "ammonia",
+    "smiles": "N",
+    "formula": "H3N",
+    "type": "base",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Amoníaco", "description": null, "uses": null },
+      "en": { "name": "Ammonia", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 222", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/222" }
+    ]
+  },
+  {
+    "id": "caffeine",
+    "smiles": "Cn1cnc2c1c(=O)n(C)c(=O)n2C",
+    "formula": "C8H10N4O2",
+    "type": "base",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Cafeína", "description": null, "uses": null },
+      "en": { "name": "Caffeine", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 2519", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519" }
+    ]
+  },
+  {
+    "id": "pyridine",
+    "smiles": "c1ccncc1",
+    "formula": "C5H5N",
+    "type": "base",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Piridina", "description": null, "uses": null },
+      "en": { "name": "Pyridine", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 1049", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1049" }
+    ]
+  },
+  {
+    "id": "oleic-acid",
+    "smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)O",
+    "formula": "C18H34O2",
+    "type": "lipid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Ácido oleico", "description": null, "uses": null },
+      "en": { "name": "Oleic acid", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 445639", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445639" }
+    ]
+  },
+  {
+    "id": "cholesterol",
+    "smiles": "C[C@H](CCCC(C)C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C",
+    "formula": "C27H46O",
+    "type": "lipid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Colesterol", "description": null, "uses": null },
+      "en": { "name": "Cholesterol", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 5997", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997" }
+    ]
+  },
+  {
+    "id": "methane",
+    "smiles": "C",
+    "formula": "CH4",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Metano", "description": null, "uses": null },
+      "en": { "name": "Methane", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 297", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297" }
+    ]
+  },
+  {
+    "id": "ethylene",
+    "smiles": "C=C",
+    "formula": "C2H4",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Etileno", "description": null, "uses": null },
+      "en": { "name": "Ethylene", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 6325", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325" }
+    ]
+  },
+  {
+    "id": "acetylene",
+    "smiles": "C#C",
+    "formula": "C2H2",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Acetileno", "description": null, "uses": null },
+      "en": { "name": "Acetylene", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 6326", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6326" }
+    ]
+  },
+  {
+    "id": "benzene",
+    "smiles": "c1ccccc1",
+    "formula": "C6H6",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Benceno", "description": null, "uses": null },
+      "en": { "name": "Benzene", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 241", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/241" }
+    ]
+  },
+  {
+    "id": "glycine",
+    "smiles": "NCC(=O)O",
+    "formula": "C2H5NO2",
+    "type": "amino-acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Glicina", "description": null, "uses": null },
+      "en": { "name": "Glycine", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 750", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/750" }
+    ]
+  },
+  {
+    "id": "alanine",
+    "smiles": "C[C@@H](N)C(=O)O",
+    "formula": "C3H7NO2",
+    "type": "amino-acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Alanina", "description": null, "uses": null },
+      "en": { "name": "Alanine", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 5950", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5950" }
+    ]
+  },
+  {
+    "id": "phenylalanine",
+    "smiles": "N[C@@H](Cc1ccccc1)C(=O)O",
+    "formula": "C9H11NO2",
+    "type": "amino-acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Fenilalanina", "description": null, "uses": null },
+      "en": { "name": "Phenylalanine", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 6140", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6140" }
+    ]
+  },
+  {
+    "id": "ethanol",
+    "smiles": "CCO",
+    "formula": "C2H6O",
+    "type": "alcohol",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Etanol", "description": null, "uses": null },
+      "en": { "name": "Ethanol", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 702", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702" }
+    ]
+  },
+  {
+    "id": "glycerol",
+    "smiles": "OCC(O)CO",
+    "formula": "C3H8O3",
+    "type": "alcohol",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Glicerol", "description": null, "uses": null },
+      "en": { "name": "Glycerol", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 753", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/753" }
+    ]
+  }
+]

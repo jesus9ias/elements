@@ -1,0 +1,82 @@
+/**
+ * Glassmorphism design tokens — the single source of truth for colors, blur
+ * and spacing. No color/blur/spacing literal may appear inline elsewhere; use
+ * these custom properties instead (no magic values).
+ */
+
+:root {
+  /* Palette */
+  --color-bg-start: #1b2140;
+  --color-bg-end: #0b0f24;
+  --color-text: #f2f4ff;
+  --color-text-muted: #aab0d6;
+  --color-accent: #6ea8ff;
+  --color-accent-strong: #3f7bff;
+
+  /* Glass surfaces */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-bg-strong: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: 14px;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  /* Layout */
+  --navbar-height: 4rem;
+  --content-max-width: 1200px;
+
+  /*
+   * Element category colors. One token per category in `categories.ts`
+   * (`categoryColor()` builds `--category-<name>`). Tuned to read as cell
+   * accents over the dark glass background while loosely following the
+   * conventional periodic-table hues. The `-soft` variant is the translucent
+   * cell fill; the solid variant is the accent/border.
+   */
+  /*
+   * Hues are spaced so no two categories rely on a similar tone alone; the
+   * 2026-07-18 accessibility pass widened three pairs that were close
+   * (alkaline-earth/transition, nonmetal/halogen, lanthanide/actinide) by
+   * separating them in BOTH hue and lightness. See the Decisions Log.
+   */
+  --category-alkali-metal: #ff8a5c;
+  --category-alkaline-earth-metal: #ffb347;
+  --category-transition-metal: #f7e074;
+  --category-post-transition-metal: #7fe0c3;
+  --category-metalloid: #6fd08c;
+  --category-nonmetal: #5aa9ff;
+  --category-halogen: #86e3f5;
+  --category-noble-gas: #b98cff;
+  --category-lanthanide: #ff9ecb;
+  --category-actinide: #f2739b;
+
+  --category-alkali-metal-soft: rgba(255, 138, 92, 0.16);
+  --category-alkaline-earth-metal-soft: rgba(255, 179, 71, 0.16);
+  --category-transition-metal-soft: rgba(247, 224, 116, 0.16);
+  --category-post-transition-metal-soft: rgba(127, 224, 195, 0.16);
+  --category-metalloid-soft: rgba(111, 208, 140, 0.16);
+  --category-nonmetal-soft: rgba(90, 169, 255, 0.16);
+  --category-halogen-soft: rgba(134, 227, 245, 0.16);
+  --category-noble-gas-soft: rgba(185, 140, 255, 0.16);
+  --category-lanthanide-soft: rgba(255, 158, 203, 0.16);
+  --category-actinide-soft: rgba(242, 115, 155, 0.16);
+
+  /* Nucleus particle colors for the Bohr model. */
+  --particle-proton: #ff5c6c;
+  --particle-neutron: #7c8bb0;
+  --particle-electron: #6ea8ff;
+
+  /* Molecule viewer bond color (atoms use their CPK colors from the data). */
+  --bond-color: #c7cce6;
+}

@@ -1,0 +1,78 @@
+{
+  "modes": {
+    "periodicTable": "Periodic Table",
+    "molecules": "Molecule Visualizer"
+  },
+  "nav": {
+    "dictionary": "Dictionary",
+    "language": "Language"
+  },
+  "shell": {
+    "underConstruction": "Under construction"
+  },
+  "moleculeTypes": {
+    "acid": "Acid",
+    "sugar": "Sugar",
+    "base": "Base",
+    "lipid": "Lipid",
+    "hydrocarbon": "Hydrocarbon",
+    "amino-acid": "Amino acid",
+    "alcohol": "Alcohol"
+  },
+  "categories": {
+    "alkali-metal": "Alkali metal",
+    "alkaline-earth-metal": "Alkaline earth metal",
+    "transition-metal": "Transition metal",
+    "post-transition-metal": "Post-transition metal",
+    "metalloid": "Metalloid",
+    "nonmetal": "Nonmetal",
+    "halogen": "Halogen",
+    "noble-gas": "Noble gas",
+    "lanthanide": "Lanthanide",
+    "actinide": "Actinide"
+  },
+  "dictionary": {
+    "filterPlaceholder": "Filter terms…",
+    "emptyState": "No term matches your filter.",
+    "explainTerm": "What does \"{{term}}\" mean?"
+  },
+  "molecule": {
+    "tabs": { "list": "List", "info": "Info" },
+    "searchPlaceholder": "Search molecules…",
+    "emptyState": "No molecule matches your search.",
+    "noSelection": "Select a molecule to view it in 3D.",
+    "smilesNote": "Source of the 3D representation",
+    "fields": {
+      "formula": "Formula",
+      "smiles": "SMILES",
+      "type": "Type",
+      "isomers": "Isomers",
+      "uses": "Uses"
+    }
+  },
+  "periodicTable": {
+    "seriesLanthanide": "57–71",
+    "seriesActinide": "89–103",
+    "previous": "Previous element",
+    "next": "Next element",
+    "close": "Close",
+    "learnMore": "Learn more",
+    "unknown": "—",
+    "needsReview": "Information under review",
+    "cellLabel": "{{name}}, symbol {{symbol}}, atomic number {{number}}",
+    "fields": {
+      "category": "Category",
+      "atomicNumber": "Atomic number",
+      "atomicMass": "Atomic mass",
+      "meltingPoint": "Melting point",
+      "boilingPoint": "Boiling point",
+      "discovery": "Discovery",
+      "discoverer": "Discoverer",
+      "halfLife": "Half-life",
+      "isotopes": "Known isotopes",
+      "electronConfiguration": "Electron configuration",
+      "uses": "Uses",
+      "characteristics": "Characteristics"
+    }
+  }
+}

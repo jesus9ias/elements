@@ -1,0 +1,290 @@
+/**
+ * Periodic Table mode styles. Consumes the design tokens; no color/spacing
+ * literals except grid-geometry values local to this layout.
+ */
+
+.periodic-table-mode {
+  --cell-min: 2.5rem;
+  --detail-width: 23rem;
+}
+
+/* --- Grid ------------------------------------------------------------- */
+
+.periodic-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(var(--cell-min), 1fr));
+  /* 7 main periods, a spacer, then the two f-block rows. */
+  grid-template-rows: repeat(7, auto) var(--space-6) repeat(2, auto);
+  gap: 0.3rem;
+  min-width: min-content;
+  padding-bottom: var(--space-2);
+}
+
+/* The grid can be wider than a phone; let it scroll horizontally. */
+.periodic-table-mode {
+  overflow-x: auto;
+}
+
+.periodic-grid__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--glass-border);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 1;
+}
+
+/* --- Cell ------------------------------------------------------------- */
+
+.element-cell {
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 0.2rem 0.25rem;
+  background: var(--cell-fill);
+  border: 1px solid var(--cell-color);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.element-cell__number {
+  font-size: 0.55rem;
+  color: var(--color-text-muted);
+}
+
+.element-cell__symbol {
+  align-self: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cell-color);
+}
+
+.element-cell__name,
+.element-cell__mass {
+  font-size: 0.5rem;
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.element-cell__name {
+  color: var(--color-text);
+}
+
+.element-cell__mass {
+  color: var(--color-text-muted);
+}
+
+.element-cell[data-selected] {
+  outline: 2px solid var(--cell-color);
+  outline-offset: 1px;
+}
+
+/* Hover-enlarge is a desktop/pointer affordance only (no touch equivalent). */
+@media (hover: hover) and (min-width: 56rem) {
+  .element-cell:hover {
+    transform: scale(1.45);
+    box-shadow: var(--glass-shadow);
+    z-index: 5;
+  }
+}
+
+/* --- Detail view ------------------------------------------------------ */
+
+.element-detail {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.element-detail__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.element-detail__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  background: var(--cell-fill);
+  border: 1px solid var(--cell-color);
+  border-radius: var(--radius-sm);
+}
+
+.element-detail__badge-number {
+  font-size: 0.6rem;
+  color: var(--color-text-muted);
+}
+
+.element-detail__badge-symbol {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cell-color);
+}
+
+.element-detail__name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.element-detail__category {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.element-detail__review {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+  color: var(--category-alkali-metal);
+}
+
+.element-detail__close {
+  align-self: start;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.bohr-model {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 13rem;
+  max-height: 18rem;
+}
+
+.bohr-model canvas {
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+.element-detail__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.element-detail__nav button {
+  flex: 1;
+  padding: var(--space-2);
+  color: var(--color-text);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.element-detail__nav button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.element-detail__description {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.element-detail__facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin: 0;
+}
+
+.element-detail__fact {
+  display: flex;
+  flex-direction: column;
+}
+
+.element-detail__fact dt {
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+}
+
+.element-detail__fact dd {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.element-detail__prose h3 {
+  margin: 0 0 0.2rem;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+}
+
+.element-detail__prose p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.element-detail__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--glass-border);
+}
+
+.element-detail__sources a {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Desktop: grid and a sticky sidebar side by side. */
+@media (min-width: 56rem) {
+  .periodic-table-mode[data-detail-open] {
+    display: grid;
+    grid-template-columns: 1fr var(--detail-width);
+    gap: var(--space-6);
+    align-items: start;
+    overflow-x: visible;
+  }
+
+  .periodic-table-mode[data-detail-open] .periodic-grid {
+    overflow-x: auto;
+  }
+
+  .element-detail {
+    position: sticky;
+    top: var(--space-4);
+    max-height: calc(100vh - var(--navbar-height) - var(--space-8));
+    overflow-y: auto;
+  }
+}
+
+/* Mobile: the detail becomes a full-screen sheet. */
+@media (max-width: 55.99rem) {
+  .element-detail {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    max-width: 32rem;
+    margin: 0 auto;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+}

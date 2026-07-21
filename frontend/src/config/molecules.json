@@ -1,0 +1,5995 @@
+[
+  {
+    "id": "acetic-acid",
+    "formula": "C2H4O2",
+    "smiles": "CC(=O)O",
+    "type": "acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": -0.9537,
+        "y": -0.1365,
+        "z": 0.0084,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.4691,
+        "y": 0.292,
+        "z": -0.1354,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.8713,
+        "y": 1.2983,
+        "z": -0.6931,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": 1.3264,
+        "y": -0.5746,
+        "z": 0.4349,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -1.2169,
+        "y": -0.1979,
+        "z": 1.0671,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.6036,
+        "y": 0.6009,
+        "z": -0.471,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.101,
+        "y": -1.1023,
+        "z": -0.4813,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.2084,
+        "y": -0.1799,
+        "z": 0.2704,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Ácido acético",
+        "description": "El ácido acético es el segundo ácido carboxílico más simple, con fórmula CH3-COOH. Es un líquido o cristal incoloro con sabor a ácido, puntos de fusión y ebullición de 16,6 °C y 117,9 °C respectivamente, y actúa como un ácido débil con pKa de 4,8 a 25 °C.",
+        "uses": "Se encuentra naturalmente en el vinagre, siendo responsable de su sabor y olor agrios. En química es de interés como reactivo orgánico, ligando inorgánico y metabolito bioquímico (activado como acetil-coenzima A), además de utilizarse como sustrato en reacciones catalizadas por acetiltransferasas e histona acetiltransferasas."
+      },
+      "en": {
+        "name": "Acetic acid",
+        "description": "Acetic acid is an acidic, colorless liquid organic compound with the chemical formula CH3COOH, and is the active component of vinegar. It is the second simplest carboxylic acid after formic acid, and a weak monoprotic acid with a pKa value of 4.76 in aqueous solution.",
+        "uses": "Acetic acid is used primarily in the production of cellulose acetate for photographic film, polyvinyl acetate for wood glue, and synthetic fibers and fabrics. In households, diluted acetic acid is used in descaling agents, while in the food industry it serves as an acidity regulator and condiment. In biochemistry, the acetyl group derived from acetic acid is fundamental to the metabolism of carbohydrates and fats in all forms of life."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 176",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/176"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/%C3%81cido_ac%C3%A9tico"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Acetic_acid"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "citric-acid",
+    "formula": "C6H8O7",
+    "smiles": "OC(=O)CC(O)(CC(=O)O)C(=O)O",
+    "type": "acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "O",
+        "x": -2.3412,
+        "y": 1.5133,
+        "z": 1.5163,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.1385,
+        "y": 1.2218,
+        "z": 0.9823,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.1214,
+        "y": 1.6691,
+        "z": 1.4811,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.2586,
+        "y": 0.3627,
+        "z": -0.2447,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.1324,
+        "y": -0.6629,
+        "z": -0.4076,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.2707,
+        "y": -1.2422,
+        "z": -1.7307,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 1.3216,
+        "y": -0.1987,
+        "z": -0.2815,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.6649,
+        "y": 0.9919,
+        "z": -1.1317,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.9109,
+        "y": 1.8129,
+        "z": -1.6229,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": 2.9996,
+        "y": 1.1223,
+        "z": -1.2898,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -0.3846,
+        "y": -1.803,
+        "z": 0.588,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.8184,
+        "y": -2.9067,
+        "z": 0.2875,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": -0.1399,
+        "y": -1.4964,
+        "z": 1.8726,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -2.1314,
+        "y": 2.1054,
+        "z": 2.2695,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.3404,
+        "y": 1.0187,
+        "z": -1.1177,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.2176,
+        "y": -0.1723,
+        "z": -0.1984,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.9145,
+        "y": -1.9766,
+        "z": -1.6624,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.5906,
+        "y": 0.0435,
+        "z": 0.7518,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.9769,
+        "y": -1.0205,
+        "z": -0.6015,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.0921,
+        "y": 1.933,
+        "z": -1.8328,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.347,
+        "y": -2.3151,
+        "z": 2.3726,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 7,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 10,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Ácido cítrico",
+        "description": "El ácido cítrico es un ácido orgánico tricarboxílico presente en la mayoría de las frutas, especialmente en cítricos como el limón, la naranja y la mandarina. Su fórmula molecular es C6H8O7. Es un polvo cristalino blanco que puede existir en forma anhidra o como monohidrato.",
+        "uses": "Se utiliza industrialmente como aditivo alimentario (E330) para conservar alimentos y bebidas, y como saborizante en refrescos y dulces. También se emplea como agente emulsionante en helados, agente quelante en limpieza para eliminar cal en calderas, y en tratamiento de agua para mejorar la eficacia de jabones y detergentes. En bioquímica, aparece como metabolito intermediario en el ciclo de los ácidos tricarboxílicos."
+      },
+      "en": {
+        "name": "Citric acid",
+        "description": "Citric acid is an organic compound with the formula C6H8O7 that is a colorless weak organic acid occurring naturally in citrus fruits. In biochemistry, it is an intermediate in the citric acid cycle, which is central to the metabolism of all aerobic organisms.",
+        "uses": "Citric acid is widely used as an acidifier, flavoring, and preservative in food and beverages, particularly soft drinks and candies. It serves as a chelating agent in cleaning products to remove limescale and soften hard water, and is used in cosmetics, pharmaceuticals, dietary supplements, and various industrial applications including rust removal and photographic film development."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 311",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/311"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/%C3%81cido_c%C3%ADtrico"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Citric_acid"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ascorbic-acid",
+    "formula": "C6H8O6",
+    "smiles": "OC[C@H](O)[C@H]1OC(=O)C(O)=C1O",
+    "type": "acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 2.9838,
+        "y": -1.3251,
+        "z": -0.7455,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 2.0965,
+        "y": -0.7637,
+        "z": 0.2262,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.1558,
+        "y": 0.2374,
+        "z": -0.4535,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 1.9333,
+        "y": 1.3919,
+        "z": -0.8417,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 0.0114,
+        "y": 0.7184,
+        "z": 0.4563,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.7725,
+        "y": 1.6778,
+        "z": -0.306,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -2.0597,
+        "y": 1.2456,
+        "z": -0.4031,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -2.9718,
+        "y": 1.7924,
+        "z": -0.9963,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -2.1972,
+        "y": -0.0081,
+        "z": 0.3457,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -3.355,
+        "y": -0.7093,
+        "z": 0.5179,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.0005,
+        "y": -0.2959,
+        "z": 0.8409,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.7071,
+        "y": -1.3522,
+        "z": 1.6587,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": 3.7118,
+        "y": -1.7439,
+        "z": -0.2562,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.5599,
+        "y": -1.5988,
+        "z": 0.6791,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.705,
+        "y": -0.2643,
+        "z": 0.9877,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.7638,
+        "y": -0.1875,
+        "z": -1.3858,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.3225,
+        "y": 1.9921,
+        "z": -1.3083,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.4022,
+        "y": 1.2506,
+        "z": 1.3309,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -4.041,
+        "y": -0.2072,
+        "z": 0.0298,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.5413,
+        "y": -1.8502,
+        "z": 1.7857,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 6,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 10,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Ácido ascórbico",
+        "description": "El ácido ascórbico, también conocido como vitamina C, es una lactona de seis carbonos que es un nutriente esencial para los primates, cobayas y algunos murciélagos. Es un potente antioxidante soluble en agua que actúa como cofactor enzimático para la biosíntesis de bioquímicos importantes y es estructuralmente relacionado con la glucosa.",
+        "uses": "La vitamina C es esencial para la síntesis de carnitina y colágeno, componentes relevantes de la piel, tendones, ligamentos y vasos sanguíneos, facilitando la reparación y cicatrización de heridas. Se utiliza para prevenir el escorbuto, fortalecer el sistema inmune, reducir el envejecimiento prematuro, facilitar la absorción de otras vitaminas y minerales, y de forma tópica para eliminar manchas en la piel. También ayuda en el desarrollo y absorción del hierro, metabolización de grasas, y ha demostrado utilidad en la prevención y alivio de infecciones."
+      },
+      "en": {
+        "name": "Ascorbic acid",
+        "description": "Ascorbic acid is a water-soluble vitamin found in citrus fruits, berries, and vegetables that is essential for tissue repair, collagen formation, and neurotransmitter production. It functions as an antioxidant and is important for immune system function and the proper operation of several enzymes. Humans and other higher primates must obtain ascorbic acid from dietary sources because they cannot synthesize it themselves.",
+        "uses": "Ascorbic acid is used to prevent and treat scurvy, a disease caused by vitamin C deficiency, and can be administered by mouth or by injection. It is available as a generic prescription medication and non-prescription dietary supplement, and is commonly added to foods such as canned fruits to slow oxidation and enzymatic browning, as well as used as a flour treatment agent in breadmaking."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 54670067",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/54670067"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Vitamina_C"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Vitamin_C"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "glucose",
+    "formula": "C6H12O6",
+    "smiles": "OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O",
+    "type": "sugar",
+    "isomers": [
+      "fructose"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 3.0681,
+        "y": -0.0713,
+        "z": -1.8984,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 2.2812,
+        "y": -0.9601,
+        "z": -1.1006,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.187,
+        "y": -0.1723,
+        "z": -0.3709,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.402,
+        "y": 0.5004,
+        "z": -1.3765,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -0.6324,
+        "y": 1.3145,
+        "z": -0.8348,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.0929,
+        "y": 2.4038,
+        "z": -0.098,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.6044,
+        "y": 0.4834,
+        "z": 0.0261,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -2.5635,
+        "y": 1.3283,
+        "z": 0.6829,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -0.8315,
+        "y": -0.2853,
+        "z": 1.1001,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -1.7155,
+        "y": -1.1798,
+        "z": 1.797,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 0.3053,
+        "y": -1.0959,
+        "z": 0.476,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 1.0547,
+        "y": -1.7293,
+        "z": 1.5136,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": 2.4314,
+        "y": 0.5455,
+        "z": -2.3089,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.8444,
+        "y": -1.6996,
+        "z": -1.7798,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.9487,
+        "y": -1.4717,
+        "z": -0.4015,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.6801,
+        "y": 0.584,
+        "z": 0.2535,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.1859,
+        "y": 1.754,
+        "z": -1.6708,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.657,
+        "y": 2.5271,
+        "z": 0.6877,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.156,
+        "y": -0.23,
+        "z": -0.5981,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.1279,
+        "y": 1.72,
+        "z": -0.0102,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.439,
+        "y": 0.3954,
+        "z": 1.8659,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.4652,
+        "y": -0.6258,
+        "z": 2.0928,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.1207,
+        "y": -1.8927,
+        "z": -0.147,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.3889,
+        "y": -2.1427,
+        "z": 2.1,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 23,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Glucosa",
+        "description": "La glucosa es un monosacárido con fórmula molecular C6H12O6, específicamente una aldosa donde el grupo carbonilo está en el extremo de la molécula. Es una forma de azúcar que se encuentra libre en frutas y miel, siendo el compuesto orgánico más abundante en la naturaleza. La D-glucosa es la forma predominante en la naturaleza y es la fuente primaria de síntesis de energía de las células.",
+        "uses": "La glucosa se utiliza principalmente para la producción de fructosa y de alimentos que contienen glucosa, funcionando como edulcorante, humectante y para mejorar la sensación en boca. Se emplea en bebidas alcohólicas a través de la fermentación, en refrescos y alimentos endulzados, y en la producción de confitería como caramelos y toffee. Además, se utiliza biotecnológicamente como materia prima para la producción de diversos ácidos orgánicos mediante fermentación con diferentes microorganismos."
+      },
+      "en": {
+        "name": "Glucose",
+        "description": "Glucose is a sugar with the molecular formula C6H12O6 and is the most abundant monosaccharide, a subcategory of carbohydrates. It is made from water and carbon dioxide during photosynthesis by plants and most algae. The naturally occurring form is d-glucose, which is a monosaccharide containing six carbon atoms and an aldehyde group, making it an aldohexose.",
+        "uses": "Glucose is used by plants to make cellulose for cell walls and by all living organisms to produce adenosine triphosphate (ATP), which cells use as energy. In energy metabolism, glucose is the most important source of energy in all organisms and circulates in the blood of animals as blood sugar. As an intravenous sugar solution, glucose is on the World Health Organization's List of Essential Medicines, and dextrose monohydrate is widely used as a nutrition supplement in food production and commonly consumed as corn syrup or high-fructose corn syrup."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 5793",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Glucosa"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Glucose"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "fructose",
+    "formula": "C6H12O6",
+    "smiles": "OC[C@H]1O[C@](O)(CO)[C@@H](O)[C@@H]1O",
+    "type": "sugar",
+    "isomers": [
+      "glucose"
+    ],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 3.2704,
+        "y": -0.7149,
+        "z": -0.1278,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 2.2346,
+        "y": -0.0252,
+        "z": -0.8144,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.1845,
+        "y": 0.5179,
+        "z": 0.1618,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.1571,
+        "y": 1.1679,
+        "z": -0.6109,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.0224,
+        "y": 0.3457,
+        "z": -0.6099,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -1.3829,
+        "y": 0.0487,
+        "z": -1.9578,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -2.1647,
+        "y": 1.1604,
+        "z": 0.0315,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -1.9355,
+        "y": 1.4347,
+        "z": 1.4173,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -0.6928,
+        "y": -0.9567,
+        "z": 0.1535,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.3187,
+        "y": -1.984,
+        "z": -0.79,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 0.5047,
+        "y": -0.5651,
+        "z": 1.0034,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.0739,
+        "y": -0.053,
+        "z": 2.2686,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": 3.9466,
+        "y": -0.9402,
+        "z": -0.7907,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.7909,
+        "y": -0.6982,
+        "z": -1.5547,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.6785,
+        "y": 0.8073,
+        "z": -1.3724,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.6494,
+        "y": 1.2691,
+        "z": 0.8105,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.9577,
+        "y": -0.8156,
+        "z": -2.1328,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.27,
+        "y": 2.1205,
+        "z": -0.4869,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.1158,
+        "y": 0.6247,
+        "z": -0.0607,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.6215,
+        "y": 2.0762,
+        "z": 1.682,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.5473,
+        "y": -1.329,
+        "z": 0.7272,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.0764,
+        "y": -2.7687,
+        "z": -0.2624,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.1707,
+        "y": -1.4065,
+        "z": 1.215,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.5557,
+        "y": 0.684,
+        "z": 2.1005,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 23,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Fructosa",
+        "description": "La fructosa, también llamada levulosa, es un monosacárido que se encuentra en vegetales, frutas y miel. Es un isómero de la glucosa con la misma fórmula molecular C6H12O6, pero diferente estructura, y es la más dulce de todos los carbohidratos naturales, con un dulzor relativo entre 1,2 y 1,8 veces mayor que el de la sacarosa.",
+        "uses": "La fructosa se utiliza a gran escala como edulcorante, principalmente en forma de jarabe de maíz rico en fructosa, que se emplea en muchos alimentos y bebidas, especialmente en Estados Unidos. Fue utilizada erróneamente como edulcorante para diabéticos, aunque estudios posteriores indican que su uso moderado puede recomendarse para este grupo debido a su bajo índice glucémico."
+      },
+      "en": {
+        "name": "Fructose",
+        "description": "Fructose, also known as fruit sugar, is a common monosaccharide and simple sugar classified as a reducing hexose. It is a white, water-soluble, crystalline solid that is the sweetest of all naturally occurring carbohydrates and is found in honey, fruits, flowers, berries, and most root vegetables. One of the three dietary monosaccharides along with glucose and galactose, fructose is often bonded to glucose to form the disaccharide sucrose.",
+        "uses": "Fructose is used commercially in foods and beverages primarily due to its high relative sweetness and low cost, serving as a sweetener and flavor enhancer. It is added to foods and drinks for palatability and taste enhancement, and for browning of baked goods and other foods. Fructose is also used in the production of high-fructose corn syrup (HFCS), which is commonly used as a sweetener for soft drinks and processed foods, breakfast cereals, and bakery products."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 2723872",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2723872"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Fructosa"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Fructose"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "sucrose",
+    "formula": "C12H22O11",
+    "smiles": "OC[C@H]1O[C@@](CO)(O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O",
+    "type": "sugar",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "O",
+        "x": -3.8011,
+        "y": 1.1311,
+        "z": 2.2149,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -2.5739,
+        "y": 1.2165,
+        "z": 1.4968,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -2.712,
+        "y": 0.6862,
+        "z": 0.0722,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -1.5264,
+        "y": 0.9268,
+        "z": -0.7084,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.2943,
+        "y": -0.2358,
+        "z": -1.5342,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.0352,
+        "y": 0.1805,
+        "z": -2.9975,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -2.1545,
+        "y": 0.8493,
+        "z": -3.573,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": -0.1797,
+        "y": -1.0198,
+        "z": -1.0538,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 0.891,
+        "y": -0.2363,
+        "z": -0.516,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.685,
+        "y": -0.1273,
+        "z": 0.8929,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 1.8656,
+        "y": 0.0548,
+        "z": 1.6895,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.4876,
+        "y": 0.8685,
+        "z": 2.9366,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 2.5435,
+        "y": 0.9248,
+        "z": 3.8884,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 2.9998,
+        "y": 0.7174,
+        "z": 0.8933,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 4.1344,
+        "y": 1.0229,
+        "z": 1.7099,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 3.4169,
+        "y": -0.213,
+        "z": -0.2582,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 4.1331,
+        "y": 0.5634,
+        "z": -1.2333,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 2.2159,
+        "y": -0.9452,
+        "z": -0.8764,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 2.1923,
+        "y": -2.2963,
+        "z": -0.381,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -2.5569,
+        "y": -1.1153,
+        "z": -1.4003,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -2.3295,
+        "y": -2.5126,
+        "z": -1.5915,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -2.9468,
+        "y": -0.8176,
+        "z": 0.0351,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -4.2887,
+        "y": -1.1727,
+        "z": 0.3401,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -4.2435,
+        "y": 0.2969,
+        "z": 1.9583,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.2586,
+        "y": 2.265,
+        "z": 1.4822,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.8064,
+        "y": 0.6658,
+        "z": 2.0505,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.5487,
+        "y": 1.2056,
+        "z": -0.4139,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.7985,
+        "y": -0.6978,
+        "z": -3.6079,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.1809,
+        "y": 0.8636,
+        "z": -3.0499,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.912,
+        "y": 1.0976,
+        "z": -4.4823,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.9067,
+        "y": 0.7703,
+        "z": -0.9523,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.2021,
+        "y": -0.9315,
+        "z": 2.0351,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.6134,
+        "y": 0.4259,
+        "z": 3.4261,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.2081,
+        "y": 1.8915,
+        "z": 2.6606,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.3688,
+        "y": 1.1052,
+        "z": 3.3888,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.6525,
+        "y": 1.6747,
+        "z": 0.484,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.8836,
+        "y": 1.1786,
+        "z": 1.0995,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.144,
+        "y": -0.9449,
+        "z": 0.1144,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.548,
+        "y": 1.2477,
+        "z": -1.6006,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.3128,
+        "y": -1.0191,
+        "z": -1.9653,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.272,
+        "y": -2.6082,
+        "z": -0.471,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.367,
+        "y": -0.8109,
+        "z": -2.0725,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.4501,
+        "y": -2.6972,
+        "z": -1.2082,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.2929,
+        "y": -1.3553,
+        "z": 0.7328,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -4.4196,
+        "y": -2.0735,
+        "z": -0.0165,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 15,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 21,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 21,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 23,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 24,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 25,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 26,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 27,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 28,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 29,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 30,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 31,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 32,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 33,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 34,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 35,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 14,
+        "to": 36,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 15,
+        "to": 37,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 38,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 39,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 18,
+        "to": 40,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 41,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 20,
+        "to": 42,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 21,
+        "to": 43,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 22,
+        "to": 44,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Sacarosa",
+        "description": "La sacarosa es el azúcar de mesa, un disacárido formado químicamente por glucosa y fructosa a partes iguales con la fórmula C12H22O11. Se sintetiza en plantas pero no en animales superiores, y se encuentra naturalmente en la caña de azúcar y la remolacha azucarera.",
+        "uses": "La sacarosa se utiliza principalmente como edulcorante para endulzar alimentos y es el edulcorante más utilizado en el mundo industrializado. Además de su poder endulzante, se utiliza en la estructura de alimentos como panecillos, galletas, helados y sorbetes, y como aditivo en la conservación de alimentos."
+      },
+      "en": {
+        "name": "Sucrose",
+        "description": "Sucrose is a disaccharide sugar composed of glucose and fructose subunits with the molecular formula C12H22O11. It is produced naturally in plants and is the main constituent of white sugar, extracted and refined from sugarcane or sugar beets for human consumption.",
+        "uses": "Sucrose is used as an added ingredient in food production and recipes. It is also mixed with potassium nitrate to produce rocket candy for propelling amateur rocket motors, and its decomposition is exploited in cookery to form caramel."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 5988",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5988"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Sacarosa"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Sucrose"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ammonia",
+    "formula": "H3N",
+    "smiles": "N",
+    "type": "base",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "N",
+        "x": 0.0027,
+        "y": -0.0167,
+        "z": 0.2951,
+        "color": "#3050F8"
+      },
+      {
+        "element": "H",
+        "x": 0.8249,
+        "y": -0.4415,
+        "z": -0.1313,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.0256,
+        "y": 0.9434,
+        "z": -0.0449,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.802,
+        "y": -0.4851,
+        "z": -0.1188,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Amoníaco",
+        "description": "El amoníaco es un compuesto químico de nitrógeno con la fórmula química NH3, un gas incoloro con un característico olor repulsivo y nauseabundo. Es más ligero que el aire y se condensa fácilmente a baja temperatura, con una estructura molecular de forma trigonal piramidal.",
+        "uses": "El amoníaco se utiliza principalmente para fabricar abonos y fertilizantes, representando más del 80% de la producción industrial. También se emplea en la elaboración de cosméticos, tinturas de cabello, desinfectantes, limpiadores de cocina, así como en textiles, plásticos, explosivos, producción de pulpa y papel, alimentos y bebidas, refrigerantes, y es importante para la síntesis de muchos fármacos."
+      },
+      "en": {
+        "name": "Ammonia",
+        "description": "Ammonia is an inorganic chemical compound of nitrogen and hydrogen with the formula NH3, appearing as a colourless gas with a distinctive pungent smell. It is a stable binary hydride and the simplest pnictogen hydride, and is lighter than air with a density of 0.589 times that of air. It is easily liquefied due to strong hydrogen bonding between molecules and boils at −33.1 °C.",
+        "uses": "Ammonia is widely used in fertilizers, refrigerants, explosives, and cleaning agents, with around 70% of industrial ammonia production used to make fertilisers in various forms such as urea and diammonium phosphate. It serves as a precursor for numerous chemicals and is considered an important energy carrier in future energy systems. Ammonia is also a building block for the synthesis of many chemicals."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 222",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/222"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Amon%C3%ADaco"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Ammonia"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "caffeine",
+    "formula": "C8H10N4O2",
+    "smiles": "Cn1cnc2c1c(=O)n(C)c(=O)n2C",
+    "type": "base",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 3.3078,
+        "y": 0.3821,
+        "z": -0.1088,
+        "color": "#909090"
+      },
+      {
+        "element": "N",
+        "x": 2.1154,
+        "y": -0.4253,
+        "z": -0.0614,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": 2.0646,
+        "y": -1.7943,
+        "z": -0.0649,
+        "color": "#909090"
+      },
+      {
+        "element": "N",
+        "x": 0.8231,
+        "y": -2.2349,
+        "z": -0.0139,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": 0.0637,
+        "y": -1.1046,
+        "z": 0.023,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.827,
+        "y": 0.0228,
+        "z": -0.0048,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.2805,
+        "y": 1.3343,
+        "z": 0.0238,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 0.9776,
+        "y": 2.3443,
+        "z": -0.0017,
+        "color": "#FF0000"
+      },
+      {
+        "element": "N",
+        "x": -1.1162,
+        "y": 1.3373,
+        "z": 0.0832,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": -1.7959,
+        "y": 2.6174,
+        "z": 0.1173,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.9408,
+        "y": 0.1929,
+        "z": 0.1135,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -3.1699,
+        "y": 0.2983,
+        "z": 0.1661,
+        "color": "#FF0000"
+      },
+      {
+        "element": "N",
+        "x": -1.3078,
+        "y": -1.0501,
+        "z": 0.0815,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": -2.0838,
+        "y": -2.2763,
+        "z": 0.1095,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": 3.3465,
+        "y": 0.999,
+        "z": 0.7925,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.1863,
+        "y": -0.267,
+        "z": -0.1487,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.2702,
+        "y": 1.0063,
+        "z": -1.005,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.9504,
+        "y": -2.416,
+        "z": -0.1051,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.1035,
+        "y": 3.4624,
+        "z": 0.0915,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.4703,
+        "y": 2.685,
+        "z": -0.7428,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.3952,
+        "y": 2.6776,
+        "z": 1.0317,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.1578,
+        "y": -2.0785,
+        "z": 0.1561,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.8739,
+        "y": -2.8527,
+        "z": -0.7971,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.7978,
+        "y": -2.8603,
+        "z": 0.99,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 6,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 10,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 1,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 12,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 23,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Cafeína",
+        "description": "La cafeína es un antioxidante alcaloide del grupo de las xantinas, sólido cristalino, blanco y de sabor amargo, que actúa como una droga psicoactiva y estimulante del sistema nervioso central. En los humanos produce un efecto temporal de restauración del nivel de alerta y eliminación de la somnolencia. La cafeína es la sustancia psicoactiva más ampliamente consumida en el mundo.",
+        "uses": "Es consumida principalmente en infusiones extraídas del fruto de la planta del café y de las hojas del arbusto del té, así como en varias bebidas y alimentos que contienen productos derivados de la nuez de cola. También se utiliza en pastillas de cafeína para favorecer la alerta mental, siendo comúnmente usadas por estudiantes y personas que trabajan o conducen durante muchas horas."
+      },
+      "en": {
+        "name": "Caffeine",
+        "description": "Caffeine is a central nervous system stimulant of the methylxanthine class and the most commonly consumed psychoactive substance globally. It is a bitter, white crystalline purine chemically related to adenine and guanine bases found in seeds, fruits, nuts, or leaves of plants native to Africa, East Asia, and South America. It works by blocking adenosine receptors and enhancing the release of acetylcholine in the brain.",
+        "uses": "Caffeine is mainly used for its wakefulness-promoting, physical performance-enhancing, and cognitive-enhancing properties, as well as recreationally and in social settings. Medically, it is used to prevent and treat breathing disorders in premature infants, to treat orthostatic hypotension, and can enhance the effectiveness of pain relievers. It is also used to improve athletic performance in both aerobic and anaerobic conditions, and was formerly used as a treatment for attention deficit hyperactivity disorder."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 2519",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Cafe%C3%ADna"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Caffeine"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "pyridine",
+    "formula": "C5H5N",
+    "smiles": "c1ccncc1",
+    "type": "base",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": -0.2481,
+        "y": 1.1542,
+        "z": 0.0885,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.2723,
+        "y": 0.2247,
+        "z": -0.0593,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.9323,
+        "y": -1.1151,
+        "z": -0.1588,
+        "color": "#909090"
+      },
+      {
+        "element": "N",
+        "x": 0.338,
+        "y": -1.5729,
+        "z": -0.1207,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": 1.311,
+        "y": -0.6469,
+        "z": 0.0236,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.0706,
+        "y": 0.7136,
+        "z": 0.1313,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": -0.4756,
+        "y": 2.2131,
+        "z": 0.1698,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.31,
+        "y": 0.5358,
+        "z": -0.0961,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.6957,
+        "y": -1.8789,
+        "z": -0.2754,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.3231,
+        "y": -1.0402,
+        "z": 0.0514,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.8913,
+        "y": 1.4125,
+        "z": 0.2456,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 5,
+        "to": 0,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Piridina",
+        "description": "La piridina es un líquido incoloro de olor desagradable, similar al pescado en mal estado, que pertenece a la familia de los compuestos heterocíclicos aromáticos. Está estructuralmente relacionada con el benceno, siendo la única diferencia el reemplazo de un grupo CH del anillo bencénico por un átomo de nitrógeno. Es débilmente básica, soluble en agua y prácticamente en todos los solventes orgánicos.",
+        "uses": null
+      },
+      "en": {
+        "name": "Pyridine",
+        "description": "Pyridine is a basic heterocyclic organic compound with the chemical formula C5H5N, structurally related to benzene with one methine group replaced by a nitrogen atom. It is a highly flammable, weakly alkaline, water-miscible liquid with a distinctive, unpleasant fish-like smell and is colorless, though older or impure samples can appear yellow. The pyridine ring occurs in many commercial compounds, including agrochemicals, pharmaceuticals, and vitamins.",
+        "uses": "The pyridine ring is found in many commercial compounds such as agrochemicals, pharmaceuticals, and vitamins. Pyridine has historically been added to foods to give them a bitter flavor, although this practice is now banned in the United States, and may still be added to ethanol to make it unsuitable for drinking."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 1049",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1049"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Piridina"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Pyridine"
+      }
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "oleic-acid",
+    "formula": "C18H34O2",
+    "smiles": "CCCCCCCC/C=C\\CCCCCCCC(=O)O",
+    "type": "lipid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": -8.5747,
+        "y": -0.0879,
+        "z": -0.8029,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -7.3254,
+        "y": -0.1022,
+        "z": 0.0649,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -6.5542,
+        "y": -1.4134,
+        "z": -0.0903,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -5.3489,
+        "y": -1.5257,
+        "z": 0.8476,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -4.2444,
+        "y": -0.5113,
+        "z": 0.543,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -3.0202,
+        "y": -0.7422,
+        "z": 1.4321,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.9151,
+        "y": 0.2727,
+        "z": 1.1321,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.6908,
+        "y": 0.0398,
+        "z": 2.0207,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.3848,
+        "y": 1.0483,
+        "z": 1.7305,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.6137,
+        "y": 0.8108,
+        "z": 1.244,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 2.214,
+        "y": -0.5229,
+        "z": 0.9009,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 2.0442,
+        "y": -0.9053,
+        "z": -0.5727,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 2.6561,
+        "y": 0.0684,
+        "z": -1.5875,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 4.1558,
+        "y": 0.3394,
+        "z": -1.4255,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 5.0136,
+        "y": -0.9213,
+        "z": -1.5439,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 6.5192,
+        "y": -0.6431,
+        "z": -1.6379,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 7.1389,
+        "y": -0.0758,
+        "z": -0.3614,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 6.9793,
+        "y": 1.4115,
+        "z": -0.2097,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 6.505,
+        "y": 1.9869,
+        "z": 0.7558,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": 7.4688,
+        "y": 2.1102,
+        "z": -1.2498,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -8.3181,
+        "y": -0.1993,
+        "z": -1.8613,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -9.2544,
+        "y": -0.9002,
+        "z": -0.5262,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -9.1101,
+        "y": 0.8588,
+        "z": -0.6807,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -6.6943,
+        "y": 0.7472,
+        "z": -0.2173,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -7.6144,
+        "y": 0.0389,
+        "z": 1.1128,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -7.2293,
+        "y": -2.2524,
+        "z": 0.1197,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -6.2233,
+        "y": -1.5282,
+        "z": -1.1298,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -4.9389,
+        "y": -2.5392,
+        "z": 0.7561,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -5.68,
+        "y": -1.4122,
+        "z": 1.8871,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.9524,
+        "y": -0.5908,
+        "z": -0.511,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -4.6151,
+        "y": 0.5073,
+        "z": 0.7026,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.6379,
+        "y": -1.7581,
+        "z": 1.2744,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.3125,
+        "y": -0.6662,
+        "z": 2.4865,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.6254,
+        "y": 0.1966,
+        "z": 0.0762,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.2999,
+        "y": 1.2887,
+        "z": 1.2868,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.3342,
+        "y": -0.9854,
+        "z": 1.8823,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.975,
+        "y": 0.1336,
+        "z": 3.0757,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.1176,
+        "y": 2.0844,
+        "z": 1.9378,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.2675,
+        "y": 1.6679,
+        "z": 1.0825,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.7792,
+        "y": -1.313,
+        "z": 1.523,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.2769,
+        "y": -0.5052,
+        "z": 1.169,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.9733,
+        "y": -1.0013,
+        "z": -0.7951,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.471,
+        "y": -1.9038,
+        "z": -0.7256,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.1225,
+        "y": 1.0255,
+        "z": -1.541,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.4752,
+        "y": -0.3275,
+        "z": -2.5949,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.4567,
+        "y": 1.0547,
+        "z": -2.2008,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.3318,
+        "y": 0.8283,
+        "z": -0.4631,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.8246,
+        "y": -1.5876,
+        "z": -0.6944,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.716,
+        "y": -1.4699,
+        "z": -2.4463,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 7.0122,
+        "y": -1.6007,
+        "z": -1.8489,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.7207,
+        "y": 0.0043,
+        "z": -2.4991,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 8.2164,
+        "y": -0.2793,
+        "z": -0.3505,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.7148,
+        "y": -0.5654,
+        "z": 0.5225,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 7.3193,
+        "y": 3.0458,
+        "z": -0.9987,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 14,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 17,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 23,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 24,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 25,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 26,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 27,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 28,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 29,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 30,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 31,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 32,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 33,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 34,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 35,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 36,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 37,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 38,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 39,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 40,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 41,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 42,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 43,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 44,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 45,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 46,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 14,
+        "to": 47,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 14,
+        "to": 48,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 15,
+        "to": 49,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 15,
+        "to": 50,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 51,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 52,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 53,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Ácido oleico",
+        "description": "El ácido oleico es un ácido graso monoinsaturado de la serie omega 9 típico de los aceites vegetales como el aceite de oliva, cártamo y aguacate. Su fórmula química molecular es C18H34O2 y su nombre IUPAC es ácido cis-9-octadecenoico. Ejerce una acción beneficiosa en los vasos sanguíneos reduciendo el riesgo de sufrir enfermedades cardiovasculares.",
+        "uses": "El ácido oleico se incluye en la dieta humana normal a través del consumo de grasas animales o aceites vegetales. Como sal de sodio es un componente importante del jabón como agente emulsionante y se utiliza como emoliente. Pequeñas cantidades se utilizan como excipiente en productos farmacéuticos y como emulsionante o agente solubilizante en productos en aerosol."
+      },
+      "en": {
+        "name": "Oleic acid",
+        "description": "Oleic acid is a monounsaturated omega-9 fatty acid that occurs naturally in various animal and vegetable fats and oils. It is an odorless, colorless oil, though commercial samples may appear yellowish due to impurities, and is the most common fatty acid in nature. The salts and esters of oleic acid are called oleates.",
+        "uses": "Oleic acid is used as a component in many foods through its triglycerides and is a normal part of the human diet from animal fats and vegetable oils. As its sodium salt, it is a major component of soap as an emulsifying agent and emollient, and small amounts are used in pharmaceuticals and aerosol products. It is also used as a soldering flux in stained glass work and to induce lung damage in animal models for testing treatments of lung diseases."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 445639",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445639"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/%C3%81cido_oleico"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Oleic_acid"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "cholesterol",
+    "formula": "C27H46O",
+    "smiles": "C[C@H](CCCC(C)C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C",
+    "type": "lipid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 3.1927,
+        "y": 2.207,
+        "z": -2.0562,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 3.0268,
+        "y": 1.5872,
+        "z": -0.6615,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 3.6141,
+        "y": 0.1581,
+        "z": -0.6937,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 3.7802,
+        "y": -0.4814,
+        "z": 0.6901,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 4.5011,
+        "y": -1.8359,
+        "z": 0.6348,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 5.9977,
+        "y": -1.7811,
+        "z": 0.9999,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 6.8173,
+        "y": -0.9076,
+        "z": 0.0519,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 6.5755,
+        "y": -3.1991,
+        "z": 1.0229,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.6148,
+        "y": 1.6979,
+        "z": -0.017,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.1484,
+        "y": 3.171,
+        "z": 0.1807,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.3871,
+        "y": 3.1505,
+        "z": 0.2068,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.7328,
+        "y": 1.6697,
+        "z": 0.2779,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -2.1686,
+        "y": 1.2448,
+        "z": -0.0565,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -3.1789,
+        "y": 1.989,
+        "z": 0.8308,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -4.5215,
+        "y": 1.3354,
+        "z": 0.9147,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -4.8006,
+        "y": 0.1077,
+        "z": 0.4444,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -6.1416,
+        "y": -0.5339,
+        "z": 0.7004,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -5.999,
+        "y": -1.7522,
+        "z": 1.6286,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -6.9636,
+        "y": -2.7407,
+        "z": 1.2567,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -4.606,
+        "y": -2.3946,
+        "z": 1.5712,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -3.9983,
+        "y": -2.2681,
+        "z": 0.1706,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -3.7672,
+        "y": -0.7826,
+        "z": -0.2635,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -4.021,
+        "y": -0.694,
+        "z": -1.7876,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -2.3089,
+        "y": -0.3008,
+        "z": 0.1058,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.1757,
+        "y": -1.0543,
+        "z": -0.6418,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.2349,
+        "y": -0.5181,
+        "z": -0.3358,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.3505,
+        "y": 0.9923,
+        "z": -0.6015,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.1732,
+        "y": 1.269,
+        "z": -2.1095,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": 2.7475,
+        "y": 3.2002,
+        "z": -2.1372,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.7781,
+        "y": 1.574,
+        "z": -2.8437,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.2593,
+        "y": 2.3238,
+        "z": -2.2841,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.6885,
+        "y": 2.1755,
+        "z": -0.0078,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.5955,
+        "y": 0.2024,
+        "z": -1.1796,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.0017,
+        "y": -0.4861,
+        "z": -1.3329,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.2987,
+        "y": 0.2036,
+        "z": 1.3707,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.7886,
+        "y": -0.655,
+        "z": 1.1198,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.009,
+        "y": -2.4999,
+        "z": 1.3584,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 4.3645,
+        "y": -2.304,
+        "z": -0.3481,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.0935,
+        "y": -1.3667,
+        "z": 2.0118,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.6987,
+        "y": -1.2294,
+        "z": -0.9881,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.5208,
+        "y": 0.143,
+        "z": 0.1256,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 7.883,
+        "y": -0.9582,
+        "z": 0.3003,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.5157,
+        "y": -3.6685,
+        "z": 0.035,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 6.0306,
+        "y": -3.8307,
+        "z": 1.7326,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 7.6269,
+        "y": -3.1867,
+        "z": 1.3293,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.7366,
+        "y": 1.309,
+        "z": 1.0056,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.5455,
+        "y": 3.5613,
+        "z": 1.1251,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.4849,
+        "y": 3.8476,
+        "z": -0.6079,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.7913,
+        "y": 3.612,
+        "z": -0.7012,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.7772,
+        "y": 3.7087,
+        "z": 1.0639,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.5597,
+        "y": 1.3673,
+        "z": 1.325,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.3885,
+        "y": 1.5228,
+        "z": -1.0927,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.3059,
+        "y": 3.011,
+        "z": 0.4536,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.7929,
+        "y": 2.0766,
+        "z": 1.8544,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -5.2859,
+        "y": 1.9002,
+        "z": 1.4447,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -6.8508,
+        "y": 0.172,
+        "z": 1.1508,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -6.5978,
+        "y": -0.8243,
+        "z": -0.2542,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -6.213,
+        "y": -1.4698,
+        "z": 2.6661,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -7.8432,
+        "y": -2.3348,
+        "z": 1.3427,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -4.6639,
+        "y": -3.454,
+        "z": 1.8473,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.942,
+        "y": -1.9058,
+        "z": 2.2947,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -4.676,
+        "y": -2.7676,
+        "z": -0.5358,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.0711,
+        "y": -2.846,
+        "z": 0.1363,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -5.058,
+        "y": -0.9489,
+        "z": -2.0373,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.8418,
+        "y": 0.3109,
+        "z": -2.1817,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -3.389,
+        "y": -1.3941,
+        "z": -2.3433,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.1595,
+        "y": -0.5205,
+        "z": 1.1749,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.1853,
+        "y": -2.1151,
+        "z": -0.3723,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.3361,
+        "y": -1.0151,
+        "z": -1.7231,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.4665,
+        "y": -0.737,
+        "z": 0.714,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.9552,
+        "y": -1.0788,
+        "z": -0.9389,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.8317,
+        "y": 1.0358,
+        "z": -2.4708,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.3603,
+        "y": 2.3154,
+        "z": -2.3685,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.8549,
+        "y": 0.6463,
+        "z": -2.697,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 14,
+        "to": 15,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 20,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 21,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 21,
+        "to": 23,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 23,
+        "to": 24,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 24,
+        "to": 25,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 25,
+        "to": 26,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 26,
+        "to": 27,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 26,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 26,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 23,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 21,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 28,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 29,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 30,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 31,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 32,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 33,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 34,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 35,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 36,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 37,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 38,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 39,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 40,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 41,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 42,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 43,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 44,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 45,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 46,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 47,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 48,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 10,
+        "to": 49,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 50,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 12,
+        "to": 51,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 52,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 13,
+        "to": 53,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 14,
+        "to": 54,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 55,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 16,
+        "to": 56,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 17,
+        "to": 57,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 18,
+        "to": 58,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 59,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 19,
+        "to": 60,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 20,
+        "to": 61,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 20,
+        "to": 62,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 22,
+        "to": 63,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 22,
+        "to": 64,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 22,
+        "to": 65,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 23,
+        "to": 66,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 24,
+        "to": 67,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 24,
+        "to": 68,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 25,
+        "to": 69,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 25,
+        "to": 70,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 27,
+        "to": 71,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 27,
+        "to": 72,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 27,
+        "to": 73,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Colesterol",
+        "description": "El colesterol es un lípido esteroide que se encuentra en la membrana plasmática de las células animales, los tejidos corporales y el plasma sanguíneo de los vertebrados. Aunque los niveles elevados de colesterol en la sangre tienen consecuencias perjudiciales para la salud, es una sustancia estructural esencial para la membrana plasmática. Abundan en las grasas de origen animal.",
+        "uses": "El colesterol es imprescindible para la vida animal por sus múltiples funciones: actúa como componente estructural en las membranas plasmáticas, es precursor de la vitamina D, las hormonas sexuales (progesterona, estrógenos y testosterona), las hormonas corticoesteroidales (cortisol y aldosterona) y las sales biliares que son esenciales en la absorción de nutrientes lipídicos. También es precursor de las balsas de lípidos."
+      },
+      "en": {
+        "name": "Cholesterol",
+        "description": "Cholesterol is the principal sterol of all animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils. It is an essential structural and signaling component of animal cell membranes that is biosynthesized by all animal cells. Cholesterol also serves as a precursor for the biosynthesis of steroid hormones, bile acid, and vitamin D.",
+        "uses": "Cholesterol is required to build and maintain cell membranes and modulates membrane fluidity. It is involved in cell signaling processes and the formation of lipid rafts in the plasma membrane. Additionally, cholesterol serves as a precursor molecule for the synthesis of steroid hormones, vitamin D, and bile acid. Elevated levels of cholesterol in the blood, especially when bound to low-density lipoprotein, may increase the risk of cardiovascular disease."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 5997",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5997"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Colesterol"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Cholesterol"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "methane",
+    "formula": "CH4",
+    "smiles": "C",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": -0.6868,
+        "y": -0.14,
+        "z": -0.8376,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.2862,
+        "y": 1.0521,
+        "z": 0.0641,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.4914,
+        "y": -0.3008,
+        "z": 0.9279,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.8919,
+        "y": -0.6112,
+        "z": -0.1544,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Metano",
+        "description": "El metano es el hidrocarburo alcano más sencillo, con fórmula química CH4. Es un gas incoloro, inodoro e insoluble en agua que se presenta en forma gaseosa a temperaturas y presiones ordinarias, formado por un átomo de carbono unido a cuatro átomos de hidrógeno mediante enlaces covalentes.",
+        "uses": "El metano se utiliza principalmente como combustible para la generación eléctrica en turbinas de gas y generadores de vapor, así como para calefacción y cocina en hogares a través de tuberías de gas natural. En la industria química, es la materia prima para la producción de hidrógeno, metanol, ácido acético y anhídrido acético, y puede transportarse como líquido refrigerado (gas natural licuado)."
+      },
+      "en": {
+        "name": "Methane",
+        "description": "Methane is a chemical compound with the formula CH4, consisting of one carbon atom bonded to four hydrogen atoms. It is the simplest alkane, the main constituent of natural gas, and an odorless, colorless gas at standard temperature and pressure that acts as a greenhouse gas by absorbing infrared radiation in the atmosphere. Methane occurs naturally both below ground and under the seafloor through geological and biological processes, with the largest reservoirs existing as methane clathrates beneath the ocean floor.",
+        "uses": "Methane is used as a fuel for homes, ovens, water heaters, kilns, automobiles, rockets, and turbines, as well as for electricity generation in gas turbines and steam generators. It serves as a chemical feedstock in industrial hydrogen production through steam methane reforming and in the synthesis of ammonia and other chemicals. Refined liquid methane and liquefied natural gas are also used as rocket propellant when combined with liquid oxygen in engines, and methane functions as a refrigerant with the ASHRAE designation R-50."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 297",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Metano"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Methane"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ethylene",
+    "formula": "C2H4",
+    "smiles": "C=C",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": -0.6424,
+        "y": 0.1818,
+        "z": 0.0198,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.6424,
+        "y": -0.1818,
+        "z": -0.0198,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": -1.0039,
+        "y": 0.8799,
+        "z": 0.7683,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.3578,
+        "y": -0.2115,
+        "z": -0.6956,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.3578,
+        "y": 0.2115,
+        "z": 0.6956,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.0039,
+        "y": -0.8799,
+        "z": -0.7683,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 0,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Etileno",
+        "description": "El etileno o eteno es un compuesto químico orgánico formado por dos átomos de carbono enlazados mediante un doble enlace con fórmula C2H4. Es un gas incoloro e inflamable con un ligero olor dulce y almizclado cuando está puro, y constituye uno de los productos químicos más importantes de la industria química, siendo el compuesto orgánico más utilizado en todo el mundo.",
+        "uses": "El etileno se utiliza ampliamente en la industria química para producir polietileno, óxido de etileno, dicloruro de etileno, etilbenceno y diversos productos derivados. También es una importante hormona vegetal natural utilizada en agricultura para forzar la maduración de frutos, acelerar la maduración de frutas cosechadas verdes e intensificar el color en tomates."
+      },
+      "en": {
+        "name": "Ethylene",
+        "description": "Ethylene is a colourless, flammable hydrocarbon gas with the formula C2H4 that represents the simplest alkene. It has a faint sweet and musky odour when pure, and all six atoms comprising the molecule are coplanar with a double bond between two carbon atoms.",
+        "uses": "Ethylene is widely used in the chemical industry to produce polyethylene plastic, which accounts for more than half of the world's ethylene supply. It is employed to make polyethylene oxide, ethylene glycol (used as automotive antifreeze), and various other chemical intermediates including ethylbenzene and polystyrene. Additionally, ethylene is used as a natural plant hormone to induce ripening of fruits and to control freshness in horticulture."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 6325",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6325"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Etileno"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Ethylene"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "acetylene",
+    "formula": "C2H2",
+    "smiles": "C#C",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0.5982,
+        "y": 0.0478,
+        "z": -0.0046,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.5982,
+        "y": -0.0478,
+        "z": 0.0046,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": 1.6606,
+        "y": 0.1327,
+        "z": -0.0128,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.6606,
+        "y": -0.1327,
+        "z": 0.0128,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "triple",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 0,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Acetileno",
+        "description": "El acetileno o etino es el alquino más sencillo. Es un gas altamente inflamable, incoloro y un poco más ligero que el aire que produce una de las temperaturas de llama adiabática más altas de 3250 °C. Fue descubierto accidentalmente por Edmund Davy en 1836 al intentar aislar el metal potasio.",
+        "uses": "A principios del siglo XX se utilizaba en generadores, lámparas de minería, sopletes oxiacetilénico para soldadura autógena, alumbrado de proyectores y faros de automóviles. En la actualidad se usa como fuente de iluminación y calor, principalmente en equipos de soldadura, y como producto de partida en síntesis química para obtener disolventes, cloroetileno para plásticos, etanal y caucho sintético."
+      },
+      "en": {
+        "name": "Acetylene",
+        "description": "Acetylene is a colorless, odorless chemical compound with the formula C2H2 and structure HC≡CH. It is a hydrocarbon and the simplest alkyne, featuring a triple bond between its two carbon atoms that places all atoms in a straight line and gives it high energy content when burned.",
+        "uses": "Acetylene is widely used as a fuel for oxyacetylene welding and cutting, producing flames over 3,600 K. It serves as a chemical building block for producing acrylic acid, acrylic esters, and various polymers and resins. Historically, acetylene was used in carbide lamps for lighting in lighthouses, street lights, and mining headlamps, though this use has largely been replaced by electric lighting."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 6326",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6326"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Acetileno"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Acetylene"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "benzene",
+    "formula": "C6H6",
+    "smiles": "c1ccccc1",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0.3944,
+        "y": 1.3366,
+        "z": -0.0578,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.3558,
+        "y": 0.3274,
+        "z": -0.0074,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.9614,
+        "y": -1.0093,
+        "z": 0.0503,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.3944,
+        "y": -1.3366,
+        "z": 0.0578,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.3558,
+        "y": -0.3274,
+        "z": 0.0074,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.9614,
+        "y": 1.0093,
+        "z": -0.0503,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": 0.7017,
+        "y": 2.3781,
+        "z": -0.1028,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.4122,
+        "y": 0.5824,
+        "z": -0.0132,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.7105,
+        "y": -1.7956,
+        "z": 0.0895,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.7017,
+        "y": -2.3781,
+        "z": 0.1028,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.4122,
+        "y": -0.5824,
+        "z": 0.0132,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.7105,
+        "y": 1.7956,
+        "z": -0.0895,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 5,
+        "to": 0,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Benceno",
+        "description": "El benceno es un hidrocarburo aromático de fórmula molecular C6H6 que forma una estructura hexagonal regular donde cada átomo de carbono se une a otros átomos de carbono y a átomos de hidrógeno. Se trata de un líquido incoloro muy inflamable con aroma dulce, con un punto de ebullición relativamente alto, y destaca por su especial estabilidad debida a la aromaticidad, caracterizada por la presencia de una nube π desdelocalizada en lugar de enlaces simples y dobles alternos.",
+        "uses": "El benceno se utiliza en grandes cantidades como punto de partida para manufacturar otros productos químicos empleados en la fabricación de plásticos, resinas, nilón y fibras sintéticas como el kevlar. También se usa en la producción de ciertos tipos de gomas, lubricantes, tinturas, detergentes, tóner de impresoras láser, medicamentos y pesticidas."
+      },
+      "en": {
+        "name": "Benzene",
+        "description": "Benzene is an organic chemical compound with the molecular formula C6H6, composed of six carbon atoms joined in a planar hexagonal ring with one hydrogen atom attached to each. It is a colorless and highly flammable liquid with a sweet smell, classified as an aromatic hydrocarbon and a carcinogen.",
+        "uses": "Benzene is used primarily as a precursor to the manufacture of chemicals with more complex structures, such as ethylbenzene and cumene, of which billions of kilograms are produced annually. Historically, it was used to decaffeinate coffee and as a significant component in consumer products such as liquid wrench, paint strippers, rubber cements, and spot removers, though most of these uses have been discontinued due to its toxicity."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 241",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/241"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Benceno"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Benzene"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "glycine",
+    "formula": "C2H5NO2",
+    "smiles": "NCC(=O)O",
+    "type": "amino-acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "N",
+        "x": -0.9597,
+        "y": 1.031,
+        "z": -0.4125,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": -0.4795,
+        "y": -0.3595,
+        "z": -0.4831,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.9044,
+        "y": -0.5039,
+        "z": 0.1345,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 1.7648,
+        "y": -1.3024,
+        "z": -0.2013,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": 1.1038,
+        "y": 0.3049,
+        "z": 1.2008,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -1.9664,
+        "y": 1.0463,
+        "z": -0.5617,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.7973,
+        "y": 1.3688,
+        "z": 0.5394,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.1621,
+        "y": -1.0215,
+        "z": 0.0582,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.4301,
+        "y": -0.6641,
+        "z": -1.5322,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.0221,
+        "y": 0.1005,
+        "z": 1.4746,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Glicina",
+        "description": "La glicina es uno de los aminoácidos que forman las proteínas de los seres vivos, siendo el más pequeño y el único no quiral de los 20 aminoácidos presentes en la célula. Actúa como neurotransmisor inhibidor en el sistema nervioso central, especialmente en la médula espinal, tallo cerebral y retina. Es un aminoácido no esencial porque el cuerpo humano puede sintetizarlo por sí mismo.",
+        "uses": "La glicina se utiliza en el organismo para sintetizar gran número de sustancias, como el grupo C2N de todas las purinas, y es necesaria para la síntesis de colágeno. Se emplea in vitro como medio gástrico en disolución para determinar la bioaccesibilidad de elementos potencialmente tóxicos. Industrialmente se prepara mediante una reacción entre el ácido cloroacético y el amoníaco."
+      },
+      "en": {
+        "name": "Glycine",
+        "description": "Glycine is the simplest stable amino acid with the formula C2H5NO2, distinguished by having a single hydrogen atom as its side chain. It is one of the 20 proteinogenic amino acids and the only common amino acid that is not chiral. In the body, glycine plays crucial roles in protein structure, particularly in collagen where it comprises about 35% of the amino acid content, and functions as an inhibitory neurotransmitter in the central nervous system.",
+        "uses": "Glycine is produced industrially for use as a food additive, a nutritional supplement, and an intermediate in the manufacture of herbicides such as glyphosate. It is also used in pharmaceutical applications, metal complexing and finishing, antibiotics synthesis, and as a buffering agent in laboratory protein analysis methods like SDS-PAGE. Additionally, metal glycinate complexes are used as supplements for animal feeds."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 750",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/750"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Glicina"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Glycine"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "alanine",
+    "formula": "C3H7NO2",
+    "smiles": "C[C@@H](N)C(=O)O",
+    "type": "amino-acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": -1.0456,
+        "y": -1.0105,
+        "z": 0.0978,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.2877,
+        "y": 0.2041,
+        "z": -0.4202,
+        "color": "#909090"
+      },
+      {
+        "element": "N",
+        "x": -0.9381,
+        "y": 1.4347,
+        "z": 0.0845,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": 1.1795,
+        "y": 0.1625,
+        "z": 0.0189,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 1.7605,
+        "y": 1.0066,
+        "z": 0.6853,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": 1.8424,
+        "y": -0.9186,
+        "z": -0.4363,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -0.9899,
+        "y": -1.0826,
+        "z": 1.1901,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.6273,
+        "y": -1.9365,
+        "z": -0.3116,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.102,
+        "y": -0.9693,
+        "z": -0.1897,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.3116,
+        "y": 0.2326,
+        "z": -1.5148,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.863,
+        "y": 1.4424,
+        "z": 1.1041,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.372,
+        "y": 2.2339,
+        "z": -0.2104,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.7547,
+        "y": -0.7993,
+        "z": -0.0977,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 3,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Alanina",
+        "description": "La alanina es uno de los aminoácidos que forman las proteínas de los seres vivos. Es el aminoácido más pequeño después de la glicina y se clasifica como hidrofóbico. Existe en dos enantiómeros: la L-alanina, que es uno de los 20 aminoácidos más ampliamente usados en la biosíntesis de proteína, y la D-alanina, que está presente en las paredes celulares bacterianas y en algunos péptidos antibióticos.",
+        "uses": "La alanina interviene en el metabolismo de la glucosa y participa en ciclos metabólicos como la glicólisis, gluconeogénesis y el ciclo del ácido cítrico. Se encuentra presente en proteínas de origen animal como la carne de vacuno, cerdo, pescado, huevos y productos lácteos."
+      },
+      "en": {
+        "name": "Alanine",
+        "description": "Alanine is an α-amino acid used in the biosynthesis of proteins. It is a non-polar, aliphatic amino acid with a methyl group side chain, and is the simplest α-amino acid after glycine. The L-isomer of alanine is incorporated into proteins and is the second most common amino acid, accounting for 7.8% of the primary structure in proteins.",
+        "uses": "Alanine is used in protein biosynthesis as one of the twenty canonical amino acids. It is also employed in loss of function experiments through alanine scanning mutagenesis to study protein function, and its property of forming stable free radicals when irradiated makes it useful in radiotherapy dosimetric measurements to determine radiation exposure and verify treatment plans."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 5950",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5950"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Alanina"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Alanine"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "phenylalanine",
+    "formula": "C9H11NO2",
+    "smiles": "N[C@@H](Cc1ccccc1)C(=O)O",
+    "type": "amino-acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "N",
+        "x": -2.3515,
+        "y": -1.5503,
+        "z": 1.2813,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": -1.3529,
+        "y": -0.5402,
+        "z": 0.8435,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.8795,
+        "y": -0.8538,
+        "z": -0.5846,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.4836,
+        "y": -0.2704,
+        "z": -0.8886,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.6057,
+        "y": 0.9424,
+        "z": -1.5783,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.865,
+        "y": 1.4833,
+        "z": -1.8424,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 3.0141,
+        "y": 0.8174,
+        "z": -1.4208,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 2.9052,
+        "y": -0.3901,
+        "z": -0.7342,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 1.6467,
+        "y": -0.9318,
+        "z": -0.4681,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.9873,
+        "y": 0.8555,
+        "z": 0.9451,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -2.037,
+        "y": 1.7321,
+        "z": 0.0989,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": -2.5311,
+        "y": 1.073,
+        "z": 2.1699,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -1.8768,
+        "y": -2.4372,
+        "z": 1.4411,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.7093,
+        "y": -1.2489,
+        "z": 2.1918,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.5107,
+        "y": -0.5622,
+        "z": 1.5459,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.8052,
+        "y": -1.9406,
+        "z": -0.7303,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.609,
+        "y": -0.5079,
+        "z": -1.3286,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.2815,
+        "y": 1.4786,
+        "z": -1.9113,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.9469,
+        "y": 2.4259,
+        "z": -2.3771,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.9936,
+        "y": 1.2396,
+        "z": -1.6286,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 3.8014,
+        "y": -0.9109,
+        "z": -0.4074,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.5799,
+        "y": -1.8769,
+        "z": 0.0661,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.9102,
+        "y": 1.9733,
+        "z": 2.0886,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 1,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 9,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 3,
+        "order": "aromatic",
+        "style": "solid+dashed"
+      },
+      {
+        "from": 0,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 14,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 15,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 16,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 17,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 18,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 19,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 7,
+        "to": 20,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 8,
+        "to": 21,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 11,
+        "to": 22,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Fenilalanina",
+        "description": "La fenilalanina es un aminoácido esencial para el ser humano que se encuentra en las proteínas como L-fenilalanina, siendo uno de los 9 aminoácidos esenciales. Su cadena lateral contiene un anillo bencénico, lo que la clasifica como uno de los aminoácidos aromáticos. La fenilalanina está presente también en muchos psicoactivos y es el precursor de las catecolaminas como la dopamina, la norepinefrina y la epinefrina.",
+        "uses": "La fenilalanina se utiliza en tratamientos para el dolor de espalda baja, dolores menstruales, migrañas, dolores musculares, de artritis reumatoide y de osteoartritis, gracias a su habilidad de bloquear las encefalinasas en el sistema nervioso central. También es usada en tratamientos antidepresivos. Además, es un componente del aspartamo, un edulcorante artificial que se encuentra en alimentos dietéticos y bebidas refrescantes."
+      },
+      "en": {
+        "name": "Phenylalanine",
+        "description": "Phenylalanine is an α-amino acid with the formula C9H11NO2, classified as one of the four aromatic amino acids and one of the 21 proteinogenic amino acids common to all life forms. It is an essential amino acid that humans and other animals cannot synthesize, so they must obtain it from dietary sources such as meat, dairy, eggs, and legumes. It is classified as neutral and nonpolar because of the inert and hydrophobic nature of its benzyl side chain.",
+        "uses": "Phenylalanine is used in the manufacture of food and drink products and sold as a nutritional supplement because it is a direct precursor to the neuromodulator phenethylamine. It serves as a precursor for tyrosine and the monoamine neurotransmitters dopamine, norepinephrine, and epinephrine, as well as the biological pigment melanin. DL-Phenylalanine is marketed as a nutritional supplement for its purported analgesic and antidepressant activities, and borofalan, a derivative of phenylalanine, is used in neutron capture therapy."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 6140",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6140"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Fenilalanina"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Phenylalanine"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ethanol",
+    "formula": "C2H6O",
+    "smiles": "CCO",
+    "type": "alcohol",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 0.8822,
+        "y": -0.1982,
+        "z": -0.0121,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.4485,
+        "y": 0.5084,
+        "z": 0.1428,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -1.4402,
+        "y": -0.1493,
+        "z": -0.6324,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": 1.1839,
+        "y": -0.2252,
+        "z": -1.0643,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.8102,
+        "y": -1.2374,
+        "z": 0.3253,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.6612,
+        "y": 0.3063,
+        "z": 0.5663,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.769,
+        "y": 0.5169,
+        "z": 1.189,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.3752,
+        "y": 1.5432,
+        "z": -0.204,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.5047,
+        "y": -1.0646,
+        "z": -0.3105,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Etanol",
+        "description": "El etanol, también llamado alcohol etílico, es un compuesto químico orgánico alifático con un grupo funcional hidroxilo de fórmula C2H6O. Se presenta como un líquido incoloro, con olor etéreo penetrante, muy inflamable, con temperatura de ebullición de 78.4 °C, y es miscible con agua en cualquier proporción.",
+        "uses": "El etanol es el compuesto característico de bebidas alcohólicas como el vino, cerveza, licores y aguardientes. También ha sido utilizado como combustible en lámparas desde 1840 y posteriormente en automóviles a partir de 1908. Actualmente se usa como disolvente versátil en industrias farmacéutica, cosmética y química."
+      },
+      "en": {
+        "name": "Ethanol",
+        "description": "Ethanol is an organic compound with the chemical formula CH3CH2OH, a volatile, flammable, colorless liquid with a pungent taste. As a central nervous system depressant, it is the active ingredient in alcoholic beverages and the second most consumed drug globally behind caffeine.",
+        "uses": "Ethanol is used recreationally as an intoxicant in alcoholic beverages. Medically, it serves as an antiseptic and disinfectant in hand sanitizers and medical wipes, as an antidote to methanol and ethylene glycol poisoning, and as a solvent in over 700 liquid medication preparations. It is also widely used as an engine fuel and fuel additive, particularly in Brazil where gasoline contains at least 25% ethanol, and was historically used as a general anesthetic during surgery."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 702",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/702"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Etanol"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Ethanol"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "glycerol",
+    "formula": "C3H8O3",
+    "smiles": "OCC(O)CO",
+    "type": "alcohol",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "O",
+        "x": 1.9579,
+        "y": 0.8582,
+        "z": 0.5287,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": 1.3038,
+        "y": -0.3698,
+        "z": 0.2467,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.0016,
+        "y": -0.1577,
+        "z": -0.5275,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -0.5942,
+        "y": -1.42,
+        "z": -0.8617,
+        "color": "#FF0000"
+      },
+      {
+        "element": "C",
+        "x": -1.0184,
+        "y": 0.6713,
+        "z": 0.2604,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": -2.2106,
+        "y": 0.821,
+        "z": -0.5135,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": 2.2779,
+        "y": 1.2228,
+        "z": -0.3158,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.1061,
+        "y": -0.8801,
+        "z": 1.1958,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.9869,
+        "y": -1.015,
+        "z": -0.3169,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.21,
+        "y": 0.3527,
+        "z": -1.4747,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.7608,
+        "y": -1.9009,
+        "z": -0.0309,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.2988,
+        "y": 0.1661,
+        "z": 1.1902,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.6367,
+        "y": 1.6681,
+        "z": 0.4985,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.3247,
+        "y": -0.0168,
+        "z": -1.0036,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 5,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Glicerol",
+        "description": "El glicerol o glicerina es un alcohol con tres grupos hidroxilos que se presenta como un líquido incoloro a temperatura ambiente. Es uno de los principales productos de la degradación digestiva de los lípidos y aparece como componente de lípidos como los triglicéridos y fosfolípidos, poseyendo un sabor dulce y propiedades higroscópicas.",
+        "uses": "El glicerol se utiliza en la elaboración de cosméticos y jabones, en medicamentos como jarabes y antisépticos, en lubricantes oftalmológicos y supositorios. También se emplea en la fabricación de explosivos, como anticongelante, en la industria alimentaria, en lacas y pinturas, en la industria tabacalera y de cigarrillos electrónicos, en textiles y cuero, y como disolvente verde en síntesis química."
+      },
+      "en": {
+        "name": "Glycerol",
+        "description": "Glycerol is a sugar alcohol with the chemical formula C3H5(OH)3, containing three carbon atoms each with a hydroxyl group. It is a colorless, odorless, sweet-tasting, viscous liquid that is miscible with water and hygroscopic. The glycerol backbone is found in lipids called glycerides, and it is most commonly found in nature as part of triglycerides in animal fats and vegetable oils.",
+        "uses": "Glycerol is widely used as a sweetener and humectant in the food industry, and as a humectant in pharmaceutical formulations for improving smoothness and lubrication. It has medical applications including treatment of skin conditions like ichthyosis and xerosis, use in cough syrups and personal care products, preservation of red blood cells, and emergency treatment for elevated eye pressure. Additionally, it is used in electronic cigarette liquid, as an antifreeze, as a chemical intermediate to produce compounds like nitroglycerin, for vibration damping in pressure gauges, and in theatrical fog machines."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 753",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/753"
+      },
+      {
+        "label": "Wikipedia (es)",
+        "url": "https://es.wikipedia.org/wiki/Glicerol"
+      },
+      {
+        "label": "Wikipedia (en)",
+        "url": "https://en.wikipedia.org/wiki/Glycerol"
+      }
+    ],
+    "needsReview": false
+  }
+]

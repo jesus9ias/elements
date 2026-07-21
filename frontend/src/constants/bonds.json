@@ -1,0 +1,42 @@
+{
+  "$comment": "SINGLE SOURCE OF TRUTH for bond styling and atom coloring. Read by BOTH runtimes: src/constants/bonds.ts (types + accessors, tested by T-BOND-*) and scripts/bond_constants.py (content pipeline). Edit this file only - never restate these values in either consumer. Aromatic is deliberately not expanded to Kekule: one solid + one dashed cylinder represents delocalization. Ionic bonds are out of scope for the MVP (not derivable from SMILES connectivity).",
+  "bondStyleNames": {
+    "SOLID": "solid",
+    "SOLID_PARALLEL": "solid-parallel",
+    "SOLID_DASHED": "solid+dashed"
+  },
+  "bondStyles": {
+    "single": { "style": "solid", "cylinders": 1 },
+    "double": { "style": "solid-parallel", "cylinders": 2 },
+    "triple": { "style": "solid-parallel", "cylinders": 3 },
+    "aromatic": { "style": "solid+dashed", "cylinders": 2, "dashed": true }
+  },
+  "cpkColors": {
+    "H": "#FFFFFF",
+    "He": "#D9FFFF",
+    "Li": "#CC80FF",
+    "Be": "#C2FF00",
+    "B": "#FFB5B5",
+    "C": "#909090",
+    "N": "#3050F8",
+    "O": "#FF0000",
+    "F": "#90E050",
+    "Ne": "#B3E3F5",
+    "Na": "#AB5CF2",
+    "Mg": "#8AFF00",
+    "Al": "#BFA6A6",
+    "Si": "#F0C8A0",
+    "P": "#FF8000",
+    "S": "#FFFF30",
+    "Cl": "#1FF01F",
+    "Ar": "#80D1E3",
+    "K": "#8F40D4",
+    "Ca": "#3DFF00",
+    "Fe": "#E06633",
+    "Cu": "#C88033",
+    "Zn": "#7D80B0",
+    "Br": "#A62929",
+    "I": "#940094"
+  },
+  "cpkDefaultColor": "#FF1493"
+}

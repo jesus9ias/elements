@@ -1,0 +1,12 @@
+{
+  "$comment": "SINGLE SOURCE OF TRUTH for the molecule `type` vocabulary. Read by BOTH runtimes: src/constants/molecules.ts and scripts/embed_constants.py (which rejects an unknown type at pipeline time). Values are English keys, never user-visible text - the displayed label lives in the `moleculeTypes` block of src/i18n/resources/{es,en}.json. To add a category: append the key here, then add its es/en label. A key with no translation renders as the 'Traducción pendiente' placeholder rather than failing silently.",
+  "moleculeTypes": [
+    "acid",
+    "sugar",
+    "base",
+    "lipid",
+    "hydrocarbon",
+    "amino-acid",
+    "alcohol"
+  ]
+}

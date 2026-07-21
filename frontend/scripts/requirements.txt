@@ -1,0 +1,7 @@
+# Python dependencies for the local-only molecule content pipeline.
+# Never installed by CI/CD — see frontend/spec.md "Content Pipeline".
+#
+# Setup (from frontend/):
+#   python -m venv .venv
+#   .venv/Scripts/python.exe -m pip install -r scripts/requirements.txt
+rdkit==2026.3.4

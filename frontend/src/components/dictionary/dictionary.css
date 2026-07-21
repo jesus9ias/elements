@@ -1,0 +1,105 @@
+/** Dictionary modal styles. Consumes the design tokens. */
+
+.dictionary-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background: rgba(6, 9, 24, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.dictionary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: min(42rem, 100%);
+  max-height: min(80vh, 44rem);
+  padding: var(--space-4);
+}
+
+.dictionary__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.dictionary__title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.dictionary__close {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.dictionary__filter {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  color: var(--color-text);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+}
+
+.dictionary__empty {
+  padding: var(--space-6) 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.dictionary__list {
+  margin: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dictionary__entry dt {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.dictionary__entry dd {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+/* Contextual "?" trigger, usable anywhere in the interface. */
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-left: 0.3rem;
+  padding: 0;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: var(--color-accent);
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.help-icon:hover {
+  background: var(--glass-bg-strong);
+}

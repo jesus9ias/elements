@@ -1,0 +1,2640 @@
+{
+  "1": {
+    "atomicNumber": 1,
+    "symbol": "H",
+    "group": "nonmetal",
+    "atomicMass": 1.008,
+    "meltingPointC": -259.14,
+    "meltingPointK": 14.009999999999991,
+    "boilingPointC": -252.87,
+    "boilingPointK": 20.279999999999973,
+    "halfLife": null,
+    "electronConfiguration": [
+      "1"
+    ],
+    "knownIsotopes": []
+  },
+  "2": {
+    "atomicNumber": 2,
+    "symbol": "He",
+    "group": "noble-gas",
+    "atomicMass": 4.002602,
+    "meltingPointC": -272.05,
+    "meltingPointK": 1.099999999999966,
+    "boilingPointC": -268.9,
+    "boilingPointK": 4.25,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2"
+    ],
+    "knownIsotopes": [
+      "He-3",
+      "He-4"
+    ]
+  },
+  "3": {
+    "atomicNumber": 3,
+    "symbol": "Li",
+    "group": "alkali-metal",
+    "atomicMass": 6.94,
+    "meltingPointC": 180.55,
+    "meltingPointK": 453.7,
+    "boilingPointC": 1317,
+    "boilingPointK": 1590.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Li-6",
+      "Li-7"
+    ]
+  },
+  "4": {
+    "atomicNumber": 4,
+    "symbol": "Be",
+    "group": "alkaline-earth-metal",
+    "atomicMass": 9.0121831,
+    "meltingPointC": 1278,
+    "meltingPointK": 1551.15,
+    "boilingPointC": 2970,
+    "boilingPointK": 3243.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Be-9"
+    ]
+  },
+  "5": {
+    "atomicNumber": 5,
+    "symbol": "B",
+    "group": "metalloid",
+    "atomicMass": 10.81,
+    "meltingPointC": 2180,
+    "meltingPointK": 2453.15,
+    "boilingPointC": 4000,
+    "boilingPointK": 4273.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "3"
+    ],
+    "knownIsotopes": [
+      "B-10",
+      "B-11"
+    ]
+  },
+  "6": {
+    "atomicNumber": 6,
+    "symbol": "C",
+    "group": "nonmetal",
+    "atomicMass": 12.011,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "4"
+    ],
+    "knownIsotopes": [
+      "C-12",
+      "C-13"
+    ]
+  },
+  "7": {
+    "atomicNumber": 7,
+    "symbol": "N",
+    "group": "nonmetal",
+    "atomicMass": 14.007,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "5"
+    ],
+    "knownIsotopes": [
+      "N-14",
+      "N-15"
+    ]
+  },
+  "8": {
+    "atomicNumber": 8,
+    "symbol": "O",
+    "group": "nonmetal",
+    "atomicMass": 15.999,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "6"
+    ],
+    "knownIsotopes": [
+      "O-16",
+      "O-17",
+      "O-18"
+    ]
+  },
+  "9": {
+    "atomicNumber": 9,
+    "symbol": "F",
+    "group": "halogen",
+    "atomicMass": 18.998403162,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "7"
+    ],
+    "knownIsotopes": [
+      "F-19"
+    ]
+  },
+  "10": {
+    "atomicNumber": 10,
+    "symbol": "Ne",
+    "group": "noble-gas",
+    "atomicMass": 20.1797,
+    "meltingPointC": -248.6,
+    "meltingPointK": 24.549999999999983,
+    "boilingPointC": -246,
+    "boilingPointK": 27.149999999999977,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8"
+    ],
+    "knownIsotopes": [
+      "Ne-20",
+      "Ne-21",
+      "Ne-22"
+    ]
+  },
+  "11": {
+    "atomicNumber": 11,
+    "symbol": "Na",
+    "group": "alkali-metal",
+    "atomicMass": 22.98976928,
+    "meltingPointC": 97.78,
+    "meltingPointK": 370.92999999999995,
+    "boilingPointC": 882.94,
+    "boilingPointK": 1156.0900000000001,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Na-23"
+    ]
+  },
+  "12": {
+    "atomicNumber": 12,
+    "symbol": "Mg",
+    "group": "alkaline-earth-metal",
+    "atomicMass": 24.305,
+    "meltingPointC": 649,
+    "meltingPointK": 922.15,
+    "boilingPointC": 1100,
+    "boilingPointK": 1373.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Mg-24",
+      "Mg-25",
+      "Mg-26"
+    ]
+  },
+  "13": {
+    "atomicNumber": 13,
+    "symbol": "Al",
+    "group": "post-transition-metal",
+    "atomicMass": 26.9815384,
+    "meltingPointC": 660,
+    "meltingPointK": 933.15,
+    "boilingPointC": 2327,
+    "boilingPointK": 2600.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "3"
+    ],
+    "knownIsotopes": [
+      "Al-27"
+    ]
+  },
+  "14": {
+    "atomicNumber": 14,
+    "symbol": "Si",
+    "group": "metalloid",
+    "atomicMass": 28.085,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "4"
+    ],
+    "knownIsotopes": [
+      "Si-28",
+      "Si-29",
+      "Si-30"
+    ]
+  },
+  "15": {
+    "atomicNumber": 15,
+    "symbol": "P",
+    "group": "nonmetal",
+    "atomicMass": 30.973761998,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "5"
+    ],
+    "knownIsotopes": [
+      "P-31"
+    ]
+  },
+  "16": {
+    "atomicNumber": 16,
+    "symbol": "S",
+    "group": "nonmetal",
+    "atomicMass": 32.06,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "6"
+    ],
+    "knownIsotopes": [
+      "S-32",
+      "S-33",
+      "S-34",
+      "S-36"
+    ]
+  },
+  "17": {
+    "atomicNumber": 17,
+    "symbol": "Cl",
+    "group": "halogen",
+    "atomicMass": 35.45,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "7"
+    ],
+    "knownIsotopes": [
+      "Cl-35",
+      "Cl-37"
+    ]
+  },
+  "18": {
+    "atomicNumber": 18,
+    "symbol": "Ar",
+    "group": "noble-gas",
+    "atomicMass": 39.95,
+    "meltingPointC": -189.34,
+    "meltingPointK": 83.80999999999997,
+    "boilingPointC": -185.85,
+    "boilingPointK": 87.29999999999998,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "8"
+    ],
+    "knownIsotopes": [
+      "Ar-36",
+      "Ar-38",
+      "Ar-40"
+    ]
+  },
+  "19": {
+    "atomicNumber": 19,
+    "symbol": "K",
+    "group": "alkali-metal",
+    "atomicMass": 39.0983,
+    "meltingPointC": 63.25,
+    "meltingPointK": 336.4,
+    "boilingPointC": 765.5,
+    "boilingPointK": 1038.65,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "8",
+      "1"
+    ],
+    "knownIsotopes": [
+      "K-39",
+      "K-40",
+      "K-41"
+    ]
+  },
+  "20": {
+    "atomicNumber": 20,
+    "symbol": "Ca",
+    "group": "alkaline-earth-metal",
+    "atomicMass": 40.078,
+    "meltingPointC": 838.85,
+    "meltingPointK": 1112,
+    "boilingPointC": 1483.85,
+    "boilingPointK": 1757,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ca-40",
+      "Ca-42",
+      "Ca-43",
+      "Ca-44",
+      "Ca-46",
+      "Ca-48"
+    ]
+  },
+  "21": {
+    "atomicNumber": 21,
+    "symbol": "Sc",
+    "group": "transition-metal",
+    "atomicMass": 44.955907,
+    "meltingPointC": 1540.85,
+    "meltingPointK": 1814,
+    "boilingPointC": 2836.85,
+    "boilingPointK": 3110,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Sc-45"
+    ]
+  },
+  "22": {
+    "atomicNumber": 22,
+    "symbol": "Ti",
+    "group": "transition-metal",
+    "atomicMass": 47.867,
+    "meltingPointC": 1667.85,
+    "meltingPointK": 1941,
+    "boilingPointC": 3286.85,
+    "boilingPointK": 3560,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "10",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ti-46",
+      "Ti-47",
+      "Ti-48",
+      "Ti-49",
+      "Ti-50"
+    ]
+  },
+  "23": {
+    "atomicNumber": 23,
+    "symbol": "V",
+    "group": "transition-metal",
+    "atomicMass": 50.9415,
+    "meltingPointC": 1887,
+    "meltingPointK": 2160.15,
+    "boilingPointC": 3377,
+    "boilingPointK": 3650.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "11",
+      "2"
+    ],
+    "knownIsotopes": [
+      "V-50",
+      "V-51"
+    ]
+  },
+  "24": {
+    "atomicNumber": 24,
+    "symbol": "Cr",
+    "group": "transition-metal",
+    "atomicMass": 51.9961,
+    "meltingPointC": 1856.9,
+    "meltingPointK": 2130.05,
+    "boilingPointC": 2671.85,
+    "boilingPointK": 2945,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "13",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Cr-50",
+      "Cr-52",
+      "Cr-53",
+      "Cr-54"
+    ]
+  },
+  "25": {
+    "atomicNumber": 25,
+    "symbol": "Mn",
+    "group": "transition-metal",
+    "atomicMass": 54.938043,
+    "meltingPointC": 1243,
+    "meltingPointK": 1516.15,
+    "boilingPointC": 1961,
+    "boilingPointK": 2234.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "13",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Mn-55"
+    ]
+  },
+  "26": {
+    "atomicNumber": 26,
+    "symbol": "Fe",
+    "group": "transition-metal",
+    "atomicMass": 55.845,
+    "meltingPointC": 1538,
+    "meltingPointK": 1811.15,
+    "boilingPointC": 2861,
+    "boilingPointK": 3134.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "14",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Fe-54",
+      "Fe-56",
+      "Fe-57",
+      "Fe-58"
+    ]
+  },
+  "27": {
+    "atomicNumber": 27,
+    "symbol": "Co",
+    "group": "transition-metal",
+    "atomicMass": 58.933194,
+    "meltingPointC": 1495,
+    "meltingPointK": 1768.15,
+    "boilingPointC": 2927,
+    "boilingPointK": 3200.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "15",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Co-59"
+    ]
+  },
+  "28": {
+    "atomicNumber": 28,
+    "symbol": "Ni",
+    "group": "transition-metal",
+    "atomicMass": 58.6934,
+    "meltingPointC": 1454.85,
+    "meltingPointK": 1728,
+    "boilingPointC": 2913,
+    "boilingPointK": 3186.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "16",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ni-58",
+      "Ni-60",
+      "Ni-61",
+      "Ni-62",
+      "Ni-64"
+    ]
+  },
+  "29": {
+    "atomicNumber": 29,
+    "symbol": "Cu",
+    "group": "transition-metal",
+    "atomicMass": 63.546,
+    "meltingPointC": 1085,
+    "meltingPointK": 1358.15,
+    "boilingPointC": 2595,
+    "boilingPointK": 2868.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Cu-63",
+      "Cu-65"
+    ]
+  },
+  "30": {
+    "atomicNumber": 30,
+    "symbol": "Zn",
+    "group": "transition-metal",
+    "atomicMass": 65.38,
+    "meltingPointC": 419,
+    "meltingPointK": 692.15,
+    "boilingPointC": 907,
+    "boilingPointK": 1180.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Zn-64",
+      "Zn-66",
+      "Zn-67",
+      "Zn-68",
+      "Zn-70"
+    ]
+  },
+  "31": {
+    "atomicNumber": 31,
+    "symbol": "Ga",
+    "group": "post-transition-metal",
+    "atomicMass": 69.723,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "3"
+    ],
+    "knownIsotopes": [
+      "Ga-69",
+      "Ga-71"
+    ]
+  },
+  "32": {
+    "atomicNumber": 32,
+    "symbol": "Ge",
+    "group": "metalloid",
+    "atomicMass": 72.63,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "4"
+    ],
+    "knownIsotopes": [
+      "Ge-70",
+      "Ge-72",
+      "Ge-73",
+      "Ge-74",
+      "Ge-76"
+    ]
+  },
+  "33": {
+    "atomicNumber": 33,
+    "symbol": "As",
+    "group": "metalloid",
+    "atomicMass": 74.921595,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "5"
+    ],
+    "knownIsotopes": [
+      "As-75"
+    ]
+  },
+  "34": {
+    "atomicNumber": 34,
+    "symbol": "Se",
+    "group": "nonmetal",
+    "atomicMass": 78.971,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "6"
+    ],
+    "knownIsotopes": [
+      "Se-74",
+      "Se-76",
+      "Se-77",
+      "Se-78",
+      "Se-80",
+      "Se-82"
+    ]
+  },
+  "35": {
+    "atomicNumber": 35,
+    "symbol": "Br",
+    "group": "halogen",
+    "atomicMass": 79.904,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "7"
+    ],
+    "knownIsotopes": [
+      "Br-79",
+      "Br-81"
+    ]
+  },
+  "36": {
+    "atomicNumber": 36,
+    "symbol": "Kr",
+    "group": "noble-gas",
+    "atomicMass": 83.798,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8"
+    ],
+    "knownIsotopes": [
+      "Kr-78",
+      "Kr-80",
+      "Kr-82",
+      "Kr-83",
+      "Kr-84",
+      "Kr-86"
+    ]
+  },
+  "37": {
+    "atomicNumber": 37,
+    "symbol": "Rb",
+    "group": "alkali-metal",
+    "atomicMass": 85.4678,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Rb-85",
+      "Rb-87"
+    ]
+  },
+  "38": {
+    "atomicNumber": 38,
+    "symbol": "Sr",
+    "group": "alkaline-earth-metal",
+    "atomicMass": 87.62,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Sr-84",
+      "Sr-86",
+      "Sr-87",
+      "Sr-88"
+    ]
+  },
+  "39": {
+    "atomicNumber": 39,
+    "symbol": "Y",
+    "group": "transition-metal",
+    "atomicMass": 88.905838,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Y-89"
+    ]
+  },
+  "40": {
+    "atomicNumber": 40,
+    "symbol": "Zr",
+    "group": "transition-metal",
+    "atomicMass": 91.222,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "10",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Zr-90",
+      "Zr-91",
+      "Zr-92",
+      "Zr-94",
+      "Zr-96"
+    ]
+  },
+  "41": {
+    "atomicNumber": 41,
+    "symbol": "Nb",
+    "group": "transition-metal",
+    "atomicMass": 92.90637,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "12",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Nb-93"
+    ]
+  },
+  "42": {
+    "atomicNumber": 42,
+    "symbol": "Mo",
+    "group": "transition-metal",
+    "atomicMass": 95.95,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "13",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Mo-92",
+      "Mo-94",
+      "Mo-95",
+      "Mo-96",
+      "Mo-97",
+      "Mo-98",
+      "Mo-100"
+    ]
+  },
+  "43": {
+    "atomicNumber": 43,
+    "symbol": "Tc",
+    "group": "transition-metal",
+    "atomicMass": 97.907,
+    "meltingPointC": 2170,
+    "meltingPointK": 2443.15,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "13",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "44": {
+    "atomicNumber": 44,
+    "symbol": "Ru",
+    "group": "transition-metal",
+    "atomicMass": 101.07,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "15",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Ru-96",
+      "Ru-98",
+      "Ru-99",
+      "Ru-100",
+      "Ru-101",
+      "Ru-102",
+      "Ru-104"
+    ]
+  },
+  "45": {
+    "atomicNumber": 45,
+    "symbol": "Rh",
+    "group": "transition-metal",
+    "atomicMass": 102.90549,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "16",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Rh-103"
+    ]
+  },
+  "46": {
+    "atomicNumber": 46,
+    "symbol": "Pd",
+    "group": "transition-metal",
+    "atomicMass": 106.42,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "10"
+    ],
+    "knownIsotopes": [
+      "Pd-102",
+      "Pd-104",
+      "Pd-105",
+      "Pd-106",
+      "Pd-108",
+      "Pd-110"
+    ]
+  },
+  "47": {
+    "atomicNumber": 47,
+    "symbol": "Ag",
+    "group": "transition-metal",
+    "atomicMass": 107.8682,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": 961.78,
+    "boilingPointK": 1234.9299999999998,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "18",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Ag-107",
+      "Ag-109"
+    ]
+  },
+  "48": {
+    "atomicNumber": 48,
+    "symbol": "Cd",
+    "group": "transition-metal",
+    "atomicMass": 112.414,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "12"
+    ],
+    "knownIsotopes": [
+      "Cd-106",
+      "Cd-108",
+      "Cd-110",
+      "Cd-111",
+      "Cd-112",
+      "Cd-113",
+      "Cd-114",
+      "Cd-116"
+    ]
+  },
+  "49": {
+    "atomicNumber": 49,
+    "symbol": "In",
+    "group": "post-transition-metal",
+    "atomicMass": 114.818,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "13"
+    ],
+    "knownIsotopes": [
+      "In-113",
+      "In-115"
+    ]
+  },
+  "50": {
+    "atomicNumber": 50,
+    "symbol": "Sn",
+    "group": "post-transition-metal",
+    "atomicMass": 118.71,
+    "meltingPointC": 231.9,
+    "meltingPointK": 505.04999999999995,
+    "boilingPointC": 2507,
+    "boilingPointK": 2780.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "14"
+    ],
+    "knownIsotopes": [
+      "Sn-112",
+      "Sn-114",
+      "Sn-115",
+      "Sn-116",
+      "Sn-117",
+      "Sn-118",
+      "Sn-119",
+      "Sn-120",
+      "Sn-122",
+      "Sn-124"
+    ]
+  },
+  "51": {
+    "atomicNumber": 51,
+    "symbol": "Sb",
+    "group": "metalloid",
+    "atomicMass": 121.76,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "15"
+    ],
+    "knownIsotopes": [
+      "Sb-121",
+      "Sb-123"
+    ]
+  },
+  "52": {
+    "atomicNumber": 52,
+    "symbol": "Te",
+    "group": "metalloid",
+    "atomicMass": 127.6,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "8",
+      "16"
+    ],
+    "knownIsotopes": [
+      "Te-120",
+      "Te-122",
+      "Te-123",
+      "Te-124",
+      "Te-125",
+      "Te-126",
+      "Te-128",
+      "Te-130"
+    ]
+  },
+  "53": {
+    "atomicNumber": 53,
+    "symbol": "I",
+    "group": "halogen",
+    "atomicMass": 126.90447,
+    "meltingPointC": 113.7,
+    "meltingPointK": 386.84999999999997,
+    "boilingPointC": 184.4,
+    "boilingPointK": 457.54999999999995,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "18",
+      "7"
+    ],
+    "knownIsotopes": [
+      "I-127"
+    ]
+  },
+  "54": {
+    "atomicNumber": 54,
+    "symbol": "Xe",
+    "group": "noble-gas",
+    "atomicMass": 131.293,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "18",
+      "8"
+    ],
+    "knownIsotopes": [
+      "Xe-124",
+      "Xe-126",
+      "Xe-128",
+      "Xe-129",
+      "Xe-130",
+      "Xe-131",
+      "Xe-132",
+      "Xe-134",
+      "Xe-136"
+    ]
+  },
+  "55": {
+    "atomicNumber": 55,
+    "symbol": "Cs",
+    "group": "alkali-metal",
+    "atomicMass": 132.90545196,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "18",
+      "8",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Cs-133"
+    ]
+  },
+  "56": {
+    "atomicNumber": 56,
+    "symbol": "Ba",
+    "group": "alkaline-earth-metal",
+    "atomicMass": 137.327,
+    "meltingPointC": 727,
+    "meltingPointK": 1000.15,
+    "boilingPointC": 1897,
+    "boilingPointK": 2170.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "18",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ba-130",
+      "Ba-132",
+      "Ba-134",
+      "Ba-135",
+      "Ba-136",
+      "Ba-137",
+      "Ba-138"
+    ]
+  },
+  "57": {
+    "atomicNumber": 57,
+    "symbol": "La",
+    "group": "lanthanide",
+    "atomicMass": 138.90547,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "18",
+      "8",
+      "3"
+    ],
+    "knownIsotopes": [
+      "La-138",
+      "La-139"
+    ]
+  },
+  "58": {
+    "atomicNumber": 58,
+    "symbol": "Ce",
+    "group": "lanthanide",
+    "atomicMass": 140.116,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "19",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ce-136",
+      "Ce-138",
+      "Ce-140",
+      "Ce-142"
+    ]
+  },
+  "59": {
+    "atomicNumber": 59,
+    "symbol": "Pr",
+    "group": "lanthanide",
+    "atomicMass": 140.90766,
+    "meltingPointC": 934.85,
+    "meltingPointK": 1208,
+    "boilingPointC": 3129.85,
+    "boilingPointK": 3403,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "21",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Pr-141"
+    ]
+  },
+  "60": {
+    "atomicNumber": 60,
+    "symbol": "Nd",
+    "group": "lanthanide",
+    "atomicMass": 144.242,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "22",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Nd-142",
+      "Nd-143",
+      "Nd-144",
+      "Nd-145",
+      "Nd-146",
+      "Nd-148",
+      "Nd-150"
+    ]
+  },
+  "61": {
+    "atomicNumber": 61,
+    "symbol": "Pm",
+    "group": "lanthanide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "23",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "62": {
+    "atomicNumber": 62,
+    "symbol": "Sm",
+    "group": "lanthanide",
+    "atomicMass": 150.36,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "24",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Sm-144",
+      "Sm-147",
+      "Sm-148",
+      "Sm-149",
+      "Sm-150",
+      "Sm-152",
+      "Sm-154"
+    ]
+  },
+  "63": {
+    "atomicNumber": 63,
+    "symbol": "Eu",
+    "group": "lanthanide",
+    "atomicMass": 151.964,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "25",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Eu-151",
+      "Eu-153"
+    ]
+  },
+  "64": {
+    "atomicNumber": 64,
+    "symbol": "Gd",
+    "group": "lanthanide",
+    "atomicMass": 157.249,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "25",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Gd-152",
+      "Gd-154",
+      "Gd-155",
+      "Gd-156",
+      "Gd-157",
+      "Gd-158",
+      "Gd-160"
+    ]
+  },
+  "65": {
+    "atomicNumber": 65,
+    "symbol": "Tb",
+    "group": "lanthanide",
+    "atomicMass": 158.925354,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "27",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Tb-159"
+    ]
+  },
+  "66": {
+    "atomicNumber": 66,
+    "symbol": "Dy",
+    "group": "lanthanide",
+    "atomicMass": 162.5,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "28",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Dy-156",
+      "Dy-158",
+      "Dy-160",
+      "Dy-161",
+      "Dy-162",
+      "Dy-163",
+      "Dy-164"
+    ]
+  },
+  "67": {
+    "atomicNumber": 67,
+    "symbol": "Ho",
+    "group": "lanthanide",
+    "atomicMass": 164.930329,
+    "meltingPointC": 1460.85,
+    "meltingPointK": 1734,
+    "boilingPointC": 2599.85,
+    "boilingPointK": 2873,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "29",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ho-165"
+    ]
+  },
+  "68": {
+    "atomicNumber": 68,
+    "symbol": "Er",
+    "group": "lanthanide",
+    "atomicMass": 167.259,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "30",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Er-162",
+      "Er-164",
+      "Er-166",
+      "Er-167",
+      "Er-168",
+      "Er-170"
+    ]
+  },
+  "69": {
+    "atomicNumber": 69,
+    "symbol": "Tm",
+    "group": "lanthanide",
+    "atomicMass": 168.934219,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "31",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Tm-169"
+    ]
+  },
+  "70": {
+    "atomicNumber": 70,
+    "symbol": "Yb",
+    "group": "lanthanide",
+    "atomicMass": 173.045,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Yb-168",
+      "Yb-170",
+      "Yb-171",
+      "Yb-172",
+      "Yb-173",
+      "Yb-174",
+      "Yb-176"
+    ]
+  },
+  "71": {
+    "atomicNumber": 71,
+    "symbol": "Lu",
+    "group": "lanthanide",
+    "atomicMass": 174.96669,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Lu-175",
+      "Lu-176"
+    ]
+  },
+  "72": {
+    "atomicNumber": 72,
+    "symbol": "Hf",
+    "group": "transition-metal",
+    "atomicMass": 178.486,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "10",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Hf-174",
+      "Hf-176",
+      "Hf-177",
+      "Hf-178",
+      "Hf-179",
+      "Hf-180"
+    ]
+  },
+  "73": {
+    "atomicNumber": 73,
+    "symbol": "Ta",
+    "group": "transition-metal",
+    "atomicMass": 180.94788,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "11",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ta-181"
+    ]
+  },
+  "74": {
+    "atomicNumber": 74,
+    "symbol": "W",
+    "group": "transition-metal",
+    "atomicMass": 183.84,
+    "meltingPointC": 3410,
+    "meltingPointK": 3683.15,
+    "boilingPointC": 5930,
+    "boilingPointK": 6203.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "12",
+      "2"
+    ],
+    "knownIsotopes": [
+      "W-180",
+      "W-182",
+      "W-183",
+      "W-184",
+      "W-186"
+    ]
+  },
+  "75": {
+    "atomicNumber": 75,
+    "symbol": "Re",
+    "group": "transition-metal",
+    "atomicMass": 186.207,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "13",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Re-185",
+      "Re-187"
+    ]
+  },
+  "76": {
+    "atomicNumber": 76,
+    "symbol": "Os",
+    "group": "transition-metal",
+    "atomicMass": 190.23,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "14",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Os-184",
+      "Os-186",
+      "Os-187",
+      "Os-188",
+      "Os-189",
+      "Os-190",
+      "Os-192"
+    ]
+  },
+  "77": {
+    "atomicNumber": 77,
+    "symbol": "Ir",
+    "group": "transition-metal",
+    "atomicMass": 192.217,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "15",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Ir-191",
+      "Ir-193"
+    ]
+  },
+  "78": {
+    "atomicNumber": 78,
+    "symbol": "Pt",
+    "group": "transition-metal",
+    "atomicMass": 195.084,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "17",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Pt-190",
+      "Pt-192",
+      "Pt-194",
+      "Pt-195",
+      "Pt-196",
+      "Pt-198"
+    ]
+  },
+  "79": {
+    "atomicNumber": 79,
+    "symbol": "Au",
+    "group": "transition-metal",
+    "atomicMass": 196.96657,
+    "meltingPointC": 1064.18,
+    "meltingPointK": 1337.33,
+    "boilingPointC": 2940,
+    "boilingPointK": 3213.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "1"
+    ],
+    "knownIsotopes": [
+      "Au-197"
+    ]
+  },
+  "80": {
+    "atomicNumber": 80,
+    "symbol": "Hg",
+    "group": "transition-metal",
+    "atomicMass": 200.592,
+    "meltingPointC": -38.83,
+    "meltingPointK": 234.32,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Hg-196",
+      "Hg-198",
+      "Hg-199",
+      "Hg-200",
+      "Hg-201",
+      "Hg-202",
+      "Hg-204"
+    ]
+  },
+  "81": {
+    "atomicNumber": 81,
+    "symbol": "Tl",
+    "group": "post-transition-metal",
+    "atomicMass": 204.38,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "3"
+    ],
+    "knownIsotopes": [
+      "Tl-203",
+      "Tl-205"
+    ]
+  },
+  "82": {
+    "atomicNumber": 82,
+    "symbol": "Pb",
+    "group": "post-transition-metal",
+    "atomicMass": 207.2,
+    "meltingPointC": 328,
+    "meltingPointK": 601.15,
+    "boilingPointC": 1740,
+    "boilingPointK": 2013.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "4"
+    ],
+    "knownIsotopes": [
+      "Pb-204",
+      "Pb-206",
+      "Pb-207",
+      "Pb-208"
+    ]
+  },
+  "83": {
+    "atomicNumber": 83,
+    "symbol": "Bi",
+    "group": "post-transition-metal",
+    "atomicMass": 208.9804,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "5"
+    ],
+    "knownIsotopes": [
+      "Bi-209"
+    ]
+  },
+  "84": {
+    "atomicNumber": 84,
+    "symbol": "Po",
+    "group": "post-transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "6"
+    ],
+    "knownIsotopes": []
+  },
+  "85": {
+    "atomicNumber": 85,
+    "symbol": "At",
+    "group": "halogen",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": 229.85000000000002,
+    "boilingPointK": 503,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "7"
+    ],
+    "knownIsotopes": []
+  },
+  "86": {
+    "atomicNumber": 86,
+    "symbol": "Rn",
+    "group": "noble-gas",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "8"
+    ],
+    "knownIsotopes": []
+  },
+  "87": {
+    "atomicNumber": 87,
+    "symbol": "Fr",
+    "group": "alkali-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "8",
+      "1"
+    ],
+    "knownIsotopes": []
+  },
+  "88": {
+    "atomicNumber": 88,
+    "symbol": "Ra",
+    "group": "alkaline-earth-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "89": {
+    "atomicNumber": 89,
+    "symbol": "Ac",
+    "group": "actinide",
+    "atomicMass": 227.028,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "90": {
+    "atomicNumber": 90,
+    "symbol": "Th",
+    "group": "actinide",
+    "atomicMass": 232.0377,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "18",
+      "10",
+      "2"
+    ],
+    "knownIsotopes": [
+      "Th-232"
+    ]
+  },
+  "91": {
+    "atomicNumber": 91,
+    "symbol": "Pa",
+    "group": "actinide",
+    "atomicMass": 231.03588,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "20",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "92": {
+    "atomicNumber": 92,
+    "symbol": "U",
+    "group": "actinide",
+    "atomicMass": 238.02891,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "21",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": [
+      "U-234",
+      "U-235",
+      "U-238"
+    ]
+  },
+  "93": {
+    "atomicNumber": 93,
+    "symbol": "Np",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "22",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "94": {
+    "atomicNumber": 94,
+    "symbol": "Pu",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "24",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "95": {
+    "atomicNumber": 95,
+    "symbol": "Am",
+    "group": "actinide",
+    "atomicMass": 243,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "25",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "96": {
+    "atomicNumber": 96,
+    "symbol": "Cm",
+    "group": "actinide",
+    "atomicMass": 247.07,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "25",
+      "9",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "97": {
+    "atomicNumber": 97,
+    "symbol": "Bk",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "27",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "98": {
+    "atomicNumber": 98,
+    "symbol": "Cf",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": 899.85,
+    "meltingPointK": 1173,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "28",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "99": {
+    "atomicNumber": 99,
+    "symbol": "Es",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "29",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "100": {
+    "atomicNumber": 100,
+    "symbol": "Fm",
+    "group": "actinide",
+    "atomicMass": 257.095,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "30",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "101": {
+    "atomicNumber": 101,
+    "symbol": "Md",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "31",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "102": {
+    "atomicNumber": 102,
+    "symbol": "No",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "8",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "103": {
+    "atomicNumber": 103,
+    "symbol": "Lr",
+    "group": "actinide",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "8",
+      "3"
+    ],
+    "knownIsotopes": []
+  },
+  "104": {
+    "atomicNumber": 104,
+    "symbol": "Rf",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "10",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "105": {
+    "atomicNumber": 105,
+    "symbol": "Db",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "11",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "106": {
+    "atomicNumber": 106,
+    "symbol": "Sg",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "12",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "107": {
+    "atomicNumber": 107,
+    "symbol": "Bh",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "13",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "108": {
+    "atomicNumber": 108,
+    "symbol": "Hs",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "14",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "109": {
+    "atomicNumber": 109,
+    "symbol": "Mt",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "15",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "110": {
+    "atomicNumber": 110,
+    "symbol": "Ds",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "16",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "111": {
+    "atomicNumber": 111,
+    "symbol": "Rg",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "17",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "112": {
+    "atomicNumber": 112,
+    "symbol": "Cn",
+    "group": "transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "2"
+    ],
+    "knownIsotopes": []
+  },
+  "113": {
+    "atomicNumber": 113,
+    "symbol": "Nh",
+    "group": "post-transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": 1130,
+    "boilingPointK": 1403.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "3"
+    ],
+    "knownIsotopes": []
+  },
+  "114": {
+    "atomicNumber": 114,
+    "symbol": "Fl",
+    "group": "post-transition-metal",
+    "atomicMass": 289.191,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "4"
+    ],
+    "knownIsotopes": []
+  },
+  "115": {
+    "atomicNumber": 115,
+    "symbol": "Mc",
+    "group": "post-transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "5"
+    ],
+    "knownIsotopes": []
+  },
+  "116": {
+    "atomicNumber": 116,
+    "symbol": "Lv",
+    "group": "post-transition-metal",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "6"
+    ],
+    "knownIsotopes": []
+  },
+  "117": {
+    "atomicNumber": 117,
+    "symbol": "Ts",
+    "group": "halogen",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": null,
+    "boilingPointK": null,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "7"
+    ],
+    "knownIsotopes": []
+  },
+  "118": {
+    "atomicNumber": 118,
+    "symbol": "Og",
+    "group": "noble-gas",
+    "atomicMass": null,
+    "meltingPointC": null,
+    "meltingPointK": null,
+    "boilingPointC": 80,
+    "boilingPointK": 353.15,
+    "halfLife": null,
+    "electronConfiguration": [
+      "2",
+      "8",
+      "18",
+      "32",
+      "32",
+      "18",
+      "8"
+    ],
+    "knownIsotopes": []
+  }
+}

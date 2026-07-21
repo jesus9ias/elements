@@ -1,0 +1,82 @@
+{
+  "acetic-acid": {
+    "description": "El ácido acético es el segundo ácido carboxílico más simple, con fórmula CH3-COOH. Es un líquido o cristal incoloro con sabor a ácido, puntos de fusión y ebullición de 16,6 °C y 117,9 °C respectivamente, y actúa como un ácido débil con pKa de 4,8 a 25 °C.",
+    "uses": "Se encuentra naturalmente en el vinagre, siendo responsable de su sabor y olor agrios. En química es de interés como reactivo orgánico, ligando inorgánico y metabolito bioquímico (activado como acetil-coenzima A), además de utilizarse como sustrato en reacciones catalizadas por acetiltransferasas e histona acetiltransferasas."
+  },
+  "citric-acid": {
+    "description": "El ácido cítrico es un ácido orgánico tricarboxílico presente en la mayoría de las frutas, especialmente en cítricos como el limón, la naranja y la mandarina. Su fórmula molecular es C6H8O7. Es un polvo cristalino blanco que puede existir en forma anhidra o como monohidrato.",
+    "uses": "Se utiliza industrialmente como aditivo alimentario (E330) para conservar alimentos y bebidas, y como saborizante en refrescos y dulces. También se emplea como agente emulsionante en helados, agente quelante en limpieza para eliminar cal en calderas, y en tratamiento de agua para mejorar la eficacia de jabones y detergentes. En bioquímica, aparece como metabolito intermediario en el ciclo de los ácidos tricarboxílicos."
+  },
+  "ascorbic-acid": {
+    "description": "El ácido ascórbico, también conocido como vitamina C, es una lactona de seis carbonos que es un nutriente esencial para los primates, cobayas y algunos murciélagos. Es un potente antioxidante soluble en agua que actúa como cofactor enzimático para la biosíntesis de bioquímicos importantes y es estructuralmente relacionado con la glucosa.",
+    "uses": "La vitamina C es esencial para la síntesis de carnitina y colágeno, componentes relevantes de la piel, tendones, ligamentos y vasos sanguíneos, facilitando la reparación y cicatrización de heridas. Se utiliza para prevenir el escorbuto, fortalecer el sistema inmune, reducir el envejecimiento prematuro, facilitar la absorción de otras vitaminas y minerales, y de forma tópica para eliminar manchas en la piel. También ayuda en el desarrollo y absorción del hierro, metabolización de grasas, y ha demostrado utilidad en la prevención y alivio de infecciones."
+  },
+  "glucose": {
+    "description": "La glucosa es un monosacárido con fórmula molecular C6H12O6, específicamente una aldosa donde el grupo carbonilo está en el extremo de la molécula. Es una forma de azúcar que se encuentra libre en frutas y miel, siendo el compuesto orgánico más abundante en la naturaleza. La D-glucosa es la forma predominante en la naturaleza y es la fuente primaria de síntesis de energía de las células.",
+    "uses": "La glucosa se utiliza principalmente para la producción de fructosa y de alimentos que contienen glucosa, funcionando como edulcorante, humectante y para mejorar la sensación en boca. Se emplea en bebidas alcohólicas a través de la fermentación, en refrescos y alimentos endulzados, y en la producción de confitería como caramelos y toffee. Además, se utiliza biotecnológicamente como materia prima para la producción de diversos ácidos orgánicos mediante fermentación con diferentes microorganismos."
+  },
+  "fructose": {
+    "description": "La fructosa, también llamada levulosa, es un monosacárido que se encuentra en vegetales, frutas y miel. Es un isómero de la glucosa con la misma fórmula molecular C6H12O6, pero diferente estructura, y es la más dulce de todos los carbohidratos naturales, con un dulzor relativo entre 1,2 y 1,8 veces mayor que el de la sacarosa.",
+    "uses": "La fructosa se utiliza a gran escala como edulcorante, principalmente en forma de jarabe de maíz rico en fructosa, que se emplea en muchos alimentos y bebidas, especialmente en Estados Unidos. Fue utilizada erróneamente como edulcorante para diabéticos, aunque estudios posteriores indican que su uso moderado puede recomendarse para este grupo debido a su bajo índice glucémico."
+  },
+  "sucrose": {
+    "description": "La sacarosa es el azúcar de mesa, un disacárido formado químicamente por glucosa y fructosa a partes iguales con la fórmula C12H22O11. Se sintetiza en plantas pero no en animales superiores, y se encuentra naturalmente en la caña de azúcar y la remolacha azucarera.",
+    "uses": "La sacarosa se utiliza principalmente como edulcorante para endulzar alimentos y es el edulcorante más utilizado en el mundo industrializado. Además de su poder endulzante, se utiliza en la estructura de alimentos como panecillos, galletas, helados y sorbetes, y como aditivo en la conservación de alimentos."
+  },
+  "ammonia": {
+    "description": "El amoníaco es un compuesto químico de nitrógeno con la fórmula química NH3, un gas incoloro con un característico olor repulsivo y nauseabundo. Es más ligero que el aire y se condensa fácilmente a baja temperatura, con una estructura molecular de forma trigonal piramidal.",
+    "uses": "El amoníaco se utiliza principalmente para fabricar abonos y fertilizantes, representando más del 80% de la producción industrial. También se emplea en la elaboración de cosméticos, tinturas de cabello, desinfectantes, limpiadores de cocina, así como en textiles, plásticos, explosivos, producción de pulpa y papel, alimentos y bebidas, refrigerantes, y es importante para la síntesis de muchos fármacos."
+  },
+  "caffeine": {
+    "description": "La cafeína es un antioxidante alcaloide del grupo de las xantinas, sólido cristalino, blanco y de sabor amargo, que actúa como una droga psicoactiva y estimulante del sistema nervioso central. En los humanos produce un efecto temporal de restauración del nivel de alerta y eliminación de la somnolencia. La cafeína es la sustancia psicoactiva más ampliamente consumida en el mundo.",
+    "uses": "Es consumida principalmente en infusiones extraídas del fruto de la planta del café y de las hojas del arbusto del té, así como en varias bebidas y alimentos que contienen productos derivados de la nuez de cola. También se utiliza en pastillas de cafeína para favorecer la alerta mental, siendo comúnmente usadas por estudiantes y personas que trabajan o conducen durante muchas horas."
+  },
+  "pyridine": {
+    "description": "La piridina es un líquido incoloro de olor desagradable, similar al pescado en mal estado, que pertenece a la familia de los compuestos heterocíclicos aromáticos. Está estructuralmente relacionada con el benceno, siendo la única diferencia el reemplazo de un grupo CH del anillo bencénico por un átomo de nitrógeno. Es débilmente básica, soluble en agua y prácticamente en todos los solventes orgánicos.",
+    "uses": null
+  },
+  "oleic-acid": {
+    "description": "El ácido oleico es un ácido graso monoinsaturado de la serie omega 9 típico de los aceites vegetales como el aceite de oliva, cártamo y aguacate. Su fórmula química molecular es C18H34O2 y su nombre IUPAC es ácido cis-9-octadecenoico. Ejerce una acción beneficiosa en los vasos sanguíneos reduciendo el riesgo de sufrir enfermedades cardiovasculares.",
+    "uses": "El ácido oleico se incluye en la dieta humana normal a través del consumo de grasas animales o aceites vegetales. Como sal de sodio es un componente importante del jabón como agente emulsionante y se utiliza como emoliente. Pequeñas cantidades se utilizan como excipiente en productos farmacéuticos y como emulsionante o agente solubilizante en productos en aerosol."
+  },
+  "cholesterol": {
+    "description": "El colesterol es un lípido esteroide que se encuentra en la membrana plasmática de las células animales, los tejidos corporales y el plasma sanguíneo de los vertebrados. Aunque los niveles elevados de colesterol en la sangre tienen consecuencias perjudiciales para la salud, es una sustancia estructural esencial para la membrana plasmática. Abundan en las grasas de origen animal.",
+    "uses": "El colesterol es imprescindible para la vida animal por sus múltiples funciones: actúa como componente estructural en las membranas plasmáticas, es precursor de la vitamina D, las hormonas sexuales (progesterona, estrógenos y testosterona), las hormonas corticoesteroidales (cortisol y aldosterona) y las sales biliares que son esenciales en la absorción de nutrientes lipídicos. También es precursor de las balsas de lípidos."
+  },
+  "methane": {
+    "description": "El metano es el hidrocarburo alcano más sencillo, con fórmula química CH4. Es un gas incoloro, inodoro e insoluble en agua que se presenta en forma gaseosa a temperaturas y presiones ordinarias, formado por un átomo de carbono unido a cuatro átomos de hidrógeno mediante enlaces covalentes.",
+    "uses": "El metano se utiliza principalmente como combustible para la generación eléctrica en turbinas de gas y generadores de vapor, así como para calefacción y cocina en hogares a través de tuberías de gas natural. En la industria química, es la materia prima para la producción de hidrógeno, metanol, ácido acético y anhídrido acético, y puede transportarse como líquido refrigerado (gas natural licuado)."
+  },
+  "ethylene": {
+    "description": "El etileno o eteno es un compuesto químico orgánico formado por dos átomos de carbono enlazados mediante un doble enlace con fórmula C2H4. Es un gas incoloro e inflamable con un ligero olor dulce y almizclado cuando está puro, y constituye uno de los productos químicos más importantes de la industria química, siendo el compuesto orgánico más utilizado en todo el mundo.",
+    "uses": "El etileno se utiliza ampliamente en la industria química para producir polietileno, óxido de etileno, dicloruro de etileno, etilbenceno y diversos productos derivados. También es una importante hormona vegetal natural utilizada en agricultura para forzar la maduración de frutos, acelerar la maduración de frutas cosechadas verdes e intensificar el color en tomates."
+  },
+  "acetylene": {
+    "description": "El acetileno o etino es el alquino más sencillo. Es un gas altamente inflamable, incoloro y un poco más ligero que el aire que produce una de las temperaturas de llama adiabática más altas de 3250 °C. Fue descubierto accidentalmente por Edmund Davy en 1836 al intentar aislar el metal potasio.",
+    "uses": "A principios del siglo XX se utilizaba en generadores, lámparas de minería, sopletes oxiacetilénico para soldadura autógena, alumbrado de proyectores y faros de automóviles. En la actualidad se usa como fuente de iluminación y calor, principalmente en equipos de soldadura, y como producto de partida en síntesis química para obtener disolventes, cloroetileno para plásticos, etanal y caucho sintético."
+  },
+  "benzene": {
+    "description": "El benceno es un hidrocarburo aromático de fórmula molecular C6H6 que forma una estructura hexagonal regular donde cada átomo de carbono se une a otros átomos de carbono y a átomos de hidrógeno. Se trata de un líquido incoloro muy inflamable con aroma dulce, con un punto de ebullición relativamente alto, y destaca por su especial estabilidad debida a la aromaticidad, caracterizada por la presencia de una nube π desdelocalizada en lugar de enlaces simples y dobles alternos.",
+    "uses": "El benceno se utiliza en grandes cantidades como punto de partida para manufacturar otros productos químicos empleados en la fabricación de plásticos, resinas, nilón y fibras sintéticas como el kevlar. También se usa en la producción de ciertos tipos de gomas, lubricantes, tinturas, detergentes, tóner de impresoras láser, medicamentos y pesticidas."
+  },
+  "glycine": {
+    "description": "La glicina es uno de los aminoácidos que forman las proteínas de los seres vivos, siendo el más pequeño y el único no quiral de los 20 aminoácidos presentes en la célula. Actúa como neurotransmisor inhibidor en el sistema nervioso central, especialmente en la médula espinal, tallo cerebral y retina. Es un aminoácido no esencial porque el cuerpo humano puede sintetizarlo por sí mismo.",
+    "uses": "La glicina se utiliza en el organismo para sintetizar gran número de sustancias, como el grupo C2N de todas las purinas, y es necesaria para la síntesis de colágeno. Se emplea in vitro como medio gástrico en disolución para determinar la bioaccesibilidad de elementos potencialmente tóxicos. Industrialmente se prepara mediante una reacción entre el ácido cloroacético y el amoníaco."
+  },
+  "alanine": {
+    "description": "La alanina es uno de los aminoácidos que forman las proteínas de los seres vivos. Es el aminoácido más pequeño después de la glicina y se clasifica como hidrofóbico. Existe en dos enantiómeros: la L-alanina, que es uno de los 20 aminoácidos más ampliamente usados en la biosíntesis de proteína, y la D-alanina, que está presente en las paredes celulares bacterianas y en algunos péptidos antibióticos.",
+    "uses": "La alanina interviene en el metabolismo de la glucosa y participa en ciclos metabólicos como la glicólisis, gluconeogénesis y el ciclo del ácido cítrico. Se encuentra presente en proteínas de origen animal como la carne de vacuno, cerdo, pescado, huevos y productos lácteos."
+  },
+  "phenylalanine": {
+    "description": "La fenilalanina es un aminoácido esencial para el ser humano que se encuentra en las proteínas como L-fenilalanina, siendo uno de los 9 aminoácidos esenciales. Su cadena lateral contiene un anillo bencénico, lo que la clasifica como uno de los aminoácidos aromáticos. La fenilalanina está presente también en muchos psicoactivos y es el precursor de las catecolaminas como la dopamina, la norepinefrina y la epinefrina.",
+    "uses": "La fenilalanina se utiliza en tratamientos para el dolor de espalda baja, dolores menstruales, migrañas, dolores musculares, de artritis reumatoide y de osteoartritis, gracias a su habilidad de bloquear las encefalinasas en el sistema nervioso central. También es usada en tratamientos antidepresivos. Además, es un componente del aspartamo, un edulcorante artificial que se encuentra en alimentos dietéticos y bebidas refrescantes."
+  },
+  "ethanol": {
+    "description": "El etanol, también llamado alcohol etílico, es un compuesto químico orgánico alifático con un grupo funcional hidroxilo de fórmula C2H6O. Se presenta como un líquido incoloro, con olor etéreo penetrante, muy inflamable, con temperatura de ebullición de 78.4 °C, y es miscible con agua en cualquier proporción.",
+    "uses": "El etanol es el compuesto característico de bebidas alcohólicas como el vino, cerveza, licores y aguardientes. También ha sido utilizado como combustible en lámparas desde 1840 y posteriormente en automóviles a partir de 1908. Actualmente se usa como disolvente versátil en industrias farmacéutica, cosmética y química."
+  },
+  "glycerol": {
+    "description": "El glicerol o glicerina es un alcohol con tres grupos hidroxilos que se presenta como un líquido incoloro a temperatura ambiente. Es uno de los principales productos de la degradación digestiva de los lípidos y aparece como componente de lípidos como los triglicéridos y fosfolípidos, poseyendo un sabor dulce y propiedades higroscópicas.",
+    "uses": "El glicerol se utiliza en la elaboración de cosméticos y jabones, en medicamentos como jarabes y antisépticos, en lubricantes oftalmológicos y supositorios. También se emplea en la fabricación de explosivos, como anticongelante, en la industria alimentaria, en lacas y pinturas, en la industria tabacalera y de cigarrillos electrónicos, en textiles y cuero, y como disolvente verde en síntesis química."
+  }
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "term": "Átomo",
+    "definition": "La unidad más pequeña de un elemento que conserva sus propiedades químicas. Consta de un núcleo de protones y neutrones rodeado por electrones."
+  },
+  {
+    "term": "Protón",
+    "definition": "Partícula de carga positiva que forma parte del núcleo. Su cantidad define de qué elemento se trata: es el número atómico."
+  },
+  {
+    "term": "Neutrón",
+    "definition": "Partícula sin carga eléctrica que forma parte del núcleo. Variar su cantidad no cambia el elemento, pero produce isótopos distintos."
+  },
+  {
+    "term": "Electrón",
+    "definition": "Partícula de carga negativa que ocupa las capas alrededor del núcleo. Es la que participa en los enlaces químicos."
+  },
+  {
+    "term": "Número atómico",
+    "definition": "Cantidad de protones en el núcleo. Determina la identidad del elemento y su posición en la tabla periódica."
+  },
+  {
+    "term": "Masa atómica",
+    "definition": "Masa promedio de los átomos de un elemento, ponderada según la abundancia natural de sus isótopos. Se expresa en unidades de masa atómica (u)."
+  },
+  {
+    "term": "Configuración electrónica",
+    "definition": "Distribución de los electrones de un átomo entre sus capas. Algunos elementos, como el cromo y el cobre, se apartan del patrón esperado: esta aplicación usa la configuración real de cada elemento, nunca una regla simplificada."
+  },
+  {
+    "term": "Capa electrónica",
+    "definition": "Nivel de energía en el que se agrupan los electrones alrededor del núcleo. Cada capa admite un número limitado de electrones."
+  },
+  {
+    "term": "Modelo de Bohr",
+    "definition": "Representación del átomo con los electrones girando en órbitas circulares bien definidas. Es una simplificación útil para visualizar la estructura, superada como teoría por el modelo cuántico de orbitales."
+  },
+  {
+    "term": "Isótopo",
+    "definition": "Átomos de un mismo elemento que difieren en su número de neutrones. Comparten propiedades químicas pero tienen distinta masa, y algunos son inestables."
+  },
+  {
+    "term": "Vida media",
+    "definition": "Tiempo que tarda en desintegrarse la mitad de una muestra de un isótopo radiactivo. Los elementos estables no tienen vida media."
+  },
+  {
+    "term": "Tabla periódica",
+    "definition": "Ordenamiento de los elementos por número atómico creciente, dispuesto de modo que los de propiedades parecidas queden en la misma columna."
+  },
+  {
+    "term": "Grupo",
+    "definition": "Cada columna de la tabla periódica. Los elementos de un mismo grupo comparten el número de electrones en su capa externa, y por eso se comportan de forma similar."
+  },
+  {
+    "term": "Período",
+    "definition": "Cada fila de la tabla periódica. Indica cuántas capas electrónicas tienen los elementos de esa fila."
+  },
+  {
+    "term": "Metal alcalino",
+    "definition": "Elementos del grupo 1, como el litio, el sodio y el potasio. Son blandos, muy reactivos y reaccionan de forma vigorosa con el agua."
+  },
+  {
+    "term": "Metal alcalinotérreo",
+    "definition": "Elementos del grupo 2, como el magnesio y el calcio. Son reactivos y más duros que los alcalinos, aunque menos reactivos que ellos."
+  },
+  {
+    "term": "Metal de transición",
+    "definition": "Elementos del bloque central de la tabla, como el hierro, el cobre y el oro. Suelen ser duros, buenos conductores y formar compuestos de colores intensos."
+  },
+  {
+    "term": "Metal post-transición",
+    "definition": "Metales situados a la derecha de los de transición, como el aluminio, el estaño y el plomo. Son más blandos y funden a menor temperatura que aquéllos."
+  },
+  {
+    "term": "No metal",
+    "definition": "Elemento sin las propiedades típicas de los metales: mal conductor del calor y la electricidad, y frágil en estado sólido. El carbono, el nitrógeno y el oxígeno son ejemplos."
+  },
+  {
+    "term": "Metaloide",
+    "definition": "Elemento con propiedades intermedias entre las de un metal y las de un no metal, como el silicio o el germanio. Su conductividad parcial los hace clave en electrónica."
+  },
+  {
+    "term": "Halógeno",
+    "definition": "Elementos del grupo 17, como el flúor, el cloro y el yodo. Son muy reactivos y forman sales al combinarse con metales."
+  },
+  {
+    "term": "Gas noble",
+    "definition": "Elementos del grupo 18, como el helio, el neón y el argón. Su capa electrónica externa está completa, por lo que casi no reaccionan."
+  },
+  {
+    "term": "Lantánido",
+    "definition": "Los quince elementos que van del 57 al 71. Son metales de propiedades muy parecidas entre sí, lo que hace difícil separarlos."
+  },
+  {
+    "term": "Actínido",
+    "definition": "Los quince elementos que van del 89 al 103. Todos son radiactivos y la mayoría no se encuentra de forma natural."
+  },
+  {
+    "term": "Tierras raras",
+    "definition": "Conjunto formado por los lantánidos más el escandio y el itrio. Pese al nombre no son escasos en la corteza terrestre: lo difícil es separarlos unos de otros."
+  },
+  {
+    "term": "Molécula",
+    "definition": "Grupo de átomos unidos entre sí por enlaces químicos, que se comporta como una unidad."
+  },
+  {
+    "term": "SMILES",
+    "definition": "Notación de texto que describe la estructura de una molécula en una sola línea. Es el punto de partida desde el que se calcula la representación tridimensional que ves en el visualizador."
+  },
+  {
+    "term": "Fórmula molecular",
+    "definition": "Indica qué elementos forman una molécula y cuántos átomos hay de cada uno, sin describir cómo están conectados entre sí."
+  },
+  {
+    "term": "Enlace covalente",
+    "definition": "Unión entre átomos que comparten electrones. Es el tipo de enlace que mantiene unidas a todas las moléculas de este visualizador."
+  },
+  {
+    "term": "Enlace simple",
+    "definition": "Enlace covalente en el que los átomos comparten un par de electrones. Se representa con un solo cilindro."
+  },
+  {
+    "term": "Enlace doble",
+    "definition": "Enlace covalente en el que los átomos comparten dos pares de electrones. Es más corto y rígido que el simple, y se representa con dos cilindros paralelos."
+  },
+  {
+    "term": "Enlace triple",
+    "definition": "Enlace covalente en el que los átomos comparten tres pares de electrones. Es el más corto y fuerte de los tres, y se representa con tres cilindros paralelos."
+  },
+  {
+    "term": "Enlace aromático",
+    "definition": "Enlace característico de anillos como el del benceno, donde los electrones no pertenecen a una pareja concreta de átomos sino que se reparten por todo el anillo. Se representa con un cilindro sólido más uno punteado."
+  },
+  {
+    "term": "Deslocalización electrónica",
+    "definition": "Situación en la que ciertos electrones no están fijos entre dos átomos, sino repartidos entre varios. Es lo que da su estabilidad característica a los compuestos aromáticos."
+  },
+  {
+    "term": "Isómero",
+    "definition": "Moléculas que comparten la misma fórmula molecular pero disponen sus átomos de manera distinta, lo que les da propiedades diferentes. La glucosa y la fructosa son un ejemplo."
+  },
+  {
+    "term": "Confórmero",
+    "definition": "Cada una de las formas tridimensionales que puede adoptar una molécula al girar sobre sus enlaces simples. Las coordenadas de este visualizador son un confórmero de baja energía calculado por ordenador, no una estructura medida experimentalmente."
+  },
+  {
+    "term": "Colores CPK",
+    "definition": "Convención estándar para colorear átomos en representaciones moleculares: hidrógeno blanco, carbono gris, oxígeno rojo y nitrógeno azul, entre otros."
+  },
+  {
+    "term": "Ángstrom",
+    "definition": "Unidad de longitud equivalente a la diezmilmillonésima parte de un metro (10⁻¹⁰ m). Es la escala habitual para medir distancias entre átomos."
+  },
+  {
+    "term": "Ácido",
+    "definition": "Sustancia que cede iones de hidrógeno (H⁺) al disolverse. Suele tener sabor agrio y reacciona con las bases neutralizándose."
+  },
+  {
+    "term": "Base",
+    "definition": "Sustancia que acepta iones de hidrógeno (H⁺) al disolverse. Neutraliza a los ácidos y suele tener tacto jabonoso."
+  },
+  {
+    "term": "Azúcar",
+    "definition": "Carbohidrato de molécula relativamente pequeña y sabor dulce, como la glucosa o la sacarosa. Es la principal fuente de energía inmediata de los seres vivos."
+  },
+  {
+    "term": "Lípido",
+    "definition": "Molécula orgánica poco soluble en agua, como las grasas, los aceites y el colesterol. Almacena energía y forma las membranas de las células."
+  },
+  {
+    "term": "Hidrocarburo",
+    "definition": "Compuesto formado únicamente por carbono e hidrógeno. Son la base de los combustibles fósiles y de buena parte de la química orgánica."
+  },
+  {
+    "term": "Aminoácido",
+    "definition": "Molécula que contiene un grupo amino y un grupo ácido, y que sirve como pieza básica para construir las proteínas."
+  },
+  {
+    "term": "Alcohol",
+    "definition": "Compuesto orgánico con un grupo hidroxilo (–OH) unido a un átomo de carbono. El etanol de las bebidas es el ejemplo más conocido."
+  },
+  {
+    "term": "Wikidata",
+    "definition": "Base de datos libre y colaborativa de la Fundación Wikimedia. Es la fuente de los datos numéricos de los elementos de esta aplicación."
+  },
+  {
+    "term": "PubChem",
+    "definition": "Base de datos pública de compuestos químicos mantenida por la Biblioteca Nacional de Medicina de Estados Unidos. Es la fuente de las moléculas de esta aplicación."
+  }
+]

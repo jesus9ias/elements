@@ -1,0 +1,190 @@
+[
+  {
+    "term": "Atom",
+    "definition": "The smallest unit of an element that still keeps its chemical properties. It consists of a nucleus of protons and neutrons surrounded by electrons."
+  },
+  {
+    "term": "Proton",
+    "definition": "A positively charged particle found in the nucleus. How many there are defines which element it is: that count is the atomic number."
+  },
+  {
+    "term": "Neutron",
+    "definition": "An electrically neutral particle found in the nucleus. Changing how many there are does not change the element, but it does produce different isotopes."
+  },
+  {
+    "term": "Electron",
+    "definition": "A negatively charged particle occupying the shells around the nucleus. Electrons are what take part in chemical bonding."
+  },
+  {
+    "term": "Atomic number",
+    "definition": "The number of protons in the nucleus. It determines the identity of the element and its position in the periodic table."
+  },
+  {
+    "term": "Atomic mass",
+    "definition": "The average mass of an element's atoms, weighted by the natural abundance of its isotopes. It is expressed in atomic mass units (u)."
+  },
+  {
+    "term": "Electron configuration",
+    "definition": "How an atom's electrons are distributed across its shells. Some elements, such as chromium and copper, depart from the expected pattern: this app uses each element's real configuration, never a simplified rule."
+  },
+  {
+    "term": "Electron shell",
+    "definition": "An energy level in which electrons are grouped around the nucleus. Each shell holds a limited number of electrons."
+  },
+  {
+    "term": "Bohr model",
+    "definition": "A depiction of the atom with electrons travelling in well-defined circular orbits. It is a useful simplification for visualizing structure, though it has been superseded as a theory by the quantum orbital model."
+  },
+  {
+    "term": "Isotope",
+    "definition": "Atoms of the same element that differ in their number of neutrons. They share chemical properties but have different masses, and some are unstable."
+  },
+  {
+    "term": "Half-life",
+    "definition": "The time it takes for half of a sample of a radioactive isotope to decay. Stable elements have no half-life."
+  },
+  {
+    "term": "Periodic table",
+    "definition": "An arrangement of the elements by increasing atomic number, laid out so that elements with similar properties fall in the same column."
+  },
+  {
+    "term": "Group",
+    "definition": "Each column of the periodic table. Elements in the same group share the number of electrons in their outer shell, which is why they behave similarly."
+  },
+  {
+    "term": "Period",
+    "definition": "Each row of the periodic table. It indicates how many electron shells the elements in that row have."
+  },
+  {
+    "term": "Alkali metal",
+    "definition": "Elements in group 1, such as lithium, sodium and potassium. They are soft, highly reactive, and react vigorously with water."
+  },
+  {
+    "term": "Alkaline earth metal",
+    "definition": "Elements in group 2, such as magnesium and calcium. They are reactive and harder than the alkali metals, though less reactive than them."
+  },
+  {
+    "term": "Transition metal",
+    "definition": "Elements in the central block of the table, such as iron, copper and gold. They tend to be hard, good conductors, and to form strongly colored compounds."
+  },
+  {
+    "term": "Post-transition metal",
+    "definition": "Metals sitting to the right of the transition metals, such as aluminium, tin and lead. They are softer and melt at lower temperatures than those do."
+  },
+  {
+    "term": "Nonmetal",
+    "definition": "An element lacking the typical properties of metals: a poor conductor of heat and electricity, and brittle when solid. Carbon, nitrogen and oxygen are examples."
+  },
+  {
+    "term": "Metalloid",
+    "definition": "An element with properties between those of a metal and a non-metal, such as silicon or germanium. Their partial conductivity makes them essential in electronics."
+  },
+  {
+    "term": "Halogen",
+    "definition": "Elements in group 17, such as fluorine, chlorine and iodine. They are highly reactive and form salts when combined with metals."
+  },
+  {
+    "term": "Noble gas",
+    "definition": "Elements in group 18, such as helium, neon and argon. Their outer electron shell is complete, so they barely react at all."
+  },
+  {
+    "term": "Lanthanide",
+    "definition": "The fifteen elements from 57 to 71. They are metals with very similar properties, which makes them difficult to separate from one another."
+  },
+  {
+    "term": "Actinide",
+    "definition": "The fifteen elements from 89 to 103. All of them are radioactive and most do not occur naturally."
+  },
+  {
+    "term": "Rare earth elements",
+    "definition": "The lanthanides together with scandium and yttrium. Despite the name they are not scarce in the Earth's crust: the hard part is separating them from each other."
+  },
+  {
+    "term": "Molecule",
+    "definition": "A group of atoms held together by chemical bonds that behaves as a single unit."
+  },
+  {
+    "term": "SMILES",
+    "definition": "A text notation that describes a molecule's structure on a single line. It is the starting point from which the three-dimensional representation you see in the viewer is computed."
+  },
+  {
+    "term": "Molecular formula",
+    "definition": "States which elements make up a molecule and how many atoms there are of each, without describing how they are connected."
+  },
+  {
+    "term": "Covalent bond",
+    "definition": "A link between atoms that share electrons. It is the bond type holding together every molecule in this viewer."
+  },
+  {
+    "term": "Single bond",
+    "definition": "A covalent bond in which the atoms share one pair of electrons. It is drawn as a single cylinder."
+  },
+  {
+    "term": "Double bond",
+    "definition": "A covalent bond in which the atoms share two pairs of electrons. It is shorter and more rigid than a single bond, and is drawn as two parallel cylinders."
+  },
+  {
+    "term": "Triple bond",
+    "definition": "A covalent bond in which the atoms share three pairs of electrons. It is the shortest and strongest of the three, and is drawn as three parallel cylinders."
+  },
+  {
+    "term": "Aromatic bond",
+    "definition": "The bond characteristic of rings such as benzene, where electrons belong to no particular pair of atoms but are spread around the whole ring. It is drawn as one solid cylinder plus one dashed one."
+  },
+  {
+    "term": "Electron delocalization",
+    "definition": "A situation in which certain electrons are not fixed between two atoms but shared across several. It is what gives aromatic compounds their characteristic stability."
+  },
+  {
+    "term": "Isomer",
+    "definition": "Molecules that share the same molecular formula but arrange their atoms differently, which gives them different properties. Glucose and fructose are an example."
+  },
+  {
+    "term": "Conformer",
+    "definition": "One of the three-dimensional shapes a molecule can adopt by rotating around its single bonds. The coordinates in this viewer are a computed low-energy conformer, not an experimentally measured structure."
+  },
+  {
+    "term": "CPK colors",
+    "definition": "The standard convention for coloring atoms in molecular depictions: white for hydrogen, grey for carbon, red for oxygen and blue for nitrogen, among others."
+  },
+  {
+    "term": "Angstrom",
+    "definition": "A unit of length equal to one ten-billionth of a metre (10⁻¹⁰ m). It is the usual scale for measuring distances between atoms."
+  },
+  {
+    "term": "Acid",
+    "definition": "A substance that releases hydrogen ions (H⁺) when dissolved. It usually tastes sour and neutralizes when it reacts with a base."
+  },
+  {
+    "term": "Base",
+    "definition": "A substance that accepts hydrogen ions (H⁺) when dissolved. It neutralizes acids and often feels soapy to the touch."
+  },
+  {
+    "term": "Sugar",
+    "definition": "A carbohydrate with a relatively small molecule and a sweet taste, such as glucose or sucrose. It is living things' main source of immediate energy."
+  },
+  {
+    "term": "Lipid",
+    "definition": "An organic molecule that dissolves poorly in water, such as fats, oils and cholesterol. Lipids store energy and form cell membranes."
+  },
+  {
+    "term": "Hydrocarbon",
+    "definition": "A compound made up only of carbon and hydrogen. Hydrocarbons are the basis of fossil fuels and of much of organic chemistry."
+  },
+  {
+    "term": "Amino acid",
+    "definition": "A molecule containing both an amino group and an acid group, serving as the basic building block of proteins."
+  },
+  {
+    "term": "Alcohol",
+    "definition": "An organic compound with a hydroxyl group (–OH) attached to a carbon atom. The ethanol in alcoholic drinks is the best-known example."
+  },
+  {
+    "term": "Wikidata",
+    "definition": "A free, collaboratively edited database run by the Wikimedia Foundation. It is the source of the numeric element data in this app."
+  },
+  {
+    "term": "PubChem",
+    "definition": "A public chemical compound database maintained by the United States National Library of Medicine. It is the source of the molecules in this app."
+  }
+]

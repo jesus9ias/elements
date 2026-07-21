@@ -1,0 +1,98 @@
+name: Deploy frontend
+
+# Builds the Astro frontend, syncs the static output to the site's S3 bucket,
+# and triggers a full CloudFront invalidation.
+#
+# Auth: OIDC. The job assumes an IAM role (no long-lived keys). The OIDC
+# provider + deploy role are a prerequisite NOT created by the Stage 1 CDK
+# stack — configure them before the first real run.
+#
+# STAGE 2 GATE: the `push` trigger below is intentionally left commented out.
+# Validation happens first via a manual `workflow_dispatch` dry-run. Enabling
+# automatic deploy on push to `main` requires explicit developer authorization
+# (see infra/spec.md, Stage 2 STOP).
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only: S3 sync runs with --dryrun and CloudFront invalidation is skipped."
+        type: boolean
+        default: true
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - "frontend/**"
+  #     - ".github/workflows/deploy.yml"
+
+# Never run two deploys against the same environment at once.
+concurrency:
+  group: deploy-frontend
+  cancel-in-progress: false
+
+# Least privilege: OIDC token issuance + repo checkout only.
+permissions:
+  id-token: write
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  deploy:
+    name: Build & publish
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Resolve dry-run flag
+        id: mode
+        # workflow_dispatch honors the input; any future push trigger deploys for real.
+        run: echo "dry_run=${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Sync build output to S3
+        run: |
+          aws s3 sync frontend/dist "s3://${{ vars.S3_BUCKET_NAME }}" \
+            --delete \
+            ${{ steps.mode.outputs.dry_run == 'true' && '--dryrun' || '' }}
+
+      - name: Invalidate CloudFront distribution
+        if: steps.mode.outputs.dry_run != 'true'
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "/*"
+
+      - name: Summary
+        run: |
+          {
+            echo "### Deploy frontend"
+            echo ""
+            echo "- Mode: ${{ steps.mode.outputs.dry_run == 'true' && 'DRY RUN (no changes applied)' || 'LIVE deploy' }}"
+            echo "- Bucket: \`${{ vars.S3_BUCKET_NAME }}\`"
+            echo "- Distribution: \`${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
