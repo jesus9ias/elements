@@ -96,3 +96,9 @@ jobs:
             echo "- Bucket: \`${{ secrets.S3_BUCKET_NAME }}\`"
             echo "- Distribution: \`${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}\`"
           } >> "$GITHUB_STEP_SUMMARY"
+      
+      - name: Debug OIDC token claims
+        run: |
+          TOKEN=$(curl -sLS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sts.amazonaws.com" | jq -r '.value')
+          echo "$TOKEN" | cut -d '.' -f2 | base64 -d 2>/dev/null | jq .
