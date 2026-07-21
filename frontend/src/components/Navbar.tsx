@@ -11,6 +11,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import './navbar.css';
 import '../i18n/config';
 import { resolveInitialLanguage, persistLanguage } from '../i18n/language';
 import { LANGUAGES, I18N_NAMESPACES, type Language } from '../constants/i18n';
@@ -49,29 +50,44 @@ export default function Navbar({ currentPath }: NavbarProps) {
   const handleOpenDictionary = (): void => openDictionary();
 
   return (
-    <nav className="navbar glass" aria-label={t('common:brand')}>
-      <span className="navbar__brand">{t('common:brand', { ns: I18N_NAMESPACES.COMMON })}</span>
+    <nav className="navbar glass glass--bar" aria-label={t('common:brand')}>
+      <div className="navbar__start">
+        <span className="navbar__brand">
+          {t('common:brand', { ns: I18N_NAMESPACES.COMMON })}
+        </span>
 
-      <ul className="navbar__modes">
-        {(Object.values(APP_MODES) as AppMode[]).map((mode) => {
-          const href = ROUTES[mode];
-          const isActive = currentPath === href;
-          return (
-            <li key={mode}>
-              <a href={href} aria-current={isActive ? 'page' : undefined}>
-                {t(MODE_LABEL_KEY[mode])}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+        <ul className="navbar__modes segmented">
+          {(Object.values(APP_MODES) as AppMode[]).map((mode) => {
+            const href = ROUTES[mode];
+            const isActive = currentPath === href;
+            return (
+              <li key={mode}>
+                <a
+                  className="segmented__item"
+                  href={href}
+                  data-active={isActive || undefined}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {t(MODE_LABEL_KEY[mode])}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
 
       <div className="navbar__actions">
-        <div className="navbar__languages" role="group" aria-label={t('nav.language')}>
+        <div
+          className="navbar__languages segmented"
+          role="group"
+          aria-label={t('nav.language')}
+        >
           {LANGUAGES.map((language) => (
             <button
               key={language}
               type="button"
+              className="segmented__item navbar__language"
+              data-active={i18n.language === language || undefined}
               aria-pressed={i18n.language === language}
               onClick={() => handleSelectLanguage(language)}
             >
@@ -80,7 +96,7 @@ export default function Navbar({ currentPath }: NavbarProps) {
           ))}
         </div>
 
-        <button type="button" onClick={handleOpenDictionary}>
+        <button type="button" className="control" onClick={handleOpenDictionary}>
           {t('nav.dictionary')}
         </button>
       </div>

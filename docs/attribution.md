@@ -80,8 +80,22 @@ visualization convention rather than a licensed asset.
 The dictionary terms in `data/dictionary/terms.{es,en}.json` are written by hand for this
 project. No text is copied from the sources above.
 
+## Bundled assets
+
+### Inter — SIL Open Font License 1.1
+
+The interface is set in [Inter](https://rsms.me/inter/) by Rasmus Andersson, shipped as a
+variable font in `frontend/public/fonts/` rather than loaded from a font CDN, so the app
+makes no third-party requests at runtime.
+
+Inter is licensed under the
+[SIL Open Font License 1.1](https://openfontlicense.org/). The license permits bundling
+and redistribution, including in a commercial product, and requires that the license
+travel with the font files — `frontend/public/fonts/OFL.txt` is that copy. The font is
+distributed unmodified and is not sold on its own.
+
 ## Scope of this notice
 
-This file covers **content and data**. Licenses for the software dependencies used to
-build and run the site (Astro, React, Three.js, i18next and their transitive
-dependencies) are carried in their own packages and are not restated here.
+This file covers **content, data and bundled assets**. Licenses for the software
+dependencies used to build and run the site (Astro, React, Three.js, i18next and their
+transitive dependencies) are carried in their own packages and are not restated here.

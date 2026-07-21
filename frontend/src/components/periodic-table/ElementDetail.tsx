@@ -48,12 +48,15 @@ export default function ElementDetail({
   const categoryLabel = t(`categories.${element.group}`);
 
   return (
-    <aside className="element-detail glass" aria-label={`${element.name} (${element.symbol})`}>
+    <aside
+      className="element-detail glass glass--raised"
+      aria-label={`${element.name} (${element.symbol})`}
+      // Set once on the panel: the badge and the category label both derive
+      // their tints from this single token.
+      style={{ ['--cell-color' as string]: `var(${token})` }}
+    >
       <header className="element-detail__header">
-        <div
-          className="element-detail__badge"
-          style={{ ['--cell-color' as string]: `var(${token})`, ['--cell-fill' as string]: `var(${token}-soft)` }}
-        >
+        <div className="element-detail__badge">
           <span className="element-detail__badge-number">{element.atomicNumber}</span>
           <span className="element-detail__badge-symbol">{element.symbol}</span>
         </div>
@@ -66,7 +69,7 @@ export default function ElementDetail({
         </div>
         <button
           type="button"
-          className="element-detail__close"
+          className="element-detail__close control control--icon"
           onClick={onClose}
           aria-label={t('periodicTable.close')}
         >
@@ -84,10 +87,10 @@ export default function ElementDetail({
       </Suspense>
 
       <nav className="element-detail__nav" aria-label={element.name}>
-        <button type="button" onClick={onPrev} disabled={!canPrev}>
+        <button type="button" className="control" onClick={onPrev} disabled={!canPrev}>
           ‹ {t('periodicTable.previous')}
         </button>
-        <button type="button" onClick={onNext} disabled={!canNext}>
+        <button type="button" className="control" onClick={onNext} disabled={!canNext}>
           {t('periodicTable.next')} ›
         </button>
       </nav>
@@ -138,8 +141,8 @@ export default function ElementDetail({
 function Fact({ label, value }: { label: string; value: string }) {
   return (
     <div className="element-detail__fact">
-      <dt>{label}</dt>
-      <dd>{value}</dd>
+      <dt className="field__label">{label}</dt>
+      <dd className="field__value">{value}</dd>
     </div>
   );
 }

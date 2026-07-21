@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 8px; }
+</style>
+</helmet>
+
+<div style="font-family:'Inter',sans-serif; min-height:100vh; background:radial-gradient(1200px 800px at 15% -10%, oklch(0.28 0.06 280 / 0.55), transparent), radial-gradient(1000px 700px at 100% 10%, oklch(0.24 0.05 250 / 0.5), transparent), linear-gradient(160deg, oklch(0.16 0.02 265), oklch(0.13 0.02 270)); padding:56px 48px 100px; color:oklch(0.93 0.01 260); box-sizing:border-box;">
+
+  <div style="max-width:1180px; margin:0 auto 48px;">
+    <div style="font-size:13px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:oklch(0.7 0.08 250); margin-bottom:8px;">Style guide · refinement</div>
+    <h1 style="font-size:34px; font-weight:800; margin:0 0 10px; letter-spacing:-0.01em;">Refined glassmorphism</h1>
+    <p style="font-size:15px; line-height:1.6; color:oklch(0.78 0.02 260); max-width:680px; margin:0;">Same dark blue/purple palette. Blur, borders, shadows and type hierarchy are refined to improve contrast and legibility. Each block shows a before/after with the real component.</p>
+  </div>
+
+  <!-- NAVBAR -->
+  <div style="max-width:1180px; margin:0 auto 64px;">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:oklch(0.65 0.06 250); margin-bottom:14px;">01 · Navbar / header</div>
+
+    <div style="display:flex; gap:24px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:320px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">Before</div>
+        <div style="background:oklch(0.19 0.02 270); border:1px solid oklch(0.28 0.02 270); border-radius:10px; padding:18px 20px;">
+          <div style="font-size:15px; font-weight:600; margin-bottom:10px; color:oklch(0.9 0.01 260);">Elements</div>
+          <div style="font-size:13px; color:oklch(0.75 0.02 260); line-height:1.9;">• Periodic Table<br>• Molecule Viewer</div>
+          <div style="display:flex; gap:6px; margin-top:12px;">
+            <div style="background:oklch(0.22 0.02 270); border:1px solid oklch(0.32 0.02 270); border-radius:4px; padding:4px 10px; font-size:12px;">ES</div>
+            <div style="background:oklch(0.22 0.02 270); border:1px solid oklch(0.32 0.02 270); border-radius:4px; padding:4px 10px; font-size:12px;">EN</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex:1; min-width:320px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">After</div>
+        <div style="background:linear-gradient(180deg, oklch(0.24 0.03 270 / 0.65), oklch(0.19 0.02 270 / 0.55)); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); border:1px solid oklch(0.9 0 0 / 0.1); border-radius:16px; padding:16px 20px; box-shadow:0 10px 30px oklch(0.1 0.02 270 / 0.5), inset 0 1px 0 oklch(1 0 0 / 0.06); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:22px;">
+            <div style="font-size:16px; font-weight:800; letter-spacing:-0.01em; color:oklch(0.97 0 0);">Elements</div>
+            <div style="display:flex; gap:4px; background:oklch(1 0 0 / 0.04); border-radius:10px; padding:4px;">
+              <div style="padding:7px 14px; border-radius:8px; font-size:13px; font-weight:600; background:oklch(0.55 0.13 255 / 0.35); color:oklch(0.98 0 0); box-shadow:inset 0 0 0 1px oklch(0.7 0.12 255 / 0.4);">Periodic Table</div>
+              <div style="padding:7px 14px; border-radius:8px; font-size:13px; font-weight:600; color:oklch(0.78 0.02 260);">Molecule Viewer</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="display:flex; background:oklch(1 0 0 / 0.05); border:1px solid oklch(1 0 0 / 0.1); border-radius:8px; padding:3px;">
+              <div style="padding:5px 11px; border-radius:6px; font-size:12px; font-weight:700; background:oklch(0.9 0 0 / 0.9); color:oklch(0.15 0.02 270);">ES</div>
+              <div style="padding:5px 11px; border-radius:6px; font-size:12px; font-weight:600; color:oklch(0.7 0.02 260);">EN</div>
+            </div>
+            <div style="padding:7px 14px; border-radius:8px; font-size:13px; font-weight:600; color:oklch(0.85 0.02 260); background:oklch(1 0 0 / 0.05); border:1px solid oklch(1 0 0 / 0.1);">Dictionary</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="font-size:12.5px; color:oklch(0.62 0.02 260); margin-top:10px; line-height:1.6;">Floating bar with heavy blur, 10% white border and a soft shadow. Active tab gets an accent fill + inner ring instead of just blue text; language toggle as a segmented switch.</div>
+  </div>
+
+  <!-- CARDS -->
+  <div style="max-width:1180px; margin:0 auto 64px;">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:oklch(0.65 0.06 250); margin-bottom:14px;">02 · Periodic table cards</div>
+
+    <div style="display:flex; gap:24px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:320px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">Before</div>
+        <div style="display:flex; gap:8px;">
+          <div style="width:74px; height:74px; background:oklch(0.24 0.06 250); border:1px solid oklch(0.5 0.15 250); border-radius:6px; padding:6px; box-sizing:border-box;">
+            <div style="font-size:10px; color:oklch(0.75 0.1 250);">1</div>
+            <div style="font-size:16px; font-weight:700; color:oklch(0.85 0.1 250);">H</div>
+            <div style="font-size:9px; color:oklch(0.7 0.05 250);">hydrogen</div>
+            <div style="font-size:8px; color:oklch(0.55 0.03 250);">1.008</div>
+          </div>
+          <div style="width:74px; height:74px; background:oklch(0.24 0.06 20); border:1px solid oklch(0.5 0.15 20); border-radius:6px; padding:6px; box-sizing:border-box;">
+            <div style="font-size:10px; color:oklch(0.75 0.1 20);">26</div>
+            <div style="font-size:16px; font-weight:700; color:oklch(0.85 0.1 20);">Fe</div>
+            <div style="font-size:9px; color:oklch(0.7 0.05 20);">iron</div>
+            <div style="font-size:8px; color:oklch(0.55 0.03 20);">55.845</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex:1; min-width:320px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">After</div>
+        <div style="display:flex; gap:10px;">
+          <div style="width:84px; height:84px; position:relative; background:linear-gradient(155deg, oklch(0.62 0.16 250 / 0.4), oklch(0.55 0.15 250 / 0.16)); backdrop-filter:blur(10px); border:1px solid oklch(0.78 0.16 250 / 0.75); border-radius:10px; padding:8px; box-sizing:border-box; box-shadow:0 0 0 1px oklch(0.7 0.14 250 / 0.15), 0 6px 18px oklch(0.55 0.14 250 / 0.25), inset 0 1px 0 oklch(1 0 0 / 0.14);" style-hover="transform:translateY(-2px); box-shadow:0 0 0 1px oklch(0.7 0.14 250 / 0.25), 0 10px 24px oklch(0.55 0.14 250 / 0.35), inset 0 1px 0 oklch(1 0 0 / 0.16);">
+            <div style="font-size:10px; font-weight:700; color:oklch(0.95 0.07 250);">1</div>
+            <div style="font-size:19px; font-weight:800; color:oklch(0.99 0 0); margin-top:2px;">H</div>
+            <div style="font-size:9.5px; font-weight:600; color:oklch(0.92 0.06 250); margin-top:2px;">hydrogen</div>
+            <div style="font-size:8.5px; color:oklch(0.78 0.05 250); position:absolute; bottom:7px; right:8px;">1.008</div>
+          </div>
+          <div style="width:84px; height:84px; position:relative; background:linear-gradient(155deg, oklch(0.62 0.16 30 / 0.4), oklch(0.55 0.15 30 / 0.16)); backdrop-filter:blur(10px); border:1px solid oklch(0.78 0.16 30 / 0.75); border-radius:10px; padding:8px; box-sizing:border-box; box-shadow:0 0 0 1px oklch(0.7 0.14 30 / 0.15), 0 6px 18px oklch(0.55 0.14 30 / 0.25), inset 0 1px 0 oklch(1 0 0 / 0.14);">
+            <div style="font-size:10px; font-weight:700; color:oklch(0.95 0.07 30);">26</div>
+            <div style="font-size:19px; font-weight:800; color:oklch(0.99 0 0); margin-top:2px;">Fe</div>
+            <div style="font-size:9.5px; font-weight:600; color:oklch(0.92 0.06 30); margin-top:2px;">iron</div>
+            <div style="font-size:8.5px; color:oklch(0.78 0.05 30); position:absolute; bottom:7px; right:8px;">55.845</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="font-size:12.5px; color:oklch(0.62 0.02 260); margin-top:10px; line-height:1.6;">Background uses a soft category-color gradient (not flat), symbol in near-pure white for max contrast, number/name get more weight and opacity, atomic mass moved to the corner as a secondary value. Hover adds a slight lift.<br><br><b style="color:oklch(0.85 0.02 260);">Update — brighter cells on dark bg:</b> raise the gradient's top-stop alpha to ~0.40 (was ~0.22) and bottom-stop to ~0.16, bump the border alpha to ~0.75 and lighten it, add a soft outer colored glow (0 6px 18px in the category hue at ~25% alpha) plus a 1px colored ring, and lift name/mass text opacity a notch. This keeps cells feeling lit instead of sinking into the black background.</div>
+  </div>
+
+  <!-- MODAL -->
+  <div style="max-width:1180px; margin:0 auto 64px;">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:oklch(0.65 0.06 250); margin-bottom:14px;">03 · Element detail modal</div>
+
+    <div style="display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start;">
+      <div style="min-width:300px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">Before</div>
+        <div style="width:300px; background:oklch(0.18 0.02 270); border:1px solid oklch(0.28 0.02 270); border-radius:8px; padding:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <div style="background:oklch(0.24 0.08 150); border:1px solid oklch(0.5 0.15 150); border-radius:5px; width:38px; height:38px; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">Te</div>
+            <div style="font-size:14px; color:oklch(0.6 0.02 260);">×</div>
+          </div>
+          <div style="font-size:17px; font-weight:700; margin-top:8px;">tellurium</div>
+          <div style="font-size:12px; color:oklch(0.65 0.02 260);">Metalloid</div>
+          <div style="height:70px; background:oklch(0.15 0.02 270); border-radius:6px; margin-top:10px;"></div>
+          <div style="font-size:11.5px; color:oklch(0.72 0.02 260); line-height:1.6; margin-top:10px;">El tellurium es un elemento químico con símbolo Te y número atómico 52…</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; font-size:11px;">
+            <div><div style="color:oklch(0.55 0.02 260);">Atomic number</div><div style="color:oklch(0.85 0.01 260);">52</div></div>
+            <div><div style="color:oklch(0.55 0.02 260);">Atomic mass</div><div style="color:oklch(0.85 0.01 260);">127.6</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="min-width:320px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">After</div>
+        <div style="width:320px; background:linear-gradient(165deg, oklch(0.26 0.03 270 / 0.7), oklch(0.17 0.02 270 / 0.75)); backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px); border:1px solid oklch(1 0 0 / 0.12); border-radius:18px; padding:20px; box-shadow:0 24px 60px oklch(0.05 0.02 270 / 0.6), inset 0 1px 0 oklch(1 0 0 / 0.08);">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <div style="background:linear-gradient(155deg, oklch(0.62 0.15 155 / 0.35), oklch(0.62 0.15 155 / 0.12)); border:1px solid oklch(0.75 0.14 155 / 0.55); border-radius:10px; width:46px; height:46px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:inset 0 1px 0 oklch(1 0 0 / 0.1);">
+              <div style="font-size:9px; color:oklch(0.85 0.08 155); margin-bottom:-2px;">52</div>
+              <div style="font-size:17px; font-weight:800; color:oklch(0.98 0 0);">Te</div>
+            </div>
+            <div style="width:26px; height:26px; border-radius:8px; background:oklch(1 0 0 / 0.06); border:1px solid oklch(1 0 0 / 0.1); display:flex; align-items:center; justify-content:center; font-size:13px; color:oklch(0.8 0.02 260); cursor:pointer;" style-hover="background:oklch(1 0 0 / 0.12);">×</div>
+          </div>
+          <div style="font-size:19px; font-weight:800; margin-top:12px; color:oklch(0.98 0 0);">tellurium</div>
+          <div style="font-size:12.5px; color:oklch(0.75 0.1 155); font-weight:600;">Metalloid</div>
+          <div style="height:110px; background:radial-gradient(circle at 50% 45%, oklch(0.3 0.03 270 / 0.6), oklch(0.14 0.02 270 / 0.7)); border:1px solid oklch(1 0 0 / 0.08); border-radius:12px; margin-top:14px; display:flex; align-items:center; justify-content:center; font-size:10.5px; color:oklch(0.55 0.02 260); font-family:monospace;">3D viewer</div>
+          <div style="display:flex; gap:8px; margin-top:12px;">
+            <div style="flex:1; text-align:center; padding:7px; border-radius:8px; background:oklch(1 0 0 / 0.05); border:1px solid oklch(1 0 0 / 0.1); font-size:11.5px; font-weight:600; color:oklch(0.85 0.02 260);">‹ Previous</div>
+            <div style="flex:1; text-align:center; padding:7px; border-radius:8px; background:oklch(1 0 0 / 0.05); border:1px solid oklch(1 0 0 / 0.1); font-size:11.5px; font-weight:600; color:oklch(0.85 0.02 260);">Next ›</div>
+          </div>
+          <div style="font-size:12.5px; color:oklch(0.82 0.015 260); line-height:1.65; margin-top:14px;">El tellurium es un elemento químico con símbolo Te y número atómico 52, clasificado como semimetal ubicado en el grupo 16 y período 5.</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px 16px; margin-top:16px; padding-top:14px; border-top:1px solid oklch(1 0 0 / 0.08);">
+            <div><div style="font-size:10.5px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:oklch(0.6 0.02 260); margin-bottom:3px;">Atomic number</div><div style="font-size:13.5px; font-weight:700; color:oklch(0.96 0 0);">52</div></div>
+            <div><div style="font-size:10.5px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:oklch(0.6 0.02 260); margin-bottom:3px;">Atomic mass</div><div style="font-size:13.5px; font-weight:700; color:oklch(0.96 0 0);">127.6</div></div>
+            <div><div style="font-size:10.5px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:oklch(0.6 0.02 260); margin-bottom:3px;">Discovered</div><div style="font-size:13.5px; font-weight:700; color:oklch(0.96 0 0);">1783</div></div>
+            <div><div style="font-size:10.5px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:oklch(0.6 0.02 260); margin-bottom:3px;">Discoverer</div><div style="font-size:13.5px; font-weight:700; color:oklch(0.96 0 0);">F.J. Müller</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="font-size:12.5px; color:oklch(0.62 0.02 260); margin-top:10px; line-height:1.6; max-width:900px;">Deeper blur and a luminous border to separate from the background. Data labels in small caps + value in bold pure white (clear label/value hierarchy). Symbol chip uses a category gradient instead of flat color. The 3D viewer gets its own frame instead of floating over the background.</div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div style="max-width:1180px; margin:0 auto;">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:oklch(0.65 0.06 250); margin-bottom:14px;">04 · Molecule viewer sidebar</div>
+
+    <div style="display:flex; gap:24px; flex-wrap:wrap;">
+      <div style="min-width:280px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">Before</div>
+        <div style="width:280px; background:oklch(0.16 0.02 270); border:1px solid oklch(0.26 0.02 270); border-radius:8px; padding:14px;">
+          <div style="display:flex; gap:6px; margin-bottom:10px;">
+            <div style="flex:1; text-align:center; padding:6px; font-size:12px; border:1px solid oklch(0.4 0.1 250); border-radius:4px; color:oklch(0.7 0.1 250);">List</div>
+            <div style="flex:1; text-align:center; padding:6px; font-size:12px; border:1px solid oklch(0.3 0.02 270); border-radius:4px; color:oklch(0.6 0.02 260);">Info</div>
+          </div>
+          <div style="background:oklch(0.14 0.02 270); border:1px solid oklch(0.24 0.02 270); border-radius:4px; padding:6px 10px; font-size:12px; color:oklch(0.55 0.02 260); margin-bottom:8px;">Search molecule...</div>
+          <div style="font-size:12.5px; line-height:2.1; color:oklch(0.75 0.02 260);">Acetylene<br>Acetic acid<br>Alanine</div>
+        </div>
+      </div>
+
+      <div style="min-width:300px;">
+        <div style="font-size:12px; color:oklch(0.6 0.02 260); margin-bottom:8px;">After</div>
+        <div style="width:300px; background:linear-gradient(165deg, oklch(0.24 0.03 270 / 0.65), oklch(0.16 0.02 270 / 0.7)); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border:1px solid oklch(1 0 0 / 0.1); border-radius:16px; padding:16px; box-shadow:0 18px 44px oklch(0.05 0.02 270 / 0.5), inset 0 1px 0 oklch(1 0 0 / 0.07);">
+          <div style="display:flex; gap:4px; background:oklch(1 0 0 / 0.04); border-radius:10px; padding:4px; margin-bottom:12px;">
+            <div style="flex:1; text-align:center; padding:7px; font-size:12.5px; font-weight:700; border-radius:7px; background:oklch(0.55 0.13 255 / 0.35); box-shadow:inset 0 0 0 1px oklch(0.7 0.12 255 / 0.4); color:oklch(0.98 0 0);">List</div>
+            <div style="flex:1; text-align:center; padding:7px; font-size:12.5px; font-weight:600; color:oklch(0.75 0.02 260);">Info</div>
+          </div>
+          <div style="background:oklch(1 0 0 / 0.05); border:1px solid oklch(1 0 0 / 0.1); border-radius:9px; padding:8px 12px; font-size:12.5px; color:oklch(0.6 0.02 260); margin-bottom:10px;">Search molecule…</div>
+          <div style="display:flex; flex-direction:column; gap:3px;">
+            <div style="display:flex; justify-content:space-between; padding:9px 10px; border-radius:8px; background:oklch(0.55 0.13 255 / 0.28); box-shadow:inset 0 0 0 1px oklch(0.7 0.12 255 / 0.35);"><span style="font-size:13px; font-weight:600; color:oklch(0.98 0 0);">Acetic acid</span><span style="font-size:11.5px; color:oklch(0.8 0.06 255); font-weight:500;">C2H4O2</span></div>
+            <div style="display:flex; justify-content:space-between; padding:9px 10px; border-radius:8px;" style-hover="background:oklch(1 0 0 / 0.05);"><span style="font-size:13px; font-weight:500; color:oklch(0.88 0.01 260);">Acetylene</span><span style="font-size:11.5px; color:oklch(0.55 0.02 260);">C2H2</span></div>
+            <div style="display:flex; justify-content:space-between; padding:9px 10px; border-radius:8px;" style-hover="background:oklch(1 0 0 / 0.05);"><span style="font-size:13px; font-weight:500; color:oklch(0.88 0.01 260);">Alanine</span><span style="font-size:11.5px; color:oklch(0.55 0.02 260);">C3H7NO2</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="font-size:12.5px; color:oklch(0.62 0.02 260); margin-top:10px; line-height:1.6; max-width:900px;">Panel con el mismo cristal que el modal (blur+borde+sombra consistentes en toda la app). Toggle List/Info como interruptor segmentado igual al de la navbar. Fila seleccionada con relleno de acento; fórmula química siempre visible pero secundaria en color.</div>
+  </div>
+
+</div>
+
+</x-dc>
+</body>
+</html>

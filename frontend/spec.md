@@ -36,6 +36,11 @@ frontend/
 ├── spec.md
 ├── claude.md
 ├── readme.md
+├── design/                            # Claude Design handoff — the visual reference
+│   ├── Guia Glassmorphism.dc.html     # authoritative source for the interface's look
+│   └── README.md                      # handoff-bundle notes from the design tool
+├── public/
+│   └── fonts/                         # self-hosted Inter (woff2, weights 400–800)
 ├── scripts/
 │   ├── fetch-elements.ts          # Wikidata + Wikipedia fetch, full-run or --element=<symbol>
 │   ├── fetch-molecules.ts         # PubChem CID → Wikidata (P662) → Wikipedia extracts per lang
@@ -45,6 +50,7 @@ frontend/
 │   ├── summarize.ts               # Claude Haiku summarization step (raw → generated)
 │   ├── merge.ts                   # generated + curated overrides → final elements.{lang}.json
 │   ├── embed-molecules.py         # RDKit ETKDG + MMFF/UFF, bond classification, CPK colors
+│   ├── check-contrast.py          # WCAG audit of the design tokens; run after any color change
 │   ├── bond_constants.py          # Python reader for src/constants/bonds.json + RDKit bond-type map
 │   ├── embed_constants.py         # paths and tuning for embed-molecules.py
 │   └── requirements.txt           # Python deps for the local-only molecule pipeline (RDKit)
@@ -245,6 +251,42 @@ Attribution: each element/molecule's `sources` array links back to its Wikidata/
 
 - Top navbar: switch mode (Periodic Table / Molecule Visualizer), switch language, open Dictionary modal.
 - EN/ES support, persisted in `localStorage` as described above.
+
+## Visual Design System
+
+`design/Guia Glassmorphism.dc.html` is the authoritative visual reference and must be consulted before any change to the interface's appearance. It is a Claude Design handoff, kept in-repo rather than in the design tool so the reference travels with the code.
+
+The language it defines lives in `src/styles/tokens.css`, which remains the only place a color, blur, radius, shadow or type-scale value may be declared.
+
+**Three glass tiers**, separated by blur depth and shadow reach so stacking order reads visually:
+
+| Tier | Used by | Blur | Radius |
+|---|---|---|---|
+| `.glass--bar` | navbar | `--blur-bar` | `--radius-lg` |
+| `.glass--panel` | molecule inventory, dictionary modal, 3D stage | `--blur-panel` | `--radius-lg` |
+| `.glass--raised` | element detail | `--blur-raised` | `--radius-xl` |
+
+Each tier is a vertical gradient between two translucent surface stops (never a flat fill), a hairline light border, an outer shadow and an `inset 0 1px 0` top highlight.
+
+**Two control patterns**, reused rather than restyled per component:
+
+- **Segmented switch** (`.segmented`) — navbar mode links, navbar language toggle, inventory List/Info tabs. Track at `--surface-track`; the active item is filled with the accent plus a 1px inset ring, never signalled by text color alone.
+- **Glass control** (`.control`) — search inputs, secondary buttons, close buttons, prev/next navigation.
+
+**Element category colors** stay exactly as the 2026-07-18 accessibility pass left them: ten base tokens, one per category. Every tint the interface needs — cell gradient, atomic number, name, mass, detail badge — is derived from that one token with `color-mix()`, so no tint can drift out of the audited state.
+
+**Element cells** carry the symbol in near-pure white (not the category color) for maximum contrast, with the category color surviving in the border, the gradient fill and the secondary text. The hover-enlarge required above is retained; the guide's elevation and border glow are layered on top of it.
+
+A cell is governed by two contrast criteria that pull against each other, and confusing them is the trap:
+
+| | Measures | Threshold | Carried by |
+|---|---|---|---|
+| WCAG 1.4.3 | text vs the fill behind it | 4.5:1 | the **fill** density |
+| WCAG 1.4.11 | the cell's edge vs the page | 3:1 | the **border**, ring and glow |
+
+"Cells look dim / sink into the background" is a 1.4.11 complaint, and it is bought entirely from the border and the colored glow — neither of which sits behind text. The fill is capped at **20%**: above it the atomic number falls below AA over the brightest categories. Brightness requests are therefore answered at the edge, never by raising the fill.
+
+Typography is Inter, self-hosted, with the system stack as its fallback.
 
 ## Gherkin Feature Specifications
 
@@ -554,3 +596,12 @@ This subproject follows the **tests-first stage model** (see the monorepo `spec.
 | 2026-07-18 | Molecules carry `needsReview`, computed exactly like the element pipeline's: `name` is required, while a pending `description`/`uses` is stored as `null` and flags the molecule. `embed-molecules.py` reports the flagged count at the end of a run | Lets the hard data (SMILES, geometry, sources) land and be validated before the prose is written, without a sentinel string like "TODO" leaking into the UI. Reuses the "needsReview flag instead of silent nulls" decision already made for elements instead of inventing a second convention |
 | 2026-07-18 | The molecule `type` vocabulary (`acid`, `sugar`, `base`, `lipid`, `hydrocarbon`, `amino-acid`, `alcohol`) lives in `src/constants/molecule-types.json`, read by both `molecules.ts` and the Python embedder, which rejects an unknown `type` at pipeline time. `molecules.json` stores only the English key; the user-visible label comes from the `moleculeTypes` block in `src/i18n/resources/{es,en}.json` | Same two-runtime problem as the bond table, solved the same way. Storing the key rather than the label keeps user-visible text in the i18n layer per the monorepo contract, and mirrors how an element stores `group: "transition-metal"`. Adding a category is then one JSON edit plus two translation lines; forgetting the translations surfaces as the Stage 3 "Traducción pendiente" placeholder rather than failing silently |
 | 2026-07-18 | The bond-style/CPK table lives in `src/constants/bonds.json`, read by **both** runtimes: `bonds.ts` imports it (adding types and the `bondStyleFor`/`cpkColor` accessors, which is what `T-BOND-*` tests) and `scripts/bond_constants.py` loads the same file. **Supersedes the "mirrored by `embed-molecules.py`" decision above** | A hand-kept Python mirror could drift silently: the two runtimes never execute together, so nothing compares them. A stale mirror would leave `T-BOND-*` green while writing outdated `style`/`color` values into the committed `molecules.json`, breaking the viewer with no failing test. One shared JSON makes drift structurally impossible without a subprocess or codegen step; `*.config.json` is already a sanctioned constants location under the monorepo no-magic-values rule |
+| 2026-07-21 | A visual-refinement pass applies `design/Guia Glassmorphism.dc.html` (a Claude Design handoff) across the whole interface, and that file is kept in-repo as the standing visual reference for any future appearance change | The design was authored outside the codebase; storing only the resulting CSS would lose the intent (the before/after rationale for each block). Keeping the handoff next to the code means a later change can be checked against what was actually designed, not reverse-engineered from tokens |
+| 2026-07-21 | The guide's hover treatment for element cells (`translateY(-2px)` lift) does **not** replace the spec's hover-enlarge; the cell still scales, and the guide's elevation and border glow are layered on top | "Hovering a cell enlarges/overlaps it for quick readability" is a stated requirement with its own 2026-07-17 Decisions Log row, and a 2px lift does not deliver the readability the requirement exists for. The guide's shadow/glow is additive, so both survive |
+| 2026-07-21 | The ten `--category-*-soft` tokens are removed. Every category tint is derived from the single `--category-*` base with `color-mix()` | The guide replaces the flat category fill with a gradient plus three differentiated text tints, which one static `-soft` value cannot express. Adding four more tokens per category would mean 50 hand-maintained values that could drift out of the 2026-07-18 audited state independently; deriving them keeps exactly one authoritative value per category |
+| 2026-07-21 | Inter is self-hosted in `public/fonts/` rather than linked from Google Fonts as the guide's mock does | The app is offline-first by design — all content is bundled and nothing is fetched at runtime (see the "no runtime loading states" decision). A webfont CDN would be the single runtime network dependency in the whole app, and a third-party one at that |
+| 2026-07-21 | **Accessibility — the guide's element-cell values could not be used as drawn.** Measured against the real compositing stack, the guide's 22% category fill drops a pure-white symbol to 4.42:1 on the light categories (transition-metal yellow, halogen cyan) where the page glow is strongest, and its category-tinted number/name/mass run 2.7–4.4:1. Text tinted the same hue as the surface beneath it is inherently low-contrast: mixing toward the category color only clears AA past ~92% white. Resolved by lowering the cell fill to 18% (badge 20%, cap is ~20% before the white symbol fails) and pinning the three tints just above the AA floor at 85/80/75% white, with size and weight carrying the hierarchy instead of color. Worst case is now 4.83:1; everything else has margin | The 2026-07-18 pass committed this interface to WCAG AA across all ten categories, and a design mock is not evidence about contrast — it was drawn over one background, while the real cells sit over a gradient with two colored glows. The guide's *intent* (white symbol, category in the border and fill, mass as a corner value) survives intact; only the numeric values moved |
+| 2026-07-21 | The contrast audit is committed as `scripts/check-contrast.py`, reads `tokens.css` directly, and exits non-zero on any AA failure | The 2026-07-18 audit was run programmatically but never committed, so this pass had to rediscover from scratch that the palette was AA-clean and rebuild the compositing model. Reading the stylesheet rather than a copy of the values means the audit cannot silently drift from what ships. It stays a local developer tool, like every other script here — CI/CD never runs it |
+| 2026-07-21 | **Guide update — brighter element cells.** The guide was revised to ask for a 40%/16% category fill, a 0.75 lightened border, a colored outer glow plus a 1px colored ring, a stronger inset highlight, and lifted name/mass text. Everything was adopted EXCEPT the fill, which went 18%→20% rather than 40%: 40% measures 2.95:1 on the atomic number, and 20% is the ceiling under the audit's conservative reading (21% already gives 4.48:1). The stated goal — cells that read as lit instead of sunk into the background — is met in full by the edge treatment: the cell's non-text contrast went from 3.54:1 to 6.09:1 worst-case | The two criteria at play are different and pull opposite ways. WCAG 1.4.11 (a component's boundary vs its surroundings, 3:1) is what "sinking into the background" measures, and it is carried by the border, ring and glow — none of which sit behind text. WCAG 1.4.3 (4.5:1) is what the fill degrades. Buying the brightness at the edge instead of the fill satisfies the design intent and improves BOTH numbers, where raising the fill would have traded one for the other |
+| 2026-07-21 | `scripts/check-contrast.py` gained a WCAG 1.4.11 section for the cell edge, and the cell tint/fill/border/glow values are all tokens rather than a single `--cell-shadow` literal | The script previously measured only text contrast, so it could not have answered "are the cells bright enough against the page" — the exact question the guide update raised. A criterion that is not measured is a criterion that drifts. Splitting elevation into ring/glow/highlight tokens is what let the guide's treatment be adopted piecewise instead of all-or-nothing |
+| 2026-07-21 | Navbar styles were written from scratch in this pass, not refined | `Navbar.tsx` emitted `.navbar`, `.navbar__brand`, `.navbar__modes` and `.navbar__languages` since Stage 1, but no rule for any of them existed anywhere in `src/` — the component rendered with only the generic `.glass` surface. Recorded so the gap is not mistaken for a regression introduced here |

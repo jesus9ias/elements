@@ -1,4 +1,8 @@
-/** Dictionary modal styles. Consumes the design tokens. */
+/**
+ * Dictionary modal and the contextual `?` trigger. The modal composes
+ * `.glass--panel`, `.control--icon` and `.control--input` from global.css, so
+ * it matches the inventory panel without restating any of it.
+ */
 
 .dictionary-backdrop {
   position: fixed;
@@ -8,9 +12,9 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-4);
-  background: rgba(6, 9, 24, 0.6);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: var(--color-backdrop);
+  backdrop-filter: blur(var(--blur-backdrop));
+  -webkit-backdrop-filter: blur(var(--blur-backdrop));
 }
 
 .dictionary {
@@ -31,33 +35,15 @@
 
 .dictionary__title {
   margin: 0;
-  font-size: 1.15rem;
-}
-
-.dictionary__close {
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.2rem;
-  line-height: 1;
-  color: var(--color-text);
-  background: transparent;
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
-
-.dictionary__filter {
-  width: 100%;
-  padding: var(--space-2) var(--space-3);
-  color: var(--color-text);
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-sm);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-black);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-strong);
 }
 
 .dictionary__empty {
   padding: var(--space-6) 0;
-  color: var(--color-text-muted);
+  color: var(--color-text-subtle);
   text-align: center;
 }
 
@@ -70,14 +56,15 @@
 }
 
 .dictionary__entry dt {
-  font-weight: 700;
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
   color: var(--color-accent);
 }
 
 .dictionary__entry dd {
   margin: 0.15rem 0 0;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
   color: var(--color-text);
 }
 
@@ -90,16 +77,18 @@
   height: 1.15rem;
   margin-left: 0.3rem;
   padding: 0;
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
   line-height: 1;
   color: var(--color-accent);
-  background: transparent;
+  background: var(--surface-control);
   border: 1px solid var(--color-accent);
   border-radius: 50%;
   cursor: pointer;
   vertical-align: middle;
+  transition: background var(--transition-fast);
 }
 
 .help-icon:hover {
-  background: var(--glass-bg-strong);
+  background: var(--surface-control-hover);
 }

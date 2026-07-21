@@ -40,9 +40,9 @@ export default function ElementCell({
       style={{
         gridRow: position.row,
         gridColumn: position.column,
-        // Reference the category tokens from tokens.css (no inline colors).
+        // Reference the category token from tokens.css (no inline colors). The
+        // stylesheet derives every tint it needs from this one value.
         ['--cell-color' as string]: `var(${token})`,
-        ['--cell-fill' as string]: `var(${token}-soft)`,
       }}
       aria-pressed={selected}
       onClick={() => onSelect(element.atomicNumber)}

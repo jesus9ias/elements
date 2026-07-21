@@ -1,26 +1,134 @@
 /**
- * Glassmorphism design tokens — the single source of truth for colors, blur
- * and spacing. No color/blur/spacing literal may appear inline elsewhere; use
- * these custom properties instead (no magic values).
+ * Glassmorphism design tokens — the single source of truth for color, blur,
+ * radius, shadow, spacing, motion and type scale. No such literal may appear
+ * anywhere else; a component stylesheet declares only geometry local to its own
+ * layout (grid tracks, aspect ratios, breakpoints).
+ *
+ * These values implement `design/Guia Glassmorphism.dc.html`. Read that file
+ * before changing anything here.
  */
 
 :root {
-  /* Palette */
-  --color-bg-start: #1b2140;
-  --color-bg-end: #0b0f24;
-  --color-text: #f2f4ff;
-  --color-text-muted: #aab0d6;
-  --color-accent: #6ea8ff;
-  --color-accent-strong: #3f7bff;
+  /* --- Typography ------------------------------------------------------ */
 
-  /* Glass surfaces */
-  --glass-bg: rgba(255, 255, 255, 0.08);
-  --glass-bg-strong: rgba(255, 255, 255, 0.14);
-  --glass-border: rgba(255, 255, 255, 0.18);
-  --glass-blur: 14px;
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+  /* Inter is self-hosted (see global.css); the system stack is the fallback. */
+  --font-sans:
+    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* Spacing scale */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  --text-3xs: 0.55rem;
+  --text-2xs: 0.65rem;
+  --text-xs: 0.72rem;
+  --text-sm: 0.8rem;
+  --text-base: 0.875rem;
+  --text-md: 0.95rem;
+  --text-lg: 1.15rem;
+  --text-xl: 1.35rem;
+
+  /* Headings tighten; small-caps labels open up. */
+  --tracking-tight: -0.01em;
+  --tracking-label: 0.06em;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* --- Background ------------------------------------------------------ */
+
+  /*
+   * Two colored glows over a base gradient, rather than a single radial. The
+   * glows give the glass surfaces something with structure to refract, which
+   * is what makes the blur read as depth instead of as grey.
+   */
+  --color-bg-start: oklch(0.16 0.02 265);
+  --color-bg-end: oklch(0.13 0.02 270);
+  --color-bg-glow-warm: oklch(0.28 0.06 280 / 0.55);
+  --color-bg-glow-cool: oklch(0.24 0.05 250 / 0.5);
+
+  /* --- Text ------------------------------------------------------------ */
+
+  --color-text: oklch(0.93 0.01 260);
+  /* Near-pure white, reserved for the value in a label/value pair. */
+  --color-text-strong: oklch(0.98 0 0);
+  --color-text-muted: oklch(0.8 0.02 260);
+  --color-text-subtle: oklch(0.68 0.02 260);
+  /* For text sitting on an inverted (light) fill. */
+  --color-text-inverse: oklch(0.15 0.02 270);
+
+  --color-accent: oklch(0.78 0.12 255);
+  --color-accent-strong: oklch(0.55 0.13 255);
+  --color-accent-ring: oklch(0.7 0.12 255);
+  /* `needsReview` notices — a status, deliberately not a category color. */
+  --color-warning: oklch(0.82 0.13 65);
+
+  /* --- Glass surfaces --------------------------------------------------- */
+
+  /*
+   * Three tiers, separated by blur depth and shadow reach so stacking order
+   * reads visually: bar < panel < raised. Each is a gradient between two
+   * translucent stops — never a flat fill — plus a hairline border and a top
+   * highlight.
+   */
+  --glass-bar-top: oklch(0.24 0.03 270 / 0.65);
+  --glass-bar-bottom: oklch(0.19 0.02 270 / 0.55);
+  --glass-bar-shadow: 0 10px 30px oklch(0.1 0.02 270 / 0.5);
+
+  --glass-panel-top: oklch(0.24 0.03 270 / 0.65);
+  --glass-panel-bottom: oklch(0.16 0.02 270 / 0.7);
+  --glass-panel-shadow: 0 18px 44px oklch(0.05 0.02 270 / 0.5);
+
+  --glass-raised-top: oklch(0.26 0.03 270 / 0.7);
+  --glass-raised-bottom: oklch(0.17 0.02 270 / 0.75);
+  --glass-raised-shadow: 0 24px 60px oklch(0.05 0.02 270 / 0.6);
+
+  --glass-border: oklch(1 0 0 / 0.1);
+  --glass-border-strong: oklch(1 0 0 / 0.12);
+  --glass-highlight: inset 0 1px 0 oklch(1 0 0 / 0.08);
+
+  --blur-bar: 22px;
+  --blur-panel: 24px;
+  --blur-raised: 28px;
+  --blur-cell: 10px;
+  --blur-backdrop: 4px;
+
+  --color-backdrop: oklch(0.12 0.02 270 / 0.6);
+
+  /* --- Controls --------------------------------------------------------- */
+
+  /* Recessed track a segmented switch sits in. */
+  --surface-track: oklch(1 0 0 / 0.04);
+  /* Inputs, secondary buttons, close buttons. */
+  --surface-control: oklch(1 0 0 / 0.05);
+  --surface-control-hover: oklch(1 0 0 / 0.12);
+  --surface-row-hover: oklch(1 0 0 / 0.05);
+  /* Inverted pill — the active language in the navbar toggle. */
+  --surface-inverse: oklch(0.9 0 0 / 0.9);
+
+  /*
+   * Selection is an accent fill plus an inset ring, never text color alone —
+   * the ring keeps the state legible where backdrop-filter is unsupported.
+   */
+  --surface-selected: oklch(0.55 0.13 255 / 0.35);
+  --surface-selected-soft: oklch(0.55 0.13 255 / 0.28);
+  --ring-selected: inset 0 0 0 1px oklch(0.7 0.12 255 / 0.4);
+  --ring-selected-soft: inset 0 0 0 1px oklch(0.7 0.12 255 / 0.35);
+
+  /* --- Radii ------------------------------------------------------------ */
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 18px;
+
+  /* --- Spacing ---------------------------------------------------------- */
+
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -28,27 +136,33 @@
   --space-6: 1.5rem;
   --space-8: 2rem;
 
-  /* Radii */
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
+  /* --- Motion ----------------------------------------------------------- */
 
-  /* Layout */
+  --transition-fast: 0.12s ease;
+  --transition-base: 0.18s ease;
+
+  /* --- Layout ----------------------------------------------------------- */
+
   --navbar-height: 4rem;
   --content-max-width: 1200px;
 
+  /* --- Element category colors ------------------------------------------ */
+
   /*
-   * Element category colors. One token per category in `categories.ts`
-   * (`categoryColor()` builds `--category-<name>`). Tuned to read as cell
-   * accents over the dark glass background while loosely following the
-   * conventional periodic-table hues. The `-soft` variant is the translucent
-   * cell fill; the solid variant is the accent/border.
-   */
-  /*
+   * One token per category in `categories.ts` (`categoryColor()` builds
+   * `--category-<name>`). Tuned to read as cell accents over the dark glass
+   * background while loosely following the conventional periodic-table hues.
+   *
    * Hues are spaced so no two categories rely on a similar tone alone; the
    * 2026-07-18 accessibility pass widened three pairs that were close
    * (alkaline-earth/transition, nonmetal/halogen, lanthanide/actinide) by
    * separating them in BOTH hue and lightness. See the Decisions Log.
+   *
+   * These ten values are the ONLY authoritative category colors. Every tint
+   * the interface needs — cell gradient, atomic number, name, mass, detail
+   * badge — is derived from them with `color-mix()` at the ratios below, so no
+   * derived value can drift out of the audited state. Do not add per-category
+   * variants; adjust the ratio instead.
    */
   --category-alkali-metal: #ff8a5c;
   --category-alkaline-earth-metal: #ffb347;
@@ -61,16 +175,64 @@
   --category-lanthanide: #ff9ecb;
   --category-actinide: #f2739b;
 
-  --category-alkali-metal-soft: rgba(255, 138, 92, 0.16);
-  --category-alkaline-earth-metal-soft: rgba(255, 179, 71, 0.16);
-  --category-transition-metal-soft: rgba(247, 224, 116, 0.16);
-  --category-post-transition-metal-soft: rgba(127, 224, 195, 0.16);
-  --category-metalloid-soft: rgba(111, 208, 140, 0.16);
-  --category-nonmetal-soft: rgba(90, 169, 255, 0.16);
-  --category-halogen-soft: rgba(134, 227, 245, 0.16);
-  --category-noble-gas-soft: rgba(185, 140, 255, 0.16);
-  --category-lanthanide-soft: rgba(255, 158, 203, 0.16);
-  --category-actinide-soft: rgba(242, 115, 155, 0.16);
+  /*
+   * White's share when blended with the category color, per text role on a
+   * category-tinted tile. Hierarchy between the three is carried mostly by
+   * size and weight — these values sit close together because they are pinned
+   * near the AA floor, not because the difference is meant to be subtle.
+   */
+  --tint-number: 90%;
+  --tint-name: 88%;
+  --tint-mass: 84%;
+
+  /*
+   * Category-tinted fills, as the category color's share of a transparent mix.
+   *
+   * 20% is a hard ceiling, not a preference: above it the atomic number drops
+   * below AA over the brightest categories (transition-metal yellow, halogen
+   * cyan) where the page's warm glow is strongest. The guide's update asks for
+   * 40%/16%, which measures 2.95:1. What the update is actually after — cells
+   * that read as lit rather than sunk into the background — is delivered by
+   * the border, ring and glow below, none of which sit behind text.
+   */
+  --cell-fill-top: 20%;
+  --cell-fill-bottom: 8%;
+
+  /*
+   * The cell's edge is what carries WCAG 1.4.11 (non-text contrast, 3:1) and
+   * what makes a tile look lit. It is independent of the fill, so it takes the
+   * guide's full value: 0.75 alpha over a lightened category color lifts the
+   * edge from 3.54:1 to 5.24:1 at no cost to legibility.
+   */
+  --cell-border-alpha: 75%;
+  --cell-border-tint: 18%; /* white blended into the border color */
+
+  /*
+   * Elevation is a colored ring plus a glow in the category's own hue, rather
+   * than a neutral drop shadow. The glow is darkened toward the page
+   * background so it grounds the tile instead of haloing it.
+   */
+  --cell-ring-geometry: 0 0 0 1px;
+  --cell-ring-alpha: 15%;
+  --cell-ring-alpha-hover: 25%;
+  --cell-glow-geometry: 0 6px 18px;
+  --cell-glow-geometry-hover: 0 10px 24px;
+  --cell-glow-alpha: 25%;
+  --cell-glow-alpha-hover: 35%;
+  --cell-glow-depth: 70%; /* category's share against the page background */
+  --cell-highlight: inset 0 1px 0 oklch(1 0 0 / 0.14);
+  --cell-highlight-hover: inset 0 1px 0 oklch(1 0 0 / 0.16);
+  /*
+   * The guide gives the detail badge a denser fill than the cell (0.35 vs
+   * 0.22). It cannot be much denser and stay AA — the badge holds the same
+   * white symbol on the same category color. Its extra emphasis comes from
+   * size and a stronger border instead.
+   */
+  --badge-fill-top: 20%;
+  --badge-fill-bottom: 6%;
+  --badge-border-alpha: 55%;
+
+  /* --- 3D scene colors --------------------------------------------------- */
 
   /* Nucleus particle colors for the Bohr model. */
   --particle-proton: #ff5c6c;

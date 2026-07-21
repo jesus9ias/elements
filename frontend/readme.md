@@ -4,6 +4,8 @@ The Astro + React + TypeScript + Three.js app, and the local content pipeline th
 
 See [`spec.md`](spec.md) for the contract and [`claude.md`](claude.md) for conventions and traps.
 
+The interface's visual language is defined by [`design/Guia Glassmorphism.dc.html`](design/Guia%20Glassmorphism.dc.html) — a Claude Design handoff kept in-repo. Open it in a browser to see the reference; implement it through the tokens in `src/styles/tokens.css`, never by copying values into a component.
+
 ## Stack
 
 Astro 7 · React 19 · TypeScript 6 · Vite · Vitest 4 · Three.js 0.185 · i18next 26 + react-i18next 17 · Node 24.
@@ -36,6 +38,7 @@ Copy `.env.example` to `.env` and fill `ANTHROPIC_API_KEY` if you intend to run 
 | `npm run preview` | Serve the built site — **use this to validate, not `dev`** |
 | `npm run check` | `astro check` (types + Astro diagnostics) |
 | `npm run dev` | Dev server; see the caveat in `claude.md` |
+| `python scripts/check-contrast.py` | WCAG audit of the design tokens. **Run after any color change.** |
 
 ## How content works
 
@@ -103,3 +106,5 @@ Records with missing data carry `needsReview: true` rather than a plausible-look
 ## Testing
 
 21 tests cover deterministic logic only — data merge, bond classification, i18n fallback, element data, molecule search, dictionary ordering and filtering. 3D rendering, layout and responsive behaviour are validated manually against the acceptance criteria in `spec.md`.
+
+Color contrast is the exception to "visual things are checked by eye": `scripts/check-contrast.py` measures every text/surface pair against the real compositing stack and fails below WCAG AA. Run it whenever a token changes.

@@ -58,7 +58,7 @@ export default function MoleculeVisualizer() {
         onShowTab={onShowTab}
       />
 
-      <div className="molecule-stage glass">
+      <div className="molecule-stage glass glass--panel">
         {selectedMolecule ? (
           <Suspense fallback={<div className="molecule-viewer" aria-hidden="true" />}>
             <MoleculeViewer

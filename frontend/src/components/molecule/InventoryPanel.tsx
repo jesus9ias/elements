@@ -45,15 +45,15 @@ export default function InventoryPanel({
     molecule.i18n[language]?.name ?? molecule.id;
 
   return (
-    <div className="inventory glass">
-      <div className="inventory__tabs" role="tablist">
+    <div className="inventory glass glass--panel">
+      <div className="inventory__tabs segmented" role="tablist">
         {TABS.map((tab) => (
           <button
             key={tab}
             type="button"
             role="tab"
             aria-selected={state.activeTab === tab}
-            className="inventory__tab"
+            className="inventory__tab segmented__item"
             data-active={state.activeTab === tab || undefined}
             // The Info tab is only meaningful once something is selected.
             disabled={tab === 'info' && !selectedMolecule}
@@ -68,7 +68,7 @@ export default function InventoryPanel({
         <div className="inventory__list-tab">
           <input
             type="search"
-            className="inventory__search"
+            className="inventory__search control control--input"
             placeholder={t('molecule.searchPlaceholder')}
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
@@ -119,25 +119,25 @@ function MoleculeInfo({
 
       <dl className="inventory__info-facts">
         <div>
-          <dt>{t('molecule.fields.formula')}</dt>
-          <dd>{molecule.formula}</dd>
+          <dt className="field__label">{t('molecule.fields.formula')}</dt>
+          <dd className="field__value">{molecule.formula}</dd>
         </div>
         <div>
-          <dt>
+          <dt className="field__label">
             {t('molecule.fields.smiles')}
             <HelpIcon term={SMILES_TERM} />{' '}
             <span className="inventory__smiles-note">({t('molecule.smilesNote')})</span>
           </dt>
-          <dd className="inventory__smiles">{molecule.smiles}</dd>
+          <dd className="field__value inventory__smiles">{molecule.smiles}</dd>
         </div>
         <div>
-          <dt>{t('molecule.fields.type')}</dt>
-          <dd>{t(`moleculeTypes.${molecule.type}`)}</dd>
+          <dt className="field__label">{t('molecule.fields.type')}</dt>
+          <dd className="field__value">{t(`moleculeTypes.${molecule.type}`)}</dd>
         </div>
         {molecule.isomers.length > 0 && (
           <div>
-            <dt>{t('molecule.fields.isomers')}</dt>
-            <dd>
+            <dt className="field__label">{t('molecule.fields.isomers')}</dt>
+            <dd className="field__value">
               {molecule.isomers
                 .map((id) => moleculeById(id)?.i18n[language]?.name ?? id)
                 .join(', ')}

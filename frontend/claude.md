@@ -17,6 +17,28 @@ Two tables are read by **both** the TypeScript app and the Python pipeline. They
 
 Element category membership (`src/constants/categories.ts`) is likewise the pipeline's source for `group`; it throws at load time if any of the 118 is uncategorized or duplicated.
 
+`src/styles/tokens.css` is the third: every color, blur, radius, shadow and type-scale value in the interface. A component stylesheet may declare geometry local to its own layout (grid tracks, aspect ratios) and nothing else.
+
+## Design changes start in `design/`
+
+`design/Guia Glassmorphism.dc.html` is the Claude Design handoff that defines the interface's look — glass tiers, the segmented-switch and glass-control patterns, the element-cell treatment. **Read it before any change that affects appearance**, and prefer extending its vocabulary over inventing a parallel one.
+
+Two things it does NOT govern, both deliberate:
+
+- **Category colors.** The guide's swatches are generic hue demos (`oklch(… 250)`, `oklch(… 30)`). The real palette is the ten `--category-*` tokens, which passed the 2026-07-18 accessibility audit — do not replace them with values read off the guide. Every tint is derived from that one base per category with `color-mix()`; there is no second value to keep in sync, and that is the point.
+- **Cell hover.** The guide proposes a 2px lift; `spec.md` requires an enlarge. The enlarge wins, with the guide's glow layered on. See the 2026-07-21 Decisions Log rows.
+
+Fixed pixel sizes in the guide are proportions, not measurements — its 84 px cells cannot fit 18 columns inside `--content-max-width`.
+
+**Run `python scripts/check-contrast.py` after touching any color, fill or tint token.** It reads `tokens.css` and exits non-zero below threshold. This is not ceremony: the guide's element-cell values have failed twice — its original 22% fill puts a white symbol at 4.42:1 over the light categories, and its "brighter cells" update asks for 40%, which measures 2.95:1. Nothing about the rendered result looks wrong enough to catch by eye, and the failures concentrate on `transition-metal` and `halogen` (the brightest categories, over the warm background glow), so spot-checking hydrogen or iron proves nothing.
+
+**"The cells look dim" is never fixed by raising `--cell-fill-top`.** Two criteria pull against each other on a cell:
+
+- **1.4.3** (4.5:1) — text vs the fill behind it. Degrades as the fill brightens. The fill is capped at **20%**; 21% already puts the atomic number at 4.48:1.
+- **1.4.11** (3:1) — the cell's edge vs the page. This is what "sinking into the background" actually measures, and it is carried by `--cell-border-alpha`, `--cell-border-tint` and the ring/glow tokens — *none of which sit behind text*.
+
+Answer brightness requests at the edge. Raising the border from 0.50 to 0.75 took the worst-case edge from 3.54:1 to 6.09:1 and cost the text nothing; raising the fill would have traded one criterion for the other.
+
 ## Traps
 
 **Run tests from `frontend/` with `npm test`.** `npx vitest` from the repo root picks up a config-less cached vitest without jsdom.
@@ -38,6 +60,8 @@ Element category membership (`src/constants/categories.ts`) is likewise the pipe
 **Prefer few `OPTIONAL`s per SPARQL query.** Wikidata returns the cross product of their values; six optionals pushed P8000 out of the result for 54 elements, surfacing as silently empty data rather than an error. Split single-purpose queries instead.
 
 **`node --experimental-strip-types -e "import('./x.ts')"` hangs.** Write a temporary `.ts` file inside the project and run it directly. Note that raw Node ESM needs explicit `.ts` extensions, while `src/` modules use extensionless imports that only Vite/Vitest resolve.
+
+**`overflow-x: auto` clips the vertical axis too.** Per CSS Overflow, when one axis is not `visible` the other cannot stay `visible` — it computes to `auto`. So the periodic grid's horizontal scroll container also clips vertically, and a hover-enlarged cell silently loses whatever grows past the grid's edge (measured: 14 px off the top and left of the corner cell). The fix is `--cell-hover-bleed` — padding inside the scroll container plus a matching negative margin — applied to *whichever element is scrolling*, which differs depending on whether the detail sidebar is open. Verify with `getComputedStyle(el).overflowY`, not with what the stylesheet says.
 
 **Headless browsers throttle `requestAnimationFrame`.** Screenshots of the Three.js scenes time out and frame counters read zero — an artifact of the automation context, not the code. The 3D visuals are the developer's manual validation by design.
 

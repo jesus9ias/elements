@@ -60,7 +60,7 @@ export default function DictionaryModal() {
   return (
     <div className="dictionary-backdrop" onClick={close}>
       <div
-        className="dictionary glass"
+        className="dictionary glass glass--panel"
         role="dialog"
         aria-modal="true"
         aria-label={t('nav.dictionary')}
@@ -71,7 +71,7 @@ export default function DictionaryModal() {
           <h2 className="dictionary__title">{t('nav.dictionary')}</h2>
           <button
             type="button"
-            className="dictionary__close"
+            className="dictionary__close control control--icon"
             onClick={close}
             aria-label={t('periodicTable.close')}
           >
@@ -82,7 +82,7 @@ export default function DictionaryModal() {
         <input
           ref={inputRef}
           type="search"
-          className="dictionary__filter"
+          className="dictionary__filter control control--input"
           placeholder={t('dictionary.filterPlaceholder')}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
