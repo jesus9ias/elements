@@ -9,10 +9,12 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "synth": "cdk synth",
-    "diff": "cdk diff",
-    "deploy": "cdk deploy",
-    "destroy": "cdk destroy"
+    "bootstrap": "node scripts/cdk.mjs bootstrap",
+    "synth": "node scripts/cdk.mjs synth",
+    "diff": "node scripts/cdk.mjs diff",
+    "deploy": "node scripts/cdk.mjs deploy",
+    "destroy": "node scripts/cdk.mjs destroy",
+    "typecheck": "tsc --noEmit"
   },
   "engines": {
     "node": ">=24"
