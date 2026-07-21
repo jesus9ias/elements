@@ -24,10 +24,10 @@ This subproject has **no `T-*` test suite** and is exempt from the failing-test 
 
 ## The deploy workflow
 
-`.github/workflows/deploy.yml` is intentionally half-armed:
+`.github/workflows/deploy.yml`:
 
-- Only `workflow_dispatch` is active, with a dry-run input.
-- The `push` trigger is **commented out**. Uncommenting it enables automatic production deploys and requires explicit developer authorization (spec Stage 2 STOP). Do not uncomment it as part of unrelated work.
+- `workflow_dispatch` is active, with a dry-run input, for manual runs.
+- `push` to `main` (paths `frontend/**` or the workflow file) is active as of 2026-07-21 — the developer authorized this, clearing the Stage 2 STOP. Every push to `main` touching those paths now deploys for real; treat merges to `main` accordingly.
 - Auth is OIDC. The OIDC provider and IAM deploy role are prerequisites this stack does **not** create — if a deploy fails with a role-assumption error, that is why.
 
 ## Configuration

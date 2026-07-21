@@ -84,7 +84,7 @@ Infra code is validated through `cdk synth` snapshot review and manual `cdk diff
 
 **Validation:** dry-run against a manually triggered workflow dispatch before enabling on every push.
 
-**STOP — await explicit developer authorization before enabling automatic deploy on push.**
+**STOP — await explicit developer authorization before enabling automatic deploy on push.** *(Cleared 2026-07-21: developer authorized enabling the `push` trigger.)*
 
 ## Decisions Log
 

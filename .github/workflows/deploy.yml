@@ -7,10 +7,8 @@ name: Deploy frontend
 # provider + deploy role are a prerequisite NOT created by the Stage 1 CDK
 # stack — configure them before the first real run.
 #
-# STAGE 2 GATE: the `push` trigger below is intentionally left commented out.
-# Validation happens first via a manual `workflow_dispatch` dry-run. Enabling
-# automatic deploy on push to `main` requires explicit developer authorization
-# (see infra/spec.md, Stage 2 STOP).
+# STAGE 2 GATE: automatic deploy on push to `main` was authorized by the
+# developer on 2026-07-21 (see infra/spec.md, Stage 2 STOP).
 
 on:
   workflow_dispatch:
@@ -19,11 +17,11 @@ on:
         description: "Preview only: S3 sync runs with --dryrun and CloudFront invalidation is skipped."
         type: boolean
         default: true
-  # push:
-  #   branches: [main]
-  #   paths:
-  #     - "frontend/**"
-  #     - ".github/workflows/deploy.yml"
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
+      - ".github/workflows/deploy.yml"
 
 # Never run two deploys against the same environment at once.
 concurrency:
@@ -68,6 +66,12 @@ jobs:
         working-directory: frontend
         run: npm run build
 
+      - name: Debug OIDC token claims
+        run: |
+          TOKEN=$(curl -sLS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sts.amazonaws.com" | jq -r '.value')
+          echo "$TOKEN" | cut -d '.' -f2 | base64 -d 2>/dev/null | jq .
+
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -96,9 +100,3 @@ jobs:
             echo "- Bucket: \`${{ secrets.S3_BUCKET_NAME }}\`"
             echo "- Distribution: \`${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}\`"
           } >> "$GITHUB_STEP_SUMMARY"
-      
-      - name: Debug OIDC token claims
-        run: |
-          TOKEN=$(curl -sLS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sts.amazonaws.com" | jq -r '.value')
-          echo "$TOKEN" | cut -d '.' -f2 | base64 -d 2>/dev/null | jq .
