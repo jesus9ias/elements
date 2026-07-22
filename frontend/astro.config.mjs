@@ -17,6 +17,14 @@ export default defineConfig({
       // acknowledge it rather than leave a standing warning that trains us to
       // ignore build output.
       chunkSizeWarningLimit: 600,
+      // Vite's default CSS minifier (lightningcss, via the Vite version bundled
+      // with @astrojs/react) treats `backdrop-filter` and `-webkit-backdrop-filter`
+      // as the same logical property and keeps only whichever is declared last,
+      // silently dropping the other. Every glass surface (.element-cell,
+      // .glass--bar/panel/raised) declares both, so production builds lost the
+      // standard property while dev (unminified) kept it — a real dev/prod
+      // rendering difference. esbuild's CSS minifier preserves both declarations.
+      cssMinify: 'esbuild',
     },
   },
 });
