@@ -7,7 +7,18 @@
  */
 
 .periodic-table-mode {
-  --cell-min: 2.5rem;
+  /*
+   * The floor a column can shrink to before the grid scrolls horizontally
+   * instead (mobile always relies on this; the detail sidebar does too, since
+   * `--content-max-width` minus the 23rem detail column leaves less than 18
+   * columns' worth of room). 3.75rem is not a rounded guess: below it, the
+   * atomic-number/mass pair sharing the top row (see `.element-cell` below)
+   * starts touching or overlapping for elements with a 3-digit number and a
+   * 6-7 character mass — checked against the actual widest values across all
+   * 118 cells, not just a couple of examples. Prefer scrolling a full-size
+   * table over shrinking cells past the point content still fits.
+   */
+  --cell-min: 3.75rem;
   --detail-width: 23rem;
   --cell-hover-scale: 1.45;
   /*
@@ -51,7 +62,16 @@
 .element-cell {
   aspect-ratio: 1;
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
+  /* Number and mass share the top row (mass at the end) instead of stacking as
+   * four separate rows — see `--cell-min` above for why the row has enough
+   * width to carry both without crowding. */
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'number mass'
+    'symbol symbol'
+    'name name';
+  column-gap: 0.2rem;
   padding: 0.25rem 0.3rem;
   /*
    * A gradient rather than a flat fill: it catches the background glows and
@@ -102,6 +122,7 @@
 }
 
 .element-cell__number {
+  grid-area: number;
   font-size: var(--text-3xs);
   font-weight: var(--weight-bold);
   line-height: 1;
@@ -118,6 +139,7 @@
  * from the border, the fill and the secondary text.
  */
 .element-cell__symbol {
+  grid-area: symbol;
   align-self: center;
   font-size: 1.05rem;
   font-weight: var(--weight-black);
@@ -135,6 +157,7 @@
 }
 
 .element-cell__name {
+  grid-area: name;
   font-size: 0.5rem;
   font-weight: var(--weight-semibold);
   color: color-mix(
@@ -144,8 +167,9 @@
   );
 }
 
-/* Secondary value, parked in the bottom-right corner. */
+/* Secondary value, parked in the top-right corner next to the atomic number. */
 .element-cell__mass {
+  grid-area: mass;
   justify-self: end;
   font-size: 0.5rem;
   color: color-mix(
@@ -373,13 +397,33 @@
 @media (min-width: 56rem) {
   .periodic-table-mode[data-detail-open] {
     display: grid;
-    grid-template-columns: 1fr var(--detail-width);
+    /*
+     * `minmax(0, 1fr)`, not plain `1fr`: a bare `fr` track has an implicit
+     * `auto` minimum, which resolves to its content's min-content size. The
+     * grid's own min-content (18 columns at `--cell-min`, plus the
+     * `--cell-hover-bleed` padding below) is wider than this column ever has
+     * room for once the sidebar's fixed `--detail-width` is subtracted — so
+     * the bare-`1fr` version forced the whole two-column layout wider than
+     * `main`, pushing the sidebar out past the page's right edge instead of
+     * letting `.periodic-grid`'s own `overflow-x: auto` (below) scroll
+     * within its column. `minmax(0, 1fr)` lets the column actually shrink to
+     * the space available, so only the table scrolls, not the whole page.
+     */
+    grid-template-columns: minmax(0, 1fr) var(--detail-width);
     gap: var(--space-6);
     align-items: start;
     overflow-x: visible;
   }
 
   .periodic-table-mode[data-detail-open] .periodic-grid {
+    /*
+     * Overrides the base `min-width: min-content` above: as a grid item next
+     * to the sidebar, `.periodic-grid` must be able to shrink below its own
+     * content's natural width so it fills (and scrolls within) its
+     * `minmax(0, 1fr)` track, instead of rendering at full width and visually
+     * spilling across the sidebar column.
+     */
+    min-width: 0;
     overflow-x: auto;
   }
 
