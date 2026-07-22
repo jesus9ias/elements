@@ -3,8 +3,10 @@ name: Deploy frontend
 # Builds the Astro frontend, syncs the static output to the site's S3 bucket,
 # and triggers a full CloudFront invalidation.
 #
-# Auth: OIDC. The job assumes an IAM role (no long-lived keys). The OIDC
-# provider + deploy role are a prerequisite NOT created by the Stage 1 CDK
+# Auth: IAM user access keys (temporary). OIDC role assumption kept failing
+# authorization despite a verified-matching trust policy; switched to keys on
+# 2026-07-21 to unblock, with the intent to return to OIDC in a later session.
+# The IAM user + access keys are a prerequisite NOT created by the Stage 1 CDK
 # stack — configure them before the first real run.
 #
 # STAGE 2 GATE: automatic deploy on push to `main` was authorized by the
@@ -28,9 +30,8 @@ concurrency:
   group: deploy-frontend
   cancel-in-progress: false
 
-# Least privilege: OIDC token issuance + repo checkout only.
+# Least privilege: repo checkout only.
 permissions:
-  id-token: write
   contents: read
 
 defaults:
@@ -66,16 +67,11 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Debug OIDC token claims
-        run: |
-          TOKEN=$(curl -sLS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sts.amazonaws.com" | jq -r '.value')
-          echo "$TOKEN" | cut -d '.' -f2 | base64 -d 2>/dev/null | jq .
-
-      - name: Configure AWS credentials (OIDC)
+      - name: Configure AWS credentials (access keys)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync build output to S3
