@@ -217,7 +217,17 @@
   }
 
   .molecule-stage {
+    /*
+     * An explicit `height`, not `min-height`, is required here: `.molecule-viewer`
+     * is `height: 100%`, and a flex container's height only counts as "definite"
+     * for a percentage-height child when it comes from `height` (or, on desktop,
+     * `aspect-ratio`) — never from `min-height` alone. Without it, `height: 100%`
+     * falls back to auto (content-based) sizing, and since the only content is
+     * the Three.js canvas — whose own height is set from this container's
+     * `clientHeight` at mount — the two chase each other down to 0/1px and the
+     * scene never becomes visible until an unrelated resize breaks the deadlock.
+     */
     aspect-ratio: auto;
-    min-height: 20rem;
+    height: 20rem;
   }
 }
