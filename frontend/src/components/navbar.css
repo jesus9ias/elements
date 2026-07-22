@@ -42,7 +42,31 @@
 }
 
 .navbar__modes a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/*
+ * Icon and text label for the same control never show at once — which one is
+ * `display: none` flips at the mobile breakpoint below. Icons stay in the DOM
+ * on desktop (just hidden) so no conditional rendering is needed either way.
+ */
+.navbar__mode-icon {
+  display: none;
+  flex-shrink: 0;
+}
+
+.navbar__dictionary {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__dictionary-icon {
+  display: none;
+  font-size: var(--text-md);
+  font-weight: var(--weight-bold);
+  line-height: 1;
 }
 
 /*
@@ -62,15 +86,45 @@
   font-weight: var(--weight-bold);
 }
 
-/* Narrow viewports: the bar wraps into two rows and centers. */
+/*
+ * Narrow viewports: modes and the dictionary trigger collapse to icon-only
+ * (labels swap for `aria-label`/`title`) and gaps/padding tighten, so the bar
+ * stays a single row instead of wrapping into two or three — freeing vertical
+ * space for the periodic table itself, which is what actually needs the room
+ * on a phone screen.
+ */
 @media (max-width: 40rem) {
   .navbar {
-    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
   }
 
   .navbar__start,
   .navbar__actions {
-    justify-content: center;
-    width: 100%;
+    gap: var(--space-2);
+  }
+
+  .navbar__mode-icon {
+    display: block;
+  }
+
+  .navbar__mode-label {
+    display: none;
+  }
+
+  .navbar__modes .segmented__item {
+    padding: var(--space-2);
+  }
+
+  .navbar__dictionary-icon {
+    display: block;
+  }
+
+  .navbar__dictionary-label {
+    display: none;
+  }
+
+  .navbar__dictionary {
+    padding: var(--space-2);
   }
 }

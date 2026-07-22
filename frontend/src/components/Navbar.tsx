@@ -28,6 +28,57 @@ const MODE_LABEL_KEY: Record<AppMode, string> = {
   [APP_MODES.MOLECULES]: 'modes.molecules',
 };
 
+/**
+ * A small grid of cells, echoing the element-cell grid itself — reads as
+ * "the periodic table" at a glance without a text label.
+ */
+function PeriodicTableIcon() {
+  return (
+    <svg
+      className="navbar__mode-icon"
+      width="16"
+      height="16"
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+    >
+      <rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="7.5" y="1" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="14" y="1" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="1" y="7.5" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="7.5" y="7.5" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <rect x="14" y="7.5" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.5" />
+    </svg>
+  );
+}
+
+/** A central atom bonded to three others — the molecule viewer's glyph. */
+function MoleculeIcon() {
+  return (
+    <svg
+      className="navbar__mode-icon"
+      width="16"
+      height="16"
+      viewBox="0 0 20 20"
+      fill="none"
+      aria-hidden="true"
+    >
+      <line x1="10" y1="10" x2="4" y2="4" stroke="currentColor" strokeWidth="1.5" />
+      <line x1="10" y1="10" x2="16" y2="5" stroke="currentColor" strokeWidth="1.5" />
+      <line x1="10" y1="10" x2="14" y2="16" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="10" cy="10" r="3" fill="currentColor" />
+      <circle cx="4" cy="4" r="2" fill="currentColor" />
+      <circle cx="16" cy="5" r="2" fill="currentColor" />
+      <circle cx="14" cy="16" r="2" fill="currentColor" />
+    </svg>
+  );
+}
+
+const MODE_ICON: Record<AppMode, () => React.JSX.Element> = {
+  [APP_MODES.PERIODIC_TABLE]: PeriodicTableIcon,
+  [APP_MODES.MOLECULES]: MoleculeIcon,
+};
+
 export default function Navbar({ currentPath }: NavbarProps) {
   const { t, i18n } = useTranslation();
 
@@ -60,6 +111,8 @@ export default function Navbar({ currentPath }: NavbarProps) {
           {(Object.values(APP_MODES) as AppMode[]).map((mode) => {
             const href = ROUTES[mode];
             const isActive = currentPath === href;
+            const label = t(MODE_LABEL_KEY[mode]);
+            const Icon = MODE_ICON[mode];
             return (
               <li key={mode}>
                 <a
@@ -67,8 +120,11 @@ export default function Navbar({ currentPath }: NavbarProps) {
                   href={href}
                   data-active={isActive || undefined}
                   aria-current={isActive ? 'page' : undefined}
+                  aria-label={label}
+                  title={label}
                 >
-                  {t(MODE_LABEL_KEY[mode])}
+                  <Icon />
+                  <span className="navbar__mode-label">{label}</span>
                 </a>
               </li>
             );
@@ -96,8 +152,17 @@ export default function Navbar({ currentPath }: NavbarProps) {
           ))}
         </div>
 
-        <button type="button" className="control" onClick={handleOpenDictionary}>
-          {t('nav.dictionary')}
+        <button
+          type="button"
+          className="control navbar__dictionary"
+          onClick={handleOpenDictionary}
+          aria-label={t('nav.dictionary')}
+          title={t('nav.dictionary')}
+        >
+          <span className="navbar__dictionary-icon" aria-hidden="true">
+            ?
+          </span>
+          <span className="navbar__dictionary-label">{t('nav.dictionary')}</span>
         </button>
       </div>
     </nav>

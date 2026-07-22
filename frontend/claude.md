@@ -79,6 +79,8 @@ Answer brightness requests at the edge. Raising the border from 0.50 to 0.75 too
 
 **Three.js is lazy-loaded.** `BohrModel` and `MoleculeViewer` are behind `React.lazy`, so the ~525 kB Three chunk loads only when a detail view or the viewer opens — never in the initial grid bundle. Vite dedupes it into one shared chunk. `chunkSizeWarningLimit` is raised to 600 in `astro.config.mjs` to acknowledge that one chunk; do not raise it further to silence a real regression.
 
+**No icon library — icons are hand-authored inline, either plain glyphs or small inline SVG.** `element-detail__close` and `HelpIcon` use a bare `×`/`?` character; the navbar's mobile mode icons (`Navbar.tsx`) use small hand-written inline `<svg>` with `stroke="currentColor"`/`fill="currentColor"` so they inherit the surrounding text color automatically. Keep following this pattern — it's zero-dependency and offline-first by construction, matching the rest of the app; don't reach for an icon font or component library for the next one.
+
 **Every 3D scene goes through `src/three/scene-lifecycle.ts`.** It owns setup, the render loop and — critically — full GPU disposal. The dispose-on-navigation criterion is verified by there being exactly one `<canvas>` after navigating across several elements or molecules.
 
 ## Data conventions
