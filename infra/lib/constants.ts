@@ -16,6 +16,8 @@ import {
 import {
   AllowedMethods,
   CachePolicy,
+  FunctionEventType,
+  FunctionRuntime,
   HttpVersion,
   PriceClass,
   ViewerProtocolPolicy,
@@ -35,6 +37,7 @@ export const CONSTRUCT_IDS = {
   CERTIFICATE: 'SiteCertificate',
   HOSTED_ZONE: 'SiteHostedZone',
   ALIAS_RECORD: 'SiteAliasRecord',
+  URL_REWRITE_FUNCTION: 'SiteUrlRewriteFunction',
 } as const;
 
 /** CloudFormation output names. */
@@ -72,4 +75,17 @@ export const DISTRIBUTION = {
    * low-traffic educational site.
    */
   PRICE_CLASS: PriceClass.PRICE_CLASS_ALL,
+} as const;
+
+/**
+ * Viewer-request CloudFront Function that rewrites extensionless URIs
+ * (e.g. `/molecules`) to their static file path (`/molecules/index.html`).
+ * Required because `defaultRootObject` only resolves the exact `/` request,
+ * not sub-paths — the standard gap when serving an Astro static build from
+ * a private S3 origin.
+ */
+export const URL_REWRITE = {
+  CODE_FILE_PATH: 'lib/functions/url-rewrite.js',
+  RUNTIME: FunctionRuntime.JS_2_0,
+  EVENT_TYPE: FunctionEventType.VIEWER_REQUEST,
 } as const;

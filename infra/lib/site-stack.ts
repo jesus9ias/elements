@@ -11,10 +11,16 @@
  * The certificate must live in us-east-1, as required by CloudFront.
  */
 
+import * as path from 'path';
+
 import { Stack, StackProps, CfnOutput } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
-import { Distribution } from 'aws-cdk-lib/aws-cloudfront';
+import {
+  Distribution,
+  FunctionCode,
+  Function as CloudFrontFunction,
+} from 'aws-cdk-lib/aws-cloudfront';
 import { S3BucketOrigin } from 'aws-cdk-lib/aws-cloudfront-origins';
 import { Certificate, ICertificate } from 'aws-cdk-lib/aws-certificatemanager';
 import {
@@ -32,6 +38,7 @@ import {
   DISTRIBUTION,
   OUTPUT_IDS,
   STACK,
+  URL_REWRITE,
 } from './constants';
 
 export interface SiteStackProps extends StackProps {
@@ -70,6 +77,20 @@ export class SiteStack extends Stack {
       },
     );
 
+    // Rewrites extensionless URIs (e.g. `/molecules`) to their static file
+    // path (`/molecules/index.html`) — `defaultRootObject` alone only covers
+    // the exact `/` request, not sub-paths.
+    const urlRewriteFunction = new CloudFrontFunction(
+      this,
+      CONSTRUCT_IDS.URL_REWRITE_FUNCTION,
+      {
+        code: FunctionCode.fromFile({
+          filePath: path.join(__dirname, '..', URL_REWRITE.CODE_FILE_PATH),
+        }),
+        runtime: URL_REWRITE.RUNTIME,
+      },
+    );
+
     // CloudFront in front of the private bucket, served over the subdomain.
     const distribution = new Distribution(this, CONSTRUCT_IDS.DISTRIBUTION, {
       defaultRootObject: DISTRIBUTION.DEFAULT_ROOT_OBJECT,
@@ -83,6 +104,12 @@ export class SiteStack extends Stack {
         allowedMethods: DISTRIBUTION.ALLOWED_METHODS,
         cachePolicy: DISTRIBUTION.CACHE_POLICY,
         compress: DISTRIBUTION.COMPRESS,
+        functionAssociations: [
+          {
+            function: urlRewriteFunction,
+            eventType: URL_REWRITE.EVENT_TYPE,
+          },
+        ],
       },
     });
 

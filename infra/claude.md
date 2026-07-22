@@ -10,7 +10,7 @@ Inherits the root [`claude.md`](../claude.md).
 
 `cdk synth` and `cdk diff` are read-only and safe, but `diff` queries deployed state — which requires AWS credentials, so it falls under the root rule on external calls and is the developer's to run too.
 
-*Current state: the stack has never been deployed. No AWS resources exist.*
+*Current state: the stack was deployed by the developer and the frontend was published successfully via the GitHub Actions workflow on 2026-07-21.*
 
 ## Review method
 
@@ -28,7 +28,7 @@ This subproject has **no `T-*` test suite** and is exempt from the failing-test 
 
 - `workflow_dispatch` is active, with a dry-run input, for manual runs.
 - `push` to `main` (paths `frontend/**` or the workflow file) is active as of 2026-07-21 — the developer authorized this, clearing the Stage 2 STOP. Every push to `main` touching those paths now deploys for real; treat merges to `main` accordingly.
-- Auth is **IAM user access keys** (temporary, since 2026-07-21) — `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` secrets, not OIDC. OIDC role assumption kept failing with a generic `Not authorized to perform sts:AssumeRoleWithWebIdentity` even after the trust policy's `sub`/`aud` were verified to match the token exactly (repo is public, so GitHub emits `repo:owner@id/repo@id:environment:name` rather than the classic format — trust policy was updated for that and still failed). Switched to access keys to unblock; revisit OIDC in a later session. The IAM user + its scoped policy (S3 sync + CloudFront invalidation only) are prerequisites this stack does **not** create.
+- Auth is **IAM user access keys** (temporary, since 2026-07-21) — `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` secrets, not OIDC. OIDC role assumption kept failing with a generic `Not authorized to perform sts:AssumeRoleWithWebIdentity` even after the trust policy's `sub`/`aud` were verified to match the token exactly (repo is public, so GitHub emits `repo:owner@id/repo@id:environment:name` rather than the classic format — trust policy was updated for that and still failed). Switched to access keys to unblock; publish confirmed working on 2026-07-21. **Pending: return to OIDC in a later session** — it remains the preferred auth method; the access-key setup is a known temporary stand-in, not the target state. The IAM user + its scoped policy (S3 sync + CloudFront invalidation only) are prerequisites this stack does **not** create.
 
 ## Configuration
 
