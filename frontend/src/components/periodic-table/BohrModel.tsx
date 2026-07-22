@@ -35,6 +35,10 @@ import {
   SHELL_TILT_STEP_RADIANS,
   NUCLEUS_SPIN_SPEED,
   CAMERA_DISTANCE,
+  ZOOM_MIN_FACTOR,
+  ZOOM_MAX_FACTOR,
+  ORBIT_SPEED,
+  ZOOM_SPEED,
   neutronCount,
 } from '../../constants/bohr';
 
@@ -112,10 +116,46 @@ export default function BohrModel({
     const dummy = new Object3D();
     const scratch = new Vector3();
 
+    const sceneGroup = new Group();
     let nucleusGroup: Group | null = null;
     let electronMesh: InstancedMesh | null = null;
     let orbits: ElectronOrbit[] = [];
     let elapsed = 0;
+
+    // Manual orbit/zoom controller (same pattern as MoleculeViewer).
+    const baseDistance = CAMERA_DISTANCE.BASE + shells.length * CAMERA_DISTANCE.PER_SHELL;
+    let rotX = 0;
+    let rotY = 0;
+    let dragging = false;
+    let lastX = 0;
+    let lastY = 0;
+    let distance = baseDistance;
+
+    const onPointerDown = (e: PointerEvent): void => {
+      dragging = true;
+      lastX = e.clientX;
+      lastY = e.clientY;
+      container.setPointerCapture(e.pointerId);
+    };
+    const onPointerMove = (e: PointerEvent): void => {
+      if (!dragging) return;
+      rotY += (e.clientX - lastX) * ORBIT_SPEED;
+      rotX += (e.clientY - lastY) * ORBIT_SPEED;
+      lastX = e.clientX;
+      lastY = e.clientY;
+    };
+    const onPointerUp = (e: PointerEvent): void => {
+      dragging = false;
+      if (container.hasPointerCapture(e.pointerId)) container.releasePointerCapture(e.pointerId);
+    };
+    const onWheel = (e: WheelEvent): void => {
+      e.preventDefault();
+      distance *= 1 + e.deltaY * ZOOM_SPEED;
+      distance = Math.min(
+        Math.max(distance, baseDistance * ZOOM_MIN_FACTOR),
+        baseDistance * ZOOM_MAX_FACTOR,
+      );
+    };
 
     const handle = mountScene(container, {
       init(ctx: SceneContext) {
@@ -124,9 +164,8 @@ export default function BohrModel({
         key.position.set(3, 4, 5);
         ctx.scene.add(key);
 
-        // Frame larger atoms from further back.
-        ctx.camera.position.z =
-          CAMERA_DISTANCE.BASE + shells.length * CAMERA_DISTANCE.PER_SHELL;
+        ctx.camera.position.z = distance;
+        ctx.scene.add(sceneGroup);
 
         // --- Nucleus: protons + neutrons packed into a jittered sphere ---
         nucleusGroup = new Group();
@@ -154,7 +193,7 @@ export default function BohrModel({
           mesh.instanceMatrix.needsUpdate = true;
           nucleusGroup.add(mesh);
         }
-        ctx.scene.add(nucleusGroup);
+        sceneGroup.add(nucleusGroup);
 
         // --- Electrons: one instanced mesh, orbit params precomputed ---
         orbits = [];
@@ -178,10 +217,16 @@ export default function BohrModel({
           PARTICLE_RADIUS.ELECTRON,
           cssColor('--particle-electron'),
         );
-        if (electronMesh) ctx.scene.add(electronMesh);
+        if (electronMesh) sceneGroup.add(electronMesh);
+
+        container.style.touchAction = 'none';
+        container.addEventListener('pointerdown', onPointerDown);
+        container.addEventListener('pointermove', onPointerMove);
+        container.addEventListener('pointerup', onPointerUp);
+        container.addEventListener('wheel', onWheel, { passive: false });
       },
 
-      update(_ctx, deltaSeconds) {
+      update(ctx, deltaSeconds) {
         elapsed += deltaSeconds;
 
         if (nucleusGroup) nucleusGroup.rotation.y += NUCLEUS_SPIN_SPEED * deltaSeconds;
@@ -199,6 +244,17 @@ export default function BohrModel({
           });
           electronMesh.instanceMatrix.needsUpdate = true;
         }
+
+        sceneGroup.rotation.x = rotX;
+        sceneGroup.rotation.y = rotY;
+        ctx.camera.position.z = distance;
+      },
+
+      dispose() {
+        container.removeEventListener('pointerdown', onPointerDown);
+        container.removeEventListener('pointermove', onPointerMove);
+        container.removeEventListener('pointerup', onPointerUp);
+        container.removeEventListener('wheel', onWheel);
       },
     });
 

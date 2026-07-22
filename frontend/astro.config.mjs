@@ -5,6 +5,7 @@ import react from '@astrojs/react';
 // English-only URLs, no language prefix (see monorepo spec: URLs are in English).
 // i18n is a client-side concern handled by i18next, not by Astro routing.
 export default defineConfig({
+  server: { port: 4332 },
   integrations: [react()],
   vite: {
     build: {

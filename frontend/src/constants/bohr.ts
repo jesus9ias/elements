@@ -47,6 +47,14 @@ export const CAMERA_DISTANCE = {
   PER_SHELL: 1.15,
 } as const;
 
+/** Wheel-zoom clamp, as multiples of the shell-scaled base distance. */
+export const ZOOM_MIN_FACTOR = 0.4;
+export const ZOOM_MAX_FACTOR = 2.5;
+
+/** Manual orbit sensitivity (radians per pixel) and wheel zoom step. */
+export const ORBIT_SPEED = 0.01;
+export const ZOOM_SPEED = 0.0015;
+
 /**
  * Neutron count is derived from the mass number when a mass is known
  * (round(atomicMass) − protons); otherwise it falls back to the proton count,

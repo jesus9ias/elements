@@ -224,6 +224,7 @@ Attribution: each element/molecule's `sources` array links back to its Wikidata/
 - Rendered via `THREE.InstancedMesh` (protons, neutrons, electrons each as their own instanced group) to keep draw calls low even for elements with hundreds of particles.
 - The previous element's scene (geometry + materials) is fully disposed before the next one is built when navigating via prev/next or re-selecting a cell — no accumulation across navigations.
 - **Acceptance criterion:** Uranium (92 protons + ~146 neutrons + 92 electrons, ~330 particles) must be validated on a mid-tier mobile device before this approach is signed off. If performance doesn't hold, the documented fallback is a single grouped nucleus blob with a particle-count label instead of individual spheres.
+- Same manual drag/wheel orbit-and-zoom controller as the Molecule Visualizer's Viewer (see below), layered on top of the continuous electron animation — the user's rotation is independent of, and does not interrupt, the automatic orbit/spin motion.
 
 ## Molecule Visualizer Mode
 
@@ -567,6 +568,7 @@ This subproject follows the **tests-first stage model** (see the monorepo `spec.
 | 2026-07-17 | 3D geometry generated via RDKit ETKDG + MMFF/UFF, never derived from the 2D layout algorithm | 2D layout is a drawing convention (flattened by design); 3D needs real distance/angle-based embedding to reflect actual non-planar geometry |
 | 2026-07-17 | Molecule embedding runs in Python (native RDKit), executed locally by the developer on-demand, not RDKit.js in the browser and not as a CI/CD build step | Avoids WASM runtime cost entirely for the MVP; native RDKit is the more mature, better-documented implementation for a one-off, infrequent batch job; deploys stay fast since they never re-run data generation |
 | 2026-07-17 | Bond styles: single = 1 solid cylinder, double/triple = N parallel solid cylinders, aromatic = 1 solid + 1 dashed (delocalization), ionic out of scope | Matches standard visualizer conventions for single/double/triple; aromatic gets a physically-honest custom style instead of forcing Kekulé; ionic bonds aren't representable directly from SMILES connectivity and are deferred |
+| 2026-07-22 | Bohr-model view gets the same manual drag/wheel orbit-and-zoom controller as the Molecule Visualizer's Viewer | Developer request for interaction parity between the two 3D views; reuses the existing controller instead of inventing a second one |
 | 2026-07-17 | CPK standard color palette for atoms | Widely recognized convention, no need to reinvent for an educational tool |
 | 2026-07-17 | Content pipeline errors surface only when the developer runs the scripts locally, loudly, listing offending IDs — never at CI/CD build time, since CI/CD never runs these scripts | MVP has no runtime loading/error states for content since everything is precomputed and committed; keeps both the runtime UI and the deploy pipeline simple |
 | 2026-07-17 | Dictionary is 100% manually curated, no fetch script | Small, controlled list of concepts; automation would add complexity without real benefit |
