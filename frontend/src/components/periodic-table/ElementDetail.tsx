@@ -14,6 +14,7 @@ import {
   formatTemperature,
   formatList,
   formatConfiguration,
+  formatDiscoveryYear,
 } from './format';
 
 /**
@@ -106,7 +107,12 @@ export default function ElementDetail({
         <Fact label={f('electronConfiguration')} value={formatConfiguration(element.electronConfiguration)} />
         <Fact label={f('meltingPoint')} value={formatTemperature(element.meltingPointC, element.meltingPointK)} />
         <Fact label={f('boilingPoint')} value={formatTemperature(element.boilingPointC, element.boilingPointK)} />
-        <Fact label={f('discovery')} value={formatText(element.discoveryDate)} />
+        <Fact
+          label={f('discovery')}
+          value={formatDiscoveryYear(element.discoveryDate, (year) =>
+            t('periodicTable.discoveryBce', { year }),
+          )}
+        />
         <Fact label={f('discoverer')} value={formatText(element.discoverer)} />
         <Fact label={f('halfLife')} value={formatText(element.halfLife)} />
         <Fact label={f('isotopes')} value={formatList(element.knownIsotopes)} />

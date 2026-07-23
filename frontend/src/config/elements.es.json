@@ -12,7 +12,11 @@
     "discoveryDate": "1766",
     "discoverer": "Henry Cavendish",
     "halfLife": null,
-    "knownIsotopes": [],
+    "knownIsotopes": [
+      "H-1",
+      "H-2",
+      "H-3"
+    ],
     "electronConfiguration": [
       "1"
     ],
@@ -936,8 +940,8 @@
     "meltingPointK": 1811.15,
     "boilingPointC": 2861,
     "boilingPointK": 3134.15,
-    "discoveryDate": null,
-    "discoverer": "http://www.wikidata.org/.well-known/genid/c150a46aad8c85725250e72a762569ed",
+    "discoveryDate": "-5000",
+    "discoverer": null,
     "halfLife": null,
     "knownIsotopes": [
       "Fe-54",
@@ -964,7 +968,7 @@
         "url": "https://es.wikipedia.org/wiki/Hierro"
       }
     ],
-    "needsReview": true
+    "needsReview": false
   },
   "27": {
     "atomicNumber": 27,
@@ -1054,7 +1058,7 @@
     "meltingPointK": 1358.15,
     "boilingPointC": 2595,
     "boilingPointK": 2868.15,
-    "discoveryDate": null,
+    "discoveryDate": "-7000",
     "discoverer": null,
     "halfLife": null,
     "knownIsotopes": [
@@ -1080,7 +1084,7 @@
         "url": "https://es.wikipedia.org/wiki/Cobre"
       }
     ],
-    "needsReview": true
+    "needsReview": false
   },
   "30": {
     "atomicNumber": 30,
@@ -1093,7 +1097,7 @@
     "boilingPointC": 907,
     "boilingPointK": 1180.15,
     "discoveryDate": null,
-    "discoverer": "http://www.wikidata.org/.well-known/genid/6df6ed05aa1b1d09337de229b582ca1d",
+    "discoverer": null,
     "halfLife": null,
     "knownIsotopes": [
       "Zn-64",
@@ -1774,7 +1778,7 @@
     "meltingPointK": null,
     "boilingPointC": 961.78,
     "boilingPointK": 1234.9299999999998,
-    "discoveryDate": null,
+    "discoveryDate": "-5000",
     "discoverer": null,
     "halfLife": null,
     "knownIsotopes": [
@@ -1801,7 +1805,7 @@
         "url": "https://es.wikipedia.org/wiki/Plata"
       }
     ],
-    "needsReview": true
+    "needsReview": false
   },
   "48": {
     "atomicNumber": 48,
@@ -3115,8 +3119,8 @@
     "meltingPointK": 1337.33,
     "boilingPointC": 2940,
     "boilingPointK": 3213.15,
-    "discoveryDate": null,
-    "discoverer": "http://www.wikidata.org/.well-known/genid/9d95c053c6a96042af9f9df8e05f2f17",
+    "discoveryDate": "-6000",
+    "discoverer": null,
     "halfLife": null,
     "knownIsotopes": [
       "Au-197"
@@ -3142,7 +3146,7 @@
         "url": "https://es.wikipedia.org/wiki/Oro"
       }
     ],
-    "needsReview": true
+    "needsReview": false
   },
   "80": {
     "atomicNumber": 80,

@@ -67,14 +67,36 @@ export const SOURCE_LABEL_WIKIPEDIA = 'Wikipedia';
 export const WIKIDATA_ENTITY_URL_PREFIX = 'https://www.wikidata.org/wiki/';
 
 /**
+ * A statement Wikidata marks as "unknown value" (e.g. P61 for elements with
+ * no individually credited discoverer) has no real object to label, so the
+ * label service resolves it to the blank node's own skolemized IRI under this
+ * prefix. That IRI is not data — the merge step treats it as absent, same as
+ * any other missing field.
+ */
+export const WIKIDATA_GENID_PREFIX = 'http://www.wikidata.org/.well-known/genid/';
+
+/**
+ * Placeholder a curated override can hold in place of `null`, meaning
+ * "checked — genuinely absent" rather than "not yet looked at". Example: Fe,
+ * Au, Ag and Cu's `discoverer`, where Wikidata's own P61 statement is an
+ * explicit "unknown value" (not merely "no statement") — there is no
+ * individual to credit for elements known since prehistoric antiquity.
+ * `merge.ts` excludes a field holding this marker from `needsReview`, then
+ * writes real `null` in its place; the marker itself never reaches the
+ * shipped config or the UI.
+ */
+export const CONFIRMED_ABSENT = '$confirmed-absent';
+
+/**
  * Fields carried by `src/config/common.json`, the language-agnostic
  * convenience index. Everything here is identical across languages, so the
  * index never diverges from the per-language files it duplicates.
  *
  * `name`, `discoveryDate`, `discoverer`, the prose fields and `sources` are
  * deliberately absent: all of them vary by language. `discoveryDate` in
- * particular renders as era text ("Antigüedad" / "Antiquity") for elements
- * known since ancient times.
+ * particular is a language-agnostic signed year in the merged per-language
+ * files, but a BCE value renders as era text ("antes de nuestra era" / "BCE")
+ * via `periodicTable.discoveryBce`, which differs per language.
  */
 export const LANGUAGE_AGNOSTIC_ELEMENT_FIELDS = [
   'atomicNumber',

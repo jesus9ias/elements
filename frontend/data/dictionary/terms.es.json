@@ -40,6 +40,10 @@
     "definition": "Átomos de un mismo elemento que difieren en su número de neutrones. Comparten propiedades químicas pero tienen distinta masa, y algunos son inestables."
   },
   {
+    "term": "Isótopo natural",
+    "definition": "Isótopo con una proporción fija y bien definida en la naturaleza, ya sea primordial o sostenida por una cadena de desintegración de vida muy larga, como la del uranio. Es el criterio que usa esta aplicación para listar isótopos: un elemento sin ninguno de este tipo, como el tecnecio o el polonio, no muestra isótopos aunque existan otros suyos, producidos artificialmente o generados como subproducto radiactivo de vida corta."
+  },
+  {
     "term": "Vida media",
     "definition": "Tiempo que tarda en desintegrarse la mitad de una muestra de un isótopo radiactivo. Los elementos estables no tienen vida media."
   },

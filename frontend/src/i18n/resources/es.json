@@ -60,6 +60,7 @@
     "unknown": "—",
     "needsReview": "Información en revisión",
     "cellLabel": "{{name}}, símbolo {{symbol}}, número atómico {{number}}",
+    "discoveryBce": "{{year}} antes de nuestra era",
     "fields": {
       "category": "Categoría",
       "atomicNumber": "Número atómico",
@@ -69,7 +70,7 @@
       "discovery": "Descubrimiento",
       "discoverer": "Descubridor",
       "halfLife": "Vida media",
-      "isotopes": "Isótopos conocidos",
+      "isotopes": "Isótopos naturales",
       "electronConfiguration": "Configuración electrónica",
       "uses": "Usos",
       "characteristics": "Características"

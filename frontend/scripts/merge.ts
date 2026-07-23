@@ -28,6 +28,8 @@ import {
   SOURCE_LABEL_WIKIDATA,
   SOURCE_LABEL_WIKIPEDIA,
   WIKIDATA_ENTITY_URL_PREFIX,
+  WIKIDATA_GENID_PREFIX,
+  CONFIRMED_ABSENT,
   LANGUAGE_AGNOSTIC_ELEMENT_FIELDS,
 } from '../src/constants/pipeline.ts';
 import { LANGUAGES, parseCliArgs, type FetchLanguage } from './fetch-elements.ts';
@@ -39,12 +41,26 @@ export interface MergedElement extends ElementInput {
   needsReview: boolean;
 }
 
-/** A field counts as missing when absent, null, blank, or an empty list. */
+/**
+ * A field counts as missing when absent, null, blank, or an empty list.
+ * `CONFIRMED_ABSENT` is the one exception: a curated override uses it to
+ * assert the field was checked and is genuinely absent, not merely unlooked-at.
+ */
 function isMissing(value: unknown): boolean {
+  if (value === CONFIRMED_ABSENT) return false;
   if (value === undefined || value === null) return true;
   if (typeof value === 'string') return value.trim() === '';
   if (Array.isArray(value)) return value.length === 0;
   return false;
+}
+
+/** Downgrades the `CONFIRMED_ABSENT` marker to real `null` for the shipped record. */
+function resolveConfirmedAbsent(element: ElementInput): ElementInput {
+  const resolved: ElementInput = { ...element };
+  for (const [field, value] of Object.entries(resolved)) {
+    if (value === CONFIRMED_ABSENT) resolved[field] = null;
+  }
+  return resolved;
 }
 
 /**
@@ -68,7 +84,7 @@ export function mergeElement(
     isMissing(merged[field]),
   );
 
-  return { ...merged, needsReview };
+  return { ...resolveConfirmedAbsent(merged), needsReview };
 }
 
 /** Fields that are still missing — used to report why an element was flagged. */
@@ -91,6 +107,8 @@ const CONFIG_DIR = path.resolve(SCRIPT_DIR, '..', 'src', 'config');
 
 /** Matches an ISO-8601 date whose year is CE (no leading minus). */
 const CE_YEAR_PATTERN = /^(\d{1,4})-\d{2}-\d{2}/;
+/** Matches an ISO-8601 date whose year is BCE (leading minus, per xsd:dateTime). */
+const BCE_YEAR_PATTERN = /^-(\d{1,4})-\d{2}-\d{2}/;
 /** Matches a bare year, which Wikidata sometimes returns for coarse precision. */
 const BARE_YEAR_PATTERN = /^(\d{1,4})$/;
 
@@ -98,11 +116,10 @@ const BARE_YEAR_PATTERN = /^(\d{1,4})$/;
  * Best-effort discovery year. Wikidata's P575 is an ISO timestamp; the app
  * shows a year, so that is what we extract.
  *
- * BCE dates (leading minus) return null on purpose: rendering them needs era
- * text ("a. C." / "BC") which is language-dependent and therefore belongs in
- * the i18n layer or an override, not in a value invented by this script. The
- * same goes for "Antiquity" — elements known since ancient times simply have
- * no P575 claim, so they arrive null and get flagged for review.
+ * A BCE year (leading minus) is kept as a negative number, e.g. "-5000" — a
+ * plain signed integer, not era text. Rendering it as "5000 antes de nuestra
+ * era" / "5000 BCE" is language-dependent and therefore belongs in the i18n
+ * layer, never invented by this script.
  */
 export function discoveryYear(raw: string | null): string | null {
   if (!raw) return null;
@@ -111,10 +128,23 @@ export function discoveryYear(raw: string | null): string | null {
   const isoMatch = CE_YEAR_PATTERN.exec(trimmed);
   if (isoMatch?.[1]) return String(Number(isoMatch[1]));
 
+  const bceMatch = BCE_YEAR_PATTERN.exec(trimmed);
+  if (bceMatch?.[1]) return String(-Number(bceMatch[1]));
+
   const bareMatch = BARE_YEAR_PATTERN.exec(trimmed);
   if (bareMatch?.[1]) return String(Number(bareMatch[1]));
 
   return null;
+}
+
+/**
+ * P61 (discoverer or inventor) set to Wikidata's "unknown value" resolves
+ * through the label service to a blank node's own skolemized IRI, since there
+ * is nothing to label. Treat that IRI as absent rather than as a name.
+ */
+function resolveDiscoverer(raw: string | null): string | null {
+  if (!raw) return null;
+  return raw.startsWith(WIKIDATA_GENID_PREFIX) ? null : raw;
 }
 
 interface RawElementFile {
@@ -189,7 +219,7 @@ function buildElement(
     boilingPointC: raw.boilingPointC,
     boilingPointK: raw.boilingPointK,
     discoveryDate: discoveryYear(raw.discoveryDate),
-    discoverer: raw.discoverer,
+    discoverer: resolveDiscoverer(raw.discoverer),
     halfLife: raw.halfLife,
     knownIsotopes: isotopes,
     electronConfiguration,

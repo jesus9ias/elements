@@ -40,6 +40,10 @@
     "definition": "Atoms of the same element that differ in their number of neutrons. They share chemical properties but have different masses, and some are unstable."
   },
   {
+    "term": "Natural isotope",
+    "definition": "An isotope with a fixed, well-defined natural proportion, either primordial or sustained by a very long-lived decay chain, such as uranium's. This is the criterion this app uses to list isotopes: an element with none of this kind, like technetium or polonium, shows no isotopes even though other isotopes of it exist, made artificially or arising as short-lived radioactive decay byproducts."
+  },
+  {
     "term": "Half-life",
     "definition": "The time it takes for half of a sample of a radioactive isotope to decay. Stable elements have no half-life."
   },

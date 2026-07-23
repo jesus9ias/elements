@@ -40,3 +40,18 @@ export function formatConfiguration(shells: string[]): string {
 export function formatText(value: string | null): string {
   return value && value.trim() !== '' ? value : UNKNOWN_DASH;
 }
+
+/**
+ * `discoveryDate` is a signed year (BCE stored negative, per `merge.ts`).
+ * A BCE year needs era text, which is language-dependent, so the caller
+ * supplies `formatBce` from the i18n layer instead of it being hardcoded here.
+ */
+export function formatDiscoveryYear(
+  value: string | null,
+  formatBce: (year: number) => string,
+): string {
+  if (!value) return UNKNOWN_DASH;
+  const year = Number(value);
+  if (!Number.isFinite(year)) return UNKNOWN_DASH;
+  return year < 0 ? formatBce(-year) : String(year);
+}
