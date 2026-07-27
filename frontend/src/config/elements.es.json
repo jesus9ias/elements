@@ -1096,8 +1096,8 @@
     "meltingPointK": 692.15,
     "boilingPointC": 907,
     "boilingPointK": 1180.15,
-    "discoveryDate": null,
-    "discoverer": null,
+    "discoveryDate": "1746",
+    "discoverer": "Andreas Sigismund Marggraf",
     "halfLife": null,
     "knownIsotopes": [
       "Zn-64",
@@ -1125,7 +1125,7 @@
         "url": "https://es.wikipedia.org/wiki/Zinc"
       }
     ],
-    "needsReview": true
+    "needsReview": false
   },
   "31": {
     "atomicNumber": 31,
