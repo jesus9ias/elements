@@ -12,6 +12,11 @@
  * the extracted prose, and `data/curated/overrides/` the manual corrections.
  * Overrides win per field; everything else stays fresh on each re-run.
  *
+ * Output is ONE aggregate file per language, unlike `fetch-elements.ts`'s
+ * one-file-per-element. So a `--element` run cannot just write what it merged:
+ * it re-reads the existing config and splices the single record into it. Every
+ * other element is carried through untouched.
+ *
  * Usage:
  *   node --experimental-strip-types scripts/merge.ts
  *   node --experimental-strip-types scripts/merge.ts --element=Cr
@@ -289,6 +294,27 @@ async function writeJson(filePath: string, value: unknown): Promise<void> {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
+/**
+ * The config a `--element` run has to splice into. Its absence is not a
+ * recoverable case: writing only the scoped record would drop every other
+ * element from the shipped file, which is exactly what this guard exists to
+ * prevent — so it fails loudly and points at the full run instead.
+ */
+async function readExistingElements(
+  configPath: string,
+  language: FetchLanguage,
+  symbol: string,
+): Promise<Record<string, MergedElement>> {
+  const existing = await readJsonIfPresent<Record<string, MergedElement>>(configPath);
+  if (!existing) {
+    throw new Error(
+      `--element=${symbol} splices into src/config/elements.${language}.json, ` +
+        'which does not exist yet. Run a full merge (no --element) first.',
+    );
+  }
+  return existing;
+}
+
 async function main(): Promise<void> {
   const args = parseCliArgs(process.argv.slice(2));
   const isotopes =
@@ -318,12 +344,22 @@ async function main(): Promise<void> {
       );
     }
 
-    await writeJson(path.join(CONFIG_DIR, `elements.${language}.json`), elements);
+    // A scoped run merged one record; the file it writes holds all of them.
+    const configPath = path.join(CONFIG_DIR, `elements.${language}.json`);
+    const output = args.element
+      ? { ...(await readExistingElements(configPath, language, args.element)), ...elements }
+      : elements;
+
+    await writeJson(configPath, output);
     console.log(
-      `[merge] ${language}: wrote ${Object.keys(elements).length} element(s) to src/config/elements.${language}.json`,
+      args.element
+        ? `[merge] ${language}: spliced ${Object.keys(elements).length} element(s) into` +
+            ` ${Object.keys(output).length} in src/config/elements.${language}.json`
+        : `[merge] ${language}: wrote ${Object.keys(output).length} element(s) to src/config/elements.${language}.json`,
     );
 
-    firstLanguageElements ??= elements;
+    // The index is rebuilt from the spliced result, never from the scoped slice.
+    firstLanguageElements ??= output;
     allFlagged.push(...flagged);
   }
 
