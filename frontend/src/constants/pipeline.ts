@@ -78,9 +78,16 @@ export const WIKIDATA_GENID_PREFIX = 'http://www.wikidata.org/.well-known/genid/
 /**
  * Placeholder a curated override can hold in place of `null`, meaning
  * "checked — genuinely absent" rather than "not yet looked at". Example: Fe,
- * Au, Ag and Cu's `discoverer`, where Wikidata's own P61 statement is an
- * explicit "unknown value" (not merely "no statement") — there is no
- * individual to credit for elements known since prehistoric antiquity.
+ * Au, Ag, Cu and Sn's `discoverer` — there is no individual to credit for
+ * elements known since prehistoric antiquity.
+ *
+ * What justifies the marker is the curated reading of the source articles,
+ * NOT the shape of the Wikidata statement: of those five, only Fe and Au have
+ * an explicit "unknown value" P61; Ag, Cu and Sn have no P61 statement at all,
+ * and Sn has no P575 either (its `discoveryDate` carries the marker too). An
+ * absent statement on its own means nothing — Wikidata simply may not have
+ * been filled in — so it is never sufficient grounds by itself.
+ *
  * `merge.ts` excludes a field holding this marker from `needsReview`, then
  * writes real `null` in its place; the marker itself never reaches the
  * shipped config or the UI.

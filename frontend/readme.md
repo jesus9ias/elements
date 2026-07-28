@@ -99,7 +99,7 @@ Every script fails loudly, listing the offending element or molecule by id, and 
 Records with missing data carry `needsReview: true` rather than a plausible-looking guess.
 
 - **28 elements have no `atomicMass`** — synthetics and radioactives with no IUPAC standard atomic weight. Convention is to show the most stable isotope's mass number in brackets; not implemented.
-- **~39 element records** flagged overall: the above, plus elements known since antiquity (no discovery date), missing discoverers, and `uses` the source article didn't cover.
+- **32 (en) / 33 (es) element records** flagged overall: the above, plus elements whose discovery date or discoverer the sources don't give, and `uses` the source article didn't cover. Elements known since antiquity are a separate case — where the absence has actually been checked against the sources (Fe, Au, Ag, Cu, Sn), the field is marked `$confirmed-absent` in the curated override and is no longer flagged; it still renders as `—`. Sb, Bi, Hg and Pb are still flagged, pending that per-element review.
 - **1 molecule** (`pyridine`) has no Spanish `uses` — its ES article doesn't cover them.
 - **37 electron configurations** in `data/curated/electron-configurations.json` are listed under `$needsVerification` (f-block and superheavies) and should be checked against an authoritative source. Wikidata only has a P8000 claim for 64 of 118 elements.
 
