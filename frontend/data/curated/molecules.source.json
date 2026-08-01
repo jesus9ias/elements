@@ -176,6 +176,28 @@
     ]
   },
   {
+    "id": "butane",
+    "smiles": "CCCC",
+    "formula": "C4H10",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "i18n": {
+      "es": {
+        "name": "Butano",
+        "description": "El butano es un alcano de fórmula C4H10, un gas incoloro e inflamable a temperatura y presión ambiente que forma parte de la familia de los hidrocarburos saturados. Se licua fácilmente a baja presión y se comercializa habitualmente en bombonas junto con el propano como gas licuado del petróleo (GLP).",
+        "uses": "El butano se utiliza principalmente como combustible doméstico e industrial, tanto solo como mezclado con propano en el gas licuado del petróleo, para cocinas, calentadores y calefacción. También se emplea como propelente en aerosoles y encendedores, y como materia prima petroquímica en la producción de etileno y otros compuestos orgánicos."
+      },
+      "en": {
+        "name": "Butane",
+        "description": "Butane is an alkane with the formula C4H10, a colorless, flammable gas at room temperature and pressure that belongs to the family of saturated hydrocarbons. It is easily liquefied under modest pressure and is commonly sold in canisters alongside propane as liquefied petroleum gas (LPG).",
+        "uses": "Butane is used mainly as a fuel for cooking, heating and portable stoves, both on its own and blended with propane in liquefied petroleum gas. It also serves as a propellant in aerosol sprays and as lighter fuel, and is used as a petrochemical feedstock in the production of ethylene and other organic compounds."
+      }
+    },
+    "sources": [
+      { "label": "PubChem CID 7843", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7843" }
+    ]
+  },
+  {
     "id": "ethylene",
     "smiles": "C=C",
     "formula": "C2H4",

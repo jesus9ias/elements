@@ -4542,6 +4542,212 @@
     "needsReview": false
   },
   {
+    "id": "butane",
+    "formula": "C4H10",
+    "smiles": "CCCC",
+    "type": "hydrocarbon",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "C",
+        "x": 1.4378,
+        "y": -0.1311,
+        "z": 0.7861,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.7908,
+        "y": -0.2425,
+        "z": -0.5858,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -0.5383,
+        "y": 0.5054,
+        "z": -0.6944,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": -1.631,
+        "y": -0.07,
+        "z": 0.1934,
+        "color": "#909090"
+      },
+      {
+        "element": "H",
+        "x": 0.8375,
+        "y": -0.6277,
+        "z": 1.5541,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.5714,
+        "y": 0.9164,
+        "z": 1.0739,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.4232,
+        "y": -0.6079,
+        "z": 0.7763,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 1.4824,
+        "y": 0.1671,
+        "z": -1.3318,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.6455,
+        "y": -1.3,
+        "z": -0.8353,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.3917,
+        "y": 1.5643,
+        "z": -0.4517,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.8772,
+        "y": 0.463,
+        "z": -1.7364,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.7815,
+        "y": -1.1352,
+        "z": -0.0088,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -2.5777,
+        "y": 0.4471,
+        "z": 0.0066,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.3913,
+        "y": 0.051,
+        "z": 1.2538,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 5,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Butano",
+        "description": "El butano es un alcano de fórmula C4H10, un gas incoloro e inflamable a temperatura y presión ambiente que forma parte de la familia de los hidrocarburos saturados. Se licua fácilmente a baja presión y se comercializa habitualmente en bombonas junto con el propano como gas licuado del petróleo (GLP).",
+        "uses": "El butano se utiliza principalmente como combustible doméstico e industrial, tanto solo como mezclado con propano en el gas licuado del petróleo, para cocinas, calentadores y calefacción. También se emplea como propelente en aerosoles y encendedores, y como materia prima petroquímica en la producción de etileno y otros compuestos orgánicos."
+      },
+      "en": {
+        "name": "Butane",
+        "description": "Butane is an alkane with the formula C4H10, a colorless, flammable gas at room temperature and pressure that belongs to the family of saturated hydrocarbons. It is easily liquefied under modest pressure and is commonly sold in canisters alongside propane as liquefied petroleum gas (LPG).",
+        "uses": "Butane is used mainly as a fuel for cooking, heating and portable stoves, both on its own and blended with propane in liquefied petroleum gas. It also serves as a propellant in aerosol sprays and as lighter fuel, and is used as a petrochemical feedstock in the production of ethylene and other organic compounds."
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 7843",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7843"
+      }
+    ],
+    "needsReview": false
+  },
+  {
     "id": "ethylene",
     "formula": "C2H4",
     "smiles": "C=C",
