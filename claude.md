@@ -24,7 +24,7 @@ The developer runs `git init`, all commits and all pushes, at their own timing. 
 
 Implementation proceeds in ordered stages defined per subproject, each ending in an explicit **STOP**. Do not begin the next stage without authorization, however obvious it seems.
 
-*Current state: `frontend/` Stages 1–7 are complete. `infra/` Stages 1–2 are code-complete but the stack has never been deployed, deliberately.*
+*Current state: `frontend/` Stages 1–7 are complete. `infra/` Stages 1–2 are complete and deployed — the stack and the frontend have been live since 2026-07-21 (see `infra/claude.md`).*
 
 ### 4. Tests-first
 

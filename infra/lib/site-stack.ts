@@ -17,6 +17,7 @@ import { Stack, StackProps, CfnOutput } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import {
+  CachePolicy,
   Distribution,
   FunctionCode,
   Function as CloudFrontFunction,
@@ -33,9 +34,11 @@ import { CloudFrontTarget } from 'aws-cdk-lib/aws-route53-targets';
 
 import { SiteConfig } from './config';
 import {
+  ASSET_BEHAVIORS,
   BUCKET,
   CONSTRUCT_IDS,
   DISTRIBUTION,
+  HTML_CACHE_POLICY,
   OUTPUT_IDS,
   STACK,
   URL_REWRITE,
@@ -91,6 +94,24 @@ export class SiteStack extends Stack {
       },
     );
 
+    // Single origin, shared across the default and additional behaviors below
+    // — CDK dedupes it into one CloudFormation Origin regardless of how many
+    // behaviors reference this instance.
+    const siteOrigin = S3BucketOrigin.withOriginAccessControl(siteBucket);
+
+    // Default (HTML) behavior's cache policy: edge TTL fixed at 1y so
+    // CloudFront ignores the `no-cache` the deploy workflow sets on HTML
+    // objects for its own caching, while that header still reaches browsers
+    // unchanged and makes them always revalidate. See constants.ts.
+    const htmlCachePolicy = new CachePolicy(this, CONSTRUCT_IDS.HTML_CACHE_POLICY, {
+      minTtl: HTML_CACHE_POLICY.MIN_TTL,
+      defaultTtl: HTML_CACHE_POLICY.DEFAULT_TTL,
+      maxTtl: HTML_CACHE_POLICY.MAX_TTL,
+      comment: HTML_CACHE_POLICY.COMMENT,
+      enableAcceptEncodingGzip: true,
+      enableAcceptEncodingBrotli: true,
+    });
+
     // CloudFront in front of the private bucket, served over the subdomain.
     const distribution = new Distribution(this, CONSTRUCT_IDS.DISTRIBUTION, {
       defaultRootObject: DISTRIBUTION.DEFAULT_ROOT_OBJECT,
@@ -98,11 +119,15 @@ export class SiteStack extends Stack {
       certificate,
       priceClass: DISTRIBUTION.PRICE_CLASS,
       httpVersion: DISTRIBUTION.HTTP_VERSION,
+      // Default behavior covers HTML and clean-URL routes (e.g. `/molecules`)
+      // — the url-rewrite function resolves those at viewer-request time,
+      // after path-pattern matching, so they can't be targeted by a `*.html`
+      // pattern and belong on the default behavior instead.
       defaultBehavior: {
-        origin: S3BucketOrigin.withOriginAccessControl(siteBucket),
+        origin: siteOrigin,
         viewerProtocolPolicy: DISTRIBUTION.VIEWER_PROTOCOL_POLICY,
         allowedMethods: DISTRIBUTION.ALLOWED_METHODS,
-        cachePolicy: DISTRIBUTION.CACHE_POLICY,
+        cachePolicy: htmlCachePolicy,
         compress: DISTRIBUTION.COMPRESS,
         functionAssociations: [
           {
@@ -110,6 +135,24 @@ export class SiteStack extends Stack {
             eventType: URL_REWRITE.EVENT_TYPE,
           },
         ],
+      },
+      // Immutable, content-hashed build output — long edge + browser TTL via
+      // DISTRIBUTION.CACHE_POLICY, which honors the origin's Cache-Control.
+      additionalBehaviors: {
+        [ASSET_BEHAVIORS.HASHED_ASSETS_PATH_PATTERN]: {
+          origin: siteOrigin,
+          viewerProtocolPolicy: DISTRIBUTION.VIEWER_PROTOCOL_POLICY,
+          allowedMethods: DISTRIBUTION.ALLOWED_METHODS,
+          cachePolicy: DISTRIBUTION.CACHE_POLICY,
+          compress: DISTRIBUTION.COMPRESS,
+        },
+        [ASSET_BEHAVIORS.FONTS_PATH_PATTERN]: {
+          origin: siteOrigin,
+          viewerProtocolPolicy: DISTRIBUTION.VIEWER_PROTOCOL_POLICY,
+          allowedMethods: DISTRIBUTION.ALLOWED_METHODS,
+          cachePolicy: DISTRIBUTION.CACHE_POLICY,
+          compress: DISTRIBUTION.COMPRESS,
+        },
       },
     });
 

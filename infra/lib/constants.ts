@@ -7,6 +7,7 @@
  */
 
 import {
+  Duration,
   RemovalPolicy,
 } from 'aws-cdk-lib';
 import {
@@ -38,6 +39,7 @@ export const CONSTRUCT_IDS = {
   HOSTED_ZONE: 'SiteHostedZone',
   ALIAS_RECORD: 'SiteAliasRecord',
   URL_REWRITE_FUNCTION: 'SiteUrlRewriteFunction',
+  HTML_CACHE_POLICY: 'HtmlCachePolicy',
 } as const;
 
 /** CloudFormation output names. */
@@ -66,6 +68,12 @@ export const DISTRIBUTION = {
   DEFAULT_ROOT_OBJECT: 'index.html',
   VIEWER_PROTOCOL_POLICY: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
   ALLOWED_METHODS: AllowedMethods.ALLOW_GET_HEAD_OPTIONS,
+  /**
+   * Applied to the immutable, content-hashed asset paths only (see
+   * ASSET_BEHAVIORS) — honors the long `Cache-Control` the deploy workflow
+   * sets on those objects. The default (HTML) behavior uses HTML_CACHE_POLICY
+   * instead; see its comment for why.
+   */
   CACHE_POLICY: CachePolicy.CACHING_OPTIMIZED,
   COMPRESS: true,
   HTTP_VERSION: HttpVersion.HTTP2_AND_3,
@@ -75,6 +83,33 @@ export const DISTRIBUTION = {
    * low-traffic educational site.
    */
   PRICE_CLASS: PriceClass.PRICE_CLASS_ALL,
+} as const;
+
+/**
+ * Path patterns for the immutable, content-hashed build output — matched
+ * against the incoming request path, so these must stay in sync with the
+ * Astro build's actual output layout (`frontend/dist/_astro/`, `.../fonts/`).
+ */
+export const ASSET_BEHAVIORS = {
+  HASHED_ASSETS_PATH_PATTERN: '/_astro/*',
+  FONTS_PATH_PATTERN: '/fonts/*',
+} as const;
+
+/**
+ * Custom cache policy for the default (HTML) behavior. Min = Default = Max
+ * clamps CloudFront's own edge TTL to exactly one year regardless of the
+ * `Cache-Control: no-cache` the deploy workflow sets on HTML objects — that
+ * header still reaches browsers as-is (CloudFront forwards origin headers
+ * unchanged), so browsers always revalidate against CloudFront, while
+ * CloudFront itself keeps serving the edge copy until the deploy workflow's
+ * full invalidation clears it. See infra/spec.md Decisions Log.
+ */
+export const HTML_CACHE_POLICY = {
+  MIN_TTL: Duration.days(365),
+  DEFAULT_TTL: Duration.days(365),
+  MAX_TTL: Duration.days(365),
+  COMMENT:
+    'Edge TTL fixed at 1y regardless of origin Cache-Control; freshness relies on full invalidation per deploy.',
 } as const;
 
 /**

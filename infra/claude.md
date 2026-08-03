@@ -36,6 +36,15 @@ All environment-specific values live in `infra/.env` (never committed; `.env.exa
 
 Constants that are not environment-specific belong in `lib/constants.ts`, per the monorepo no-magic-values rule — not inline in the stack.
 
+## Cache strategy
+
+Two behaviors, two `CachePolicy`s (`infra/lib/site-stack.ts`, `infra/lib/constants.ts`):
+
+- `/_astro/*` and `/fonts/*` (immutable, content-hashed build output): managed `CACHING_OPTIMIZED` policy, honoring the `Cache-Control: public, max-age=31536000, immutable` the deploy workflow sets on those objects — cached for a year at both CloudFront and the browser.
+- Default behavior (HTML, including clean-URL routes resolved by the url-rewrite function): custom `HtmlCachePolicy` with Min=Default=Max=1y, so CloudFront keeps its edge copy for a year **regardless** of the `Cache-Control: no-cache` the deploy workflow sets on HTML objects. That header still reaches the browser unchanged (CloudFront forwards origin headers as-is), so browsers always revalidate against CloudFront — but CloudFront itself doesn't have to hit the origin on every request.
+
+This only works because every deploy invalidates the **entire** distribution (below) — CloudFront's long edge TTL is safe precisely because invalidation, not TTL expiry, is what actually refreshes it. Not yet deployed: added 2026-08-03, requires a `cdk deploy` (see spec.md Decisions Log).
+
 ## Cache invalidation
 
 Every deploy invalidates the **entire** CloudFront distribution. This is a deliberate MVP simplification; there is no granular invalidation strategy. Revisit only if deploy frequency makes the cost matter.

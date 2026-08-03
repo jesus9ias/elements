@@ -74,7 +74,7 @@ Infra code is validated through `cdk synth` snapshot review and manual `cdk diff
 
 **Validation:** `cdk synth` succeeds without hardcoded values; `cdk diff` reviewed manually before first deploy.
 
-**STOP — await explicit developer authorization before running `cdk deploy` against real AWS resources.**
+**STOP — await explicit developer authorization before running `cdk deploy` against real AWS resources.** *(Cleared 2026-07-21: developer deployed the stack.)*
 
 ### Stage 2 — GitHub Actions Deploy Pipeline
 
@@ -94,3 +94,4 @@ Infra code is validated through `cdk synth` snapshot review and manual `cdk diff
 | 2026-07-17 | Deploy stack from local, frontend updates via GitHub Actions | Matches the pattern already used in Arcade/Textual |
 | 2026-07-21 | Deploy workflow auth switched from OIDC role assumption to IAM user access keys (temporary) | OIDC `AssumeRoleWithWebIdentity` kept failing authorization even after the trust policy's `sub`/`aud` were verified to match the actual token exactly (repo's public visibility makes GitHub emit an ID-qualified `sub`, which the policy was updated to match) — root cause not found. Access keys unblock publishing now; OIDC remains the intended long-term method and should be revisited in a later session |
 | 2026-07-22 | Added a viewer-request CloudFront Function (`lib/functions/url-rewrite.js`) to the default behavior | Astro's clean URLs (e.g. `/molecules`) don't resolve against the private S3 origin — `defaultRootObject` only covers the exact `/` request, not sub-paths, so every non-root route 403'd. The function rewrites extensionless URIs to their `index.html` file before the origin lookup. Requires a `cdk deploy` to take effect on the already-deployed stack; not yet run |
+| 2026-08-03 | Split caching by file type: immutable `Cache-Control` (1y) for hashed assets (`_astro/*`, `fonts/*`) via `additionalBehaviors` using `CACHING_OPTIMIZED`; `no-cache` for HTML via a new custom `CachePolicy` (Min=Default=Max=1y) on the default behavior | Content-hashed filenames make long caching safe for assets at both CloudFront and the browser — a changed file gets a new URL. HTML has no hash and references those asset URLs, so browsers must always revalidate it; but CloudFront's own edge copy can still be cached for a year and rely on the full invalidation already triggered on every deploy, maximizing the edge hit ratio without risking a stale HTML response for new visitors. Requires a `cdk deploy` to take effect; not yet run |

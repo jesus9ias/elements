@@ -75,9 +75,25 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync build output to S3
+        # Two passes so hashed/immutable assets and HTML entry points get
+        # different Cache-Control (see infra/spec.md Decisions Log). --delete
+        # only removes destination objects matching each pass's own filter,
+        # so together the two passes still clean up every removed file.
+        # NOTE: if the Astro build ever adds a new top-level asset directory
+        # besides _astro/ and fonts/, it falls through to the second pass
+        # (no-cache) unless a matching CloudFront behavior + sync filter is
+        # added for it too — see infra/lib/constants.ts ASSET_BEHAVIORS.
         run: |
           aws s3 sync frontend/dist "s3://${{ secrets.S3_BUCKET_NAME }}" \
             --delete \
+            --exclude "*" --include "_astro/*" --include "fonts/*" \
+            --cache-control "public, max-age=31536000, immutable" \
+            ${{ steps.mode.outputs.dry_run == 'true' && '--dryrun' || '' }}
+
+          aws s3 sync frontend/dist "s3://${{ secrets.S3_BUCKET_NAME }}" \
+            --delete \
+            --exclude "*" --include "*.html" \
+            --cache-control "no-cache" \
             ${{ steps.mode.outputs.dry_run == 'true' && '--dryrun' || '' }}
 
       - name: Invalidate CloudFront distribution
