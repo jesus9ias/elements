@@ -282,6 +282,20 @@
     ]
   },
   {
+    "id": "cysteine",
+    "smiles": "N[C@@H](CS)C(=O)O",
+    "formula": "C3H7NO2S",
+    "type": "amino-acid",
+    "isomers": [],
+    "i18n": {
+      "es": { "name": "Cisteína", "description": null, "uses": null },
+      "en": { "name": "Cysteine", "description": null, "uses": null }
+    },
+    "sources": [
+      { "label": "PubChem CID 5862", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5862" }
+    ]
+  },
+  {
     "id": "ethanol",
     "smiles": "CCO",
     "formula": "C2H6O",

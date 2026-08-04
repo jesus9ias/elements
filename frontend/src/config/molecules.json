@@ -5836,6 +5836,212 @@
     "needsReview": false
   },
   {
+    "id": "cysteine",
+    "formula": "C3H7NO2S",
+    "smiles": "N[C@@H](CS)C(=O)O",
+    "type": "amino-acid",
+    "isomers": [],
+    "atoms": [
+      {
+        "element": "N",
+        "x": -1.8017,
+        "y": 0.0495,
+        "z": 0.2958,
+        "color": "#3050F8"
+      },
+      {
+        "element": "C",
+        "x": -0.3466,
+        "y": -0.1424,
+        "z": 0.5325,
+        "color": "#909090"
+      },
+      {
+        "element": "C",
+        "x": 0.2422,
+        "y": -1.2174,
+        "z": -0.3919,
+        "color": "#909090"
+      },
+      {
+        "element": "S",
+        "x": 1.8651,
+        "y": -1.8354,
+        "z": 0.1685,
+        "color": "#FFFF30"
+      },
+      {
+        "element": "C",
+        "x": 0.3931,
+        "y": 1.1793,
+        "z": 0.2972,
+        "color": "#909090"
+      },
+      {
+        "element": "O",
+        "x": 1.444,
+        "y": 1.5212,
+        "z": 0.8166,
+        "color": "#FF0000"
+      },
+      {
+        "element": "O",
+        "x": -0.1816,
+        "y": 1.9611,
+        "z": -0.6469,
+        "color": "#FF0000"
+      },
+      {
+        "element": "H",
+        "x": -2.2623,
+        "y": -0.8514,
+        "z": 0.1844,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -1.917,
+        "y": 0.5583,
+        "z": -0.5846,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.2355,
+        "y": -0.4135,
+        "z": 1.5881,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.3569,
+        "y": -0.8391,
+        "z": -1.4138,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": -0.4201,
+        "y": -2.089,
+        "z": -0.4349,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 2.478,
+        "y": -0.6416,
+        "z": 0.2541,
+        "color": "#FFFFFF"
+      },
+      {
+        "element": "H",
+        "x": 0.3856,
+        "y": 2.7606,
+        "z": -0.6651,
+        "color": "#FFFFFF"
+      }
+    ],
+    "bonds": [
+      {
+        "from": 0,
+        "to": 1,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 2,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 4,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "order": "double",
+        "style": "solid-parallel"
+      },
+      {
+        "from": 4,
+        "to": 6,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 7,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 0,
+        "to": 8,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 1,
+        "to": 9,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 10,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 2,
+        "to": 11,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 3,
+        "to": 12,
+        "order": "single",
+        "style": "solid"
+      },
+      {
+        "from": 6,
+        "to": 13,
+        "order": "single",
+        "style": "solid"
+      }
+    ],
+    "i18n": {
+      "es": {
+        "name": "Cisteína",
+        "description": null,
+        "uses": null
+      },
+      "en": {
+        "name": "Cysteine",
+        "description": null,
+        "uses": null
+      }
+    },
+    "sources": [
+      {
+        "label": "PubChem CID 5862",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5862"
+      }
+    ],
+    "needsReview": true
+  },
+  {
     "id": "ethanol",
     "formula": "C2H6O",
     "smiles": "CCO",
